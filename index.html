@@ -151,7 +151,7 @@
     /* ===== DEFINITION PANEL ===== */
     .def-panel {
       position: fixed; bottom: var(--bottom-nav-h); left: 50%;
-      transform: translateX(-50%) translateY(100%);
+      transform: translateX(-50%) translateY(calc(100% + 60px));
       width: 100%; max-width: 480px;
       background: var(--bg3); border-top: 2px solid var(--blue);
       border-radius: 16px 16px 0 0; padding: 16px 16px 24px;
@@ -1155,27 +1155,33 @@ function getFiltered() {
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
     if (dictTab === 'en') {
-      // 見出し(en)一致 → 説明(ja)一致の順、各グループ内は見出し文字数の短い順
-      const headMatches = [];
-      const descMatches = [];
+      // 優先順位: ①見出しが検索語で始まる → ②見出しに含む → ③説明に含む
+      // 各グループ内は見出し文字数の短い順
+      const startMatches = [], midMatches = [], descMatches = [];
       list.forEach(e => {
-        if (e.en.toLowerCase().includes(q)) headMatches.push(e);
+        const enL = e.en.toLowerCase();
+        if (enL.startsWith(q)) startMatches.push(e);
+        else if (enL.includes(q)) midMatches.push(e);
         else if (e.ja.toLowerCase().includes(q)) descMatches.push(e);
       });
-      headMatches.sort((a, b) => a.en.length - b.en.length || a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
-      descMatches.sort((a, b) => a.en.length - b.en.length || a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
-      list = [...headMatches, ...descMatches];
+      const byLen = (a, b) => a.en.length - b.en.length || a.en.toLowerCase().localeCompare(b.en.toLowerCase());
+      startMatches.sort(byLen);
+      midMatches.sort(byLen);
+      descMatches.sort(byLen);
+      list = [...startMatches, ...midMatches, ...descMatches];
     } else {
-      // 見出し(ja)一致 → 説明(en)一致の順、各グループ内は見出し文字数の短い順
-      const headMatches = [];
-      const descMatches = [];
+      // 優先順位: ①見出しが検索語で始まる → ②見出しに含む → ③説明に含む
+      const startMatches = [], midMatches = [], descMatches = [];
       list.forEach(e => {
-        if (e.ja.includes(searchQuery)) headMatches.push(e);
+        if (e.ja.startsWith(searchQuery)) startMatches.push(e);
+        else if (e.ja.includes(searchQuery)) midMatches.push(e);
         else if (e.en.toLowerCase().includes(q)) descMatches.push(e);
       });
-      headMatches.sort((a, b) => a.ja.length - b.ja.length || jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
-      descMatches.sort((a, b) => a.ja.length - b.ja.length || jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
-      list = [...headMatches, ...descMatches];
+      const byLen = (a, b) => a.ja.length - b.ja.length || jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja');
+      startMatches.sort(byLen);
+      midMatches.sort(byLen);
+      descMatches.sort(byLen);
+      list = [...startMatches, ...midMatches, ...descMatches];
     }
   } else {
     if (dictTab === 'en') {
