@@ -183,42 +183,152 @@
     }
 
     /* ===== QUIZ SCREEN ===== */
+
+    /* Shared stadium background */
+    .quiz-stadium-bg {
+      flex: 1; display: flex; flex-direction: column; overflow-y: auto;
+      background: linear-gradient(180deg, #071220 0%, #0a1e38 60%, #0d2245 100%);
+    }
+
     /* Quiz Home */
     .quiz-home {
       flex: 1; display: flex; flex-direction: column;
-      align-items: center; justify-content: flex-start;
-      padding: 10px 16px 16px; gap: 6px; overflow-y: auto;
+      align-items: center; overflow-y: auto; gap: 0;
+      background: linear-gradient(180deg, #071220 0%, #0a1e38 60%, #0d2245 100%);
     }
-    .quiz-home-icon { font-size: 32px; }
-    .quiz-home-title { font-size: 20px; font-weight: 700; color: #fff; }
-    .quiz-home-desc { font-size: 12px; color: var(--text2); text-align: center; line-height: 1.4; margin: 2px 0; }
-    .quiz-mode-list { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 320px; }
-    .quiz-mode-btn {
-      padding: 10px 14px; border-radius: 12px;
-      border: 1px solid var(--border); background: var(--bg3);
-      color: var(--text); cursor: pointer;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 2px; text-align: center; transition: all 0.2s;
-    }
-    .quiz-mode-btn:active { background: var(--blue); border-color: var(--blue); }
-    .qm-icon { font-size: 22px; line-height: 1; }
-    .qm-title { font-size: 14px; font-weight: 700; color: #fff; }
-    .qm-sub { font-size: 11px; color: var(--text2); margin-top: 1px; }
 
-    /* Score badge on quiz home */
+    /* Hero */
+    .quiz-hero {
+      width: 100%; height: 180px; position: relative;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; flex-shrink: 0;
+      background: #04111f;
+    }
+    /* Stadium ground glow */
+    .quiz-hero::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 50%;
+      background: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(40,160,155,0.18) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    /* Spotlight beams */
+    .quiz-hero-beams {
+      position: absolute; inset: 0; pointer-events: none;
+    }
+    .quiz-hero-beams::before,
+    .quiz-hero-beams::after {
+      content: '';
+      position: absolute; top: -10px; width: 160px; height: 200%;
+      opacity: 0.55;
+    }
+    .quiz-hero-beams::before {
+      left: -20px;
+      background: linear-gradient(155deg,
+        rgba(255,235,120,0.25) 0%,
+        rgba(255,215,80,0.12) 20%,
+        transparent 55%);
+      transform-origin: top left;
+    }
+    .quiz-hero-beams::after {
+      right: -20px;
+      background: linear-gradient(205deg,
+        rgba(255,235,120,0.25) 0%,
+        rgba(255,215,80,0.12) 20%,
+        transparent 55%);
+      transform-origin: top right;
+    }
+    .quiz-hero-content {
+      position: relative; text-align: center; z-index: 2;
+    }
+    .quiz-hero-ball {
+      font-size: 60px; line-height: 1; margin-bottom: 8px;
+      filter: drop-shadow(0 0 24px rgba(255,255,255,0.35)) drop-shadow(0 4px 8px rgba(0,0,0,0.6));
+    }
+    .quiz-hero-title {
+      font-size: 24px; font-weight: 900; color: #fff;
+      letter-spacing: 3px;
+      text-shadow: 0 0 20px rgba(61,184,176,0.5), 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    /* Stats boxes */
     .quiz-stats-wrap {
-      display: flex; gap: 8px; width: 100%; max-width: 320px;
+      display: flex; gap: 8px; width: 100%; padding: 0 12px; margin: 0 0 4px;
     }
     .quiz-stats {
-      flex: 1; display: flex; gap: 8px; justify-content: center;
-      background: var(--bg3); border-radius: 12px; padding: 10px 8px;
-      flex-direction: column; align-items: center;
+      flex: 1; border-radius: 12px; padding: 10px 8px;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.04);
     }
-    .qs-section-label { font-size: 9px; color: var(--text3); letter-spacing: 0.5px; margin-bottom: 2px; }
+    .quiz-stats-ej {
+      border: 1px solid rgba(61,184,176,0.55);
+      box-shadow: 0 0 14px rgba(61,184,176,0.1) inset;
+    }
+    .quiz-stats-je {
+      border: 1px solid rgba(239,83,80,0.55);
+      box-shadow: 0 0 14px rgba(239,83,80,0.1) inset;
+    }
+    .qs-section-label { font-size: 9px; color: var(--text2); letter-spacing: 0.5px; }
     .qs-row { display: flex; gap: 10px; }
     .qs-item { text-align: center; }
-    .qs-num { font-size: 18px; font-weight: 700; color: var(--blue-light); }
+    .qs-num { font-size: 17px; font-weight: 700; color: var(--blue-light); }
     .qs-label { font-size: 9px; color: var(--text3); margin-top: 1px; }
+
+    /* Home desc */
+    .quiz-home-desc {
+      font-size: 11px; color: var(--text2); margin: 6px 0 2px;
+      letter-spacing: 0.3px;
+    }
+
+    /* Section groups */
+    .quiz-section { width: 100%; padding: 6px 12px 0; }
+    .quiz-section-label {
+      font-size: 11px; color: var(--text2); margin-bottom: 6px;
+      display: flex; align-items: center; gap: 6px; letter-spacing: 0.3px;
+    }
+    .qs-badge {
+      background: rgba(61,184,176,0.15); color: var(--blue-light);
+      font-size: 9px; padding: 2px 5px; border-radius: 4px;
+      font-weight: 700; letter-spacing: 0.3px;
+    }
+    .qs-badge-red {
+      background: rgba(239,83,80,0.15); color: #ef9a9a;
+    }
+
+    /* Quiz mode buttons - horizontal rows */
+    .quiz-mode-list { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+    .quiz-mode-btn {
+      width: 100%; padding: 12px 14px; border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.04);
+      color: var(--text); cursor: pointer;
+      display: flex; flex-direction: row; align-items: center;
+      gap: 14px; text-align: left; transition: all 0.2s;
+    }
+    .quiz-mode-btn:active { background: rgba(61,184,176,0.1); border-color: rgba(61,184,176,0.3); }
+    .qm-icon-wrap {
+      width: 52px; height: 52px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px; flex-shrink: 0;
+    }
+    .qm-icon-blue {
+      background: linear-gradient(135deg, #1565c0, #0d3a7a);
+      box-shadow: 0 4px 14px rgba(21,101,192,0.4);
+      border: 1px solid rgba(100,181,246,0.25);
+    }
+    .qm-icon-red {
+      background: linear-gradient(135deg, #b71c1c, #7f0000);
+      box-shadow: 0 4px 14px rgba(183,28,28,0.4);
+      border: 1px solid rgba(239,154,154,0.25);
+    }
+    .qm-icon-gold {
+      background: linear-gradient(135deg, #7a5c00, #4a3800);
+      box-shadow: 0 4px 14px rgba(122,92,0,0.4);
+      border: 1px solid rgba(255,193,7,0.25);
+    }
+    .qm-text { flex: 1; }
+    .qm-title { font-size: 15px; font-weight: 700; color: #fff; }
+    .qm-sub { font-size: 11px; color: var(--text2); margin-top: 2px; }
+    .qm-arrow { font-size: 20px; color: var(--text3); line-height: 1; }
 
     /* Hint button */
     .hint-btn {
@@ -246,6 +356,7 @@
     .quiz-active {
       display: none; flex: 1; flex-direction: column;
       padding: 16px; gap: 12px; overflow-y: auto;
+      background: linear-gradient(180deg, #071220 0%, #0a1e38 60%, #0d2245 100%);
     }
     .quiz-active.show { display: flex; }
 
@@ -263,8 +374,10 @@
     .quiz-score-text { font-size: 13px; font-weight: 700; color: var(--green); }
 
     .quiz-card {
-      background: var(--bg3); border-radius: 16px;
+      background: rgba(255,255,255,0.05); border-radius: 16px;
       padding: 20px; text-align: center;
+      border: 1px solid rgba(61,184,176,0.2);
+      box-shadow: 0 0 20px rgba(61,184,176,0.05) inset;
     }
     .quiz-mode-label {
       font-size: 11px; color: var(--text2); margin-bottom: 10px;
@@ -342,6 +455,7 @@
       display: none; flex: 1; flex-direction: column;
       align-items: center; justify-content: center;
       padding: 24px; gap: 14px; text-align: center;
+      background: linear-gradient(180deg, #071220 0%, #0a1e38 60%, #0d2245 100%);
     }
     .quiz-results.show { display: flex; }
     .qr-icon {
@@ -489,11 +603,19 @@
 
   <!-- Quiz Home -->
   <div class="quiz-home" id="quizHome">
-    <div class="quiz-home-icon">🎯</div>
-    <div class="quiz-home-title">クイズモード</div>
 
+    <!-- Hero banner -->
+    <div class="quiz-hero">
+      <div class="quiz-hero-beams"></div>
+      <div class="quiz-hero-content">
+        <div class="quiz-hero-ball">⚾</div>
+        <div class="quiz-hero-title">クイズモード</div>
+      </div>
+    </div>
+
+    <!-- Stats -->
     <div class="quiz-stats-wrap">
-      <div class="quiz-stats">
+      <div class="quiz-stats quiz-stats-ej">
         <div class="qs-section-label">🔤 英語 → 日本語</div>
         <div class="qs-row">
           <div class="qs-item">
@@ -510,7 +632,7 @@
           </div>
         </div>
       </div>
-      <div class="quiz-stats">
+      <div class="quiz-stats quiz-stats-je">
         <div class="qs-section-label">🈳 日本語 → 英語</div>
         <div class="qs-row">
           <div class="qs-item">
@@ -531,56 +653,72 @@
 
     <div class="quiz-home-desc">出題方法を選んでください</div>
 
-    <div style="width:100%;max-width:320px">
-      <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;padding-left:4px">🔤 英語 → 日本語</div>
-      <div class="quiz-mode-list" style="margin-bottom:6px">
+    <!-- EN→JP -->
+    <div class="quiz-section">
+      <div class="quiz-section-label">
+        <span class="qs-badge">abc</span> 英語 → 日本語
+      </div>
+      <div class="quiz-mode-list">
         <button class="quiz-mode-btn" onclick="startQuiz('input')">
-          <span class="qm-icon">✍️</span>
-          <div>
+          <div class="qm-icon-wrap qm-icon-blue">✍️</div>
+          <div class="qm-text">
             <div class="qm-title">入力クイズ</div>
             <div class="qm-sub">英語を見て日本語キーワードを入力</div>
           </div>
+          <div class="qm-arrow">›</div>
         </button>
         <button class="quiz-mode-btn" onclick="startQuiz('choice')">
-          <span class="qm-icon">📝</span>
-          <div>
+          <div class="qm-icon-wrap qm-icon-red">📋</div>
+          <div class="qm-text">
             <div class="qm-title">四択クイズ</div>
             <div class="qm-sub">4つの選択肢から正解を選ぶ</div>
           </div>
-        </button>
-      </div>
-
-      <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;padding-left:4px">🈳 日本語 → 英語</div>
-      <div class="quiz-mode-list" style="margin-bottom:6px">
-        <button class="quiz-mode-btn" onclick="startQuiz('ja-input')">
-          <span class="qm-icon">✍️</span>
-          <div>
-            <div class="qm-title">Input Quiz</div>
-            <div class="qm-sub">日本語を見て英語キーワードを入力</div>
-          </div>
-        </button>
-        <button class="quiz-mode-btn" onclick="startQuiz('ja-choice')">
-          <span class="qm-icon">📝</span>
-          <div>
-            <div class="qm-title">4-Choice Quiz</div>
-            <div class="qm-sub">4つの選択肢から英語の正解を選ぶ</div>
-          </div>
-        </button>
-      </div>
-
-      <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;padding-left:4px">⭐ お気に入り</div>
-      <div class="quiz-mode-list">
-        <button class="quiz-mode-btn" id="favQuizBtn" onclick="startFavQuiz()" style="border-color:var(--yellow);opacity:0.5" disabled>
-          <span class="qm-icon">⭐</span>
-          <div>
-            <div class="qm-title">お気に入りクイズ</div>
-            <div class="qm-sub" id="favQuizSub">お気に入りを5件以上登録すると解放</div>
-          </div>
+          <div class="qm-arrow">›</div>
         </button>
       </div>
     </div>
 
-    <button onclick="resetStats()" style="background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;padding:8px;margin-top:4px;opacity:0.6;">↺ 記録をリセット</button>
+    <!-- JP→EN -->
+    <div class="quiz-section">
+      <div class="quiz-section-label">
+        <span class="qs-badge qs-badge-red">空</span> 日本語 → 英語
+      </div>
+      <div class="quiz-mode-list">
+        <button class="quiz-mode-btn" onclick="startQuiz('ja-input')">
+          <div class="qm-icon-wrap qm-icon-blue">✍️</div>
+          <div class="qm-text">
+            <div class="qm-title">入力クイズ</div>
+            <div class="qm-sub">日本語を見て英語キーワードを入力</div>
+          </div>
+          <div class="qm-arrow">›</div>
+        </button>
+        <button class="quiz-mode-btn" onclick="startQuiz('ja-choice')">
+          <div class="qm-icon-wrap qm-icon-red">📋</div>
+          <div class="qm-text">
+            <div class="qm-title">四択クイズ</div>
+            <div class="qm-sub">4つの選択肢から英語の正解を選ぶ</div>
+          </div>
+          <div class="qm-arrow">›</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Favorites -->
+    <div class="quiz-section" style="padding-bottom:8px">
+      <div class="quiz-section-label">⭐ お気に入り</div>
+      <div class="quiz-mode-list">
+        <button class="quiz-mode-btn" id="favQuizBtn" onclick="startFavQuiz()" style="opacity:0.45" disabled>
+          <div class="qm-icon-wrap qm-icon-gold">⭐</div>
+          <div class="qm-text">
+            <div class="qm-title">お気に入りクイズ</div>
+            <div class="qm-sub" id="favQuizSub">お気に入りを5件以上登録すると解放</div>
+          </div>
+          <div class="qm-arrow">›</div>
+        </button>
+      </div>
+    </div>
+
+    <button onclick="resetStats()" style="background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;padding:8px;margin-bottom:4px;opacity:0.5;">↺ 記録をリセット</button>
   </div>
 
   <!-- Quiz Active -->
