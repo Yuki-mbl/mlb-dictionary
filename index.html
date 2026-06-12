@@ -42,8 +42,7 @@
       margin: 0 auto;
       background: var(--bg);
       overflow: hidden;
-      height: 100vh;
-      height: 100svh;
+      height: var(--app-h, 100svh);
     }
 
     /* ===== HEADER ===== */
@@ -752,6 +751,13 @@ let quizIndex = 0;
     app.style.height = (window.innerHeight - GLASS_OFFSET) + 'px';
   });
 })();
+
+// Fix viewport height for iOS Safari (excludes browser chrome)
+function setAppHeight() {
+  document.documentElement.style.setProperty('--app-h', window.innerHeight + 'px');
+}
+setAppHeight();
+window.addEventListener('resize', setAppHeight);
 
 // =====================
 //  DATA LOADING
