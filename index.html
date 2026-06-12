@@ -1047,6 +1047,11 @@ function kata2hira(s) {
 }
 function jaReading(ja, entry) {
   if (entry && entry.yomi) return entry.yomi;
+  // 先頭文字から判定（途中の助詞などを拾わないよう）
+  const c = ja[0];
+  if (c >= 'ぁ' && c <= 'ん') return c;
+  if (c >= 'ァ' && c <= 'ヶ') return kata2hira(c);
+  // 漢字先頭でyomiなしの場合は最初のかなで代用
   const m = ja.match(/[ぁ-ん]/);
   if (m) return m[0];
   const m2 = ja.match(/[ァ-ヶ]/);
