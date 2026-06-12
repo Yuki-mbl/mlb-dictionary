@@ -201,55 +201,63 @@
 
     /* Hero */
     .quiz-hero {
-      width: 100%; height: 180px; position: relative;
+      width: 100%; height: 200px; position: relative;
       display: flex; align-items: center; justify-content: center;
       overflow: hidden; flex-shrink: 0;
-      background: #04111f;
+      background: #030c18;
     }
-    /* Stadium ground glow */
+    /* Dark base + ground glow */
     .quiz-hero::after {
       content: '';
-      position: absolute; bottom: 0; left: 0; right: 0; height: 50%;
-      background: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(40,160,155,0.18) 0%, transparent 100%);
-      pointer-events: none;
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 105%, rgba(30,180,172,0.12) 0%, transparent 65%),
+        radial-gradient(ellipse 100% 100% at 50% 50%, rgba(5,20,40,0.6) 0%, transparent 100%);
     }
     /* Spotlight beams */
     .quiz-hero-beams {
-      position: absolute; inset: 0; pointer-events: none;
+      position: absolute; inset: 0; pointer-events: none; z-index: 1;
     }
-    .quiz-hero-beams::before,
+    /* Left beam */
+    .quiz-hero-beams::before {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 60%; height: 100%;
+      background: linear-gradient(148deg,
+        rgba(255,248,180,0.38) 0%,
+        rgba(255,240,130,0.18) 22%,
+        rgba(255,230,100,0.06) 45%,
+        transparent 65%);
+      clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
+    }
+    /* Right beam */
     .quiz-hero-beams::after {
       content: '';
-      position: absolute; top: -10px; width: 160px; height: 200%;
-      opacity: 0.55;
-    }
-    .quiz-hero-beams::before {
-      left: -20px;
-      background: linear-gradient(155deg,
-        rgba(255,235,120,0.25) 0%,
-        rgba(255,215,80,0.12) 20%,
-        transparent 55%);
-      transform-origin: top left;
-    }
-    .quiz-hero-beams::after {
-      right: -20px;
-      background: linear-gradient(205deg,
-        rgba(255,235,120,0.25) 0%,
-        rgba(255,215,80,0.12) 20%,
-        transparent 55%);
-      transform-origin: top right;
+      position: absolute; top: 0; right: 0;
+      width: 60%; height: 100%;
+      background: linear-gradient(212deg,
+        rgba(255,248,180,0.38) 0%,
+        rgba(255,240,130,0.18) 22%,
+        rgba(255,230,100,0.06) 45%,
+        transparent 65%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
     }
     .quiz-hero-content {
       position: relative; text-align: center; z-index: 2;
     }
     .quiz-hero-ball {
-      font-size: 60px; line-height: 1; margin-bottom: 8px;
-      filter: drop-shadow(0 0 24px rgba(255,255,255,0.35)) drop-shadow(0 4px 8px rgba(0,0,0,0.6));
+      font-size: 68px; line-height: 1; margin-bottom: 10px;
+      filter:
+        drop-shadow(0 0 28px rgba(255,255,255,0.4))
+        drop-shadow(0 6px 12px rgba(0,0,0,0.7));
     }
     .quiz-hero-title {
-      font-size: 24px; font-weight: 900; color: #fff;
+      font-size: 26px; font-weight: 900; color: #fff;
       letter-spacing: 3px;
-      text-shadow: 0 0 20px rgba(61,184,176,0.5), 0 2px 8px rgba(0,0,0,0.8);
+      text-shadow:
+        0 0 24px rgba(61,220,210,0.55),
+        0 0 8px rgba(61,220,210,0.3),
+        0 3px 10px rgba(0,0,0,0.9);
     }
 
     /* Stats boxes */
@@ -272,7 +280,30 @@
     .qs-section-label { font-size: 9px; color: var(--text2); letter-spacing: 0.5px; }
     .qs-row { display: flex; gap: 10px; }
     .qs-item { text-align: center; }
-    .qs-num { font-size: 17px; font-weight: 700; color: var(--blue-light); }
+    .qs-num {
+      font-size: 18px; font-weight: 800;
+      background: linear-gradient(180deg, #5efff4 0%, #00c8b8 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .quiz-stats-je .qs-num {
+      background: linear-gradient(180deg, #ff7043 0%, #e53935 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    /* Override inline color styles for correct/rate cells */
+    .qs-num[style*="color:var(--green)"],
+    .qs-num[style*="color: var(--green)"] {
+      background: linear-gradient(180deg, #69f0ae 0%, #00c853 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .qs-num[style*="color:var(--yellow)"],
+    .qs-num[style*="color: var(--yellow)"] {
+      background: linear-gradient(180deg, #ffe57f 0%, #ffc107 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
     .qs-label { font-size: 9px; color: var(--text3); margin-top: 1px; }
 
     /* Home desc */
@@ -300,32 +331,33 @@
     .quiz-mode-list { display: flex; flex-direction: column; gap: 8px; width: 100%; }
     .quiz-mode-btn {
       width: 100%; padding: 12px 14px; border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
       color: var(--text); cursor: pointer;
       display: flex; flex-direction: row; align-items: center;
       gap: 14px; text-align: left; transition: all 0.2s;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
     }
-    .quiz-mode-btn:active { background: rgba(61,184,176,0.1); border-color: rgba(61,184,176,0.3); }
+    .quiz-mode-btn:active { background: rgba(61,184,176,0.12); border-color: rgba(61,184,176,0.4); }
     .qm-icon-wrap {
       width: 52px; height: 52px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-size: 26px; flex-shrink: 0;
     }
     .qm-icon-blue {
-      background: linear-gradient(135deg, #1565c0, #0d3a7a);
-      box-shadow: 0 4px 14px rgba(21,101,192,0.4);
-      border: 1px solid rgba(100,181,246,0.25);
+      background: linear-gradient(145deg, #1e6ab8, #0a3570);
+      box-shadow: 0 4px 18px rgba(30,106,184,0.6), 0 0 0 1px rgba(100,181,246,0.2) inset;
+      border: 1px solid rgba(100,181,246,0.35);
     }
     .qm-icon-red {
-      background: linear-gradient(135deg, #b71c1c, #7f0000);
-      box-shadow: 0 4px 14px rgba(183,28,28,0.4);
-      border: 1px solid rgba(239,154,154,0.25);
+      background: linear-gradient(145deg, #c62828, #7b0000);
+      box-shadow: 0 4px 18px rgba(198,40,40,0.6), 0 0 0 1px rgba(239,154,154,0.2) inset;
+      border: 1px solid rgba(239,154,154,0.35);
     }
     .qm-icon-gold {
-      background: linear-gradient(135deg, #7a5c00, #4a3800);
-      box-shadow: 0 4px 14px rgba(122,92,0,0.4);
-      border: 1px solid rgba(255,193,7,0.25);
+      background: linear-gradient(145deg, #8a6500, #4a3800);
+      box-shadow: 0 4px 18px rgba(138,101,0,0.5), 0 0 0 1px rgba(255,193,7,0.2) inset;
+      border: 1px solid rgba(255,193,7,0.35);
     }
     .qm-text { flex: 1; }
     .qm-title { font-size: 15px; font-weight: 700; color: #fff; }
@@ -635,7 +667,7 @@
         </div>
       </div>
       <div class="quiz-stats quiz-stats-je">
-        <div class="qs-section-label">🈳 日本語 → 英語</div>
+        <div class="qs-section-label">あ 日本語 → 英語</div>
         <div class="qs-row">
           <div class="qs-item">
             <div class="qs-num" id="statTotalJE">0/1107</div>
@@ -683,7 +715,7 @@
     <!-- JP→EN -->
     <div class="quiz-section">
       <div class="quiz-section-label">
-        <span class="qs-badge qs-badge-red">空</span> 日本語 → 英語
+        <span class="qs-badge qs-badge-red">あ</span> 日本語 → 英語
       </div>
       <div class="quiz-mode-list">
         <button class="quiz-mode-btn" onclick="startQuiz('ja-input')">
