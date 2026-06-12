@@ -1136,11 +1136,18 @@ function getFiltered() {
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
     list = list.filter(e => e.en.toLowerCase().includes(q) || e.ja.includes(searchQuery));
-  }
-  if (dictTab === 'en') {
-    list.sort((a, b) => a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
+    // 短い単語から表示（検索語に近い短さ優先、同じ長さは辞書順）
+    if (dictTab === 'en') {
+      list.sort((a, b) => a.en.length - b.en.length || a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
+    } else {
+      list.sort((a, b) => a.ja.length - b.ja.length || jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
+    }
   } else {
-    list.sort((a, b) => jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
+    if (dictTab === 'en') {
+      list.sort((a, b) => a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
+    } else {
+      list.sort((a, b) => jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
+    }
   }
   return list;
 }
