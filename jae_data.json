@@ -1,15 +1,18 @@
 [
   {
     "ja": "相性がよい",
-    "en": "easy　｢今日の先発投手はイチローには相性がよい投手である｣はToday’s starter is an easy pitcher to Ichiro。となる。"
+    "en": "easy　｢今日の先発投手はイチローには相性がよい投手である｣はToday’s starter is an easy pitcher to Ichiro。となる。",
+    "yomi": "あ"
   },
   {
     "ja": "相性が悪い",
-    "en": "tough　｢あの投手とは相性が悪い｣はThe pitcher is (a) tough (customer) to me.となる。"
+    "en": "tough　｢あの投手とは相性が悪い｣はThe pitcher is (a) tough (customer) to me.となる。",
+    "yomi": "あ"
   },
   {
     "ja": "相手チーム",
-    "en": "opponent/opposing team"
+    "en": "opponent/opposing team",
+    "yomi": "あ"
   },
   {
     "ja": "アイディー（ID）野球",
@@ -73,15 +76,18 @@
   },
   {
     "ja": "悪送球",
-    "en": "bad throw, errant throw　暴投参照。"
+    "en": "bad throw, errant throw　暴投参照。",
+    "yomi": "あ"
   },
   {
     "ja": "足から滑り込む",
-    "en": "slide foot-first　頭から滑り込む、フット・スライディング参照。"
+    "en": "slide foot-first　頭から滑り込む、フット・スライディング参照。",
+    "yomi": "あ"
   },
   {
     "ja": "足の速い選手",
-    "en": "speedster"
+    "en": "speedster",
+    "yomi": "あ"
   },
   {
     "ja": "アストロドーム",
@@ -89,15 +95,18 @@
   },
   {
     "ja": "遊び球",
-    "en": "garbage pitch　投手がよくカウント２ストライク・ノーボールになると次の球 はストライクからはずした球を投げること。"
+    "en": "garbage pitch　投手がよくカウント２ストライク・ノーボールになると次の球 はストライクからはずした球を投げること。",
+    "yomi": "あ"
   },
   {
     "ja": "頭から滑り込む",
-    "en": "slide head-first, slide headlong　足から滑り込む、ヘッドスラディン グ参照。"
+    "en": "slide head-first, slide headlong　足から滑り込む、ヘッドスラディン グ参照。",
+    "yomi": "あ"
   },
   {
     "ja": "当たりそこねのヒット",
-    "en": "scratch, scratch hit/single"
+    "en": "scratch, scratch hit/single",
+    "yomi": "あ"
   },
   {
     "ja": "アーチ",
@@ -105,11 +114,13 @@
   },
   {
     "ja": "悪球打ちの打者",
-    "en": "free swinger, free-swinging batter/hitter　ボール打ちの打者参照。"
+    "en": "free swinger, free-swinging batter/hitter　ボール打ちの打者参照。",
+    "yomi": "あ"
   },
   {
     "ja": "悪球に手を出す",
-    "en": "chase a bad pitch　ボールに手を出す参照。"
+    "en": "chase a bad pitch　ボールに手を出す参照。",
+    "yomi": "あ"
   },
   {
     "ja": "アットバット",
@@ -149,7 +160,8 @@
   },
   {
     "ja": "甘い球",
-    "en": "fat pitch, fat one　絶好球、ホームランボール参照。"
+    "en": "fat pitch, fat one　絶好球、ホームランボール参照。",
+    "yomi": "あ"
   },
   {
     "ja": "アメリカンリーグ",
@@ -173,7 +185,8 @@
   },
   {
     "ja": "安打",
-    "en": "１．safe hit 2. base hit, single ：１の意味では単打、二塁打、三塁打、本塁 打、の全てを包含する。　２の意味では｢単打｣だけの意味である。"
+    "en": "１．safe hit 2. base hit, single ：１の意味では単打、二塁打、三塁打、本塁 打、の全てを包含する。　２の意味では｢単打｣だけの意味である。",
+    "yomi": "あ"
   },
   {
     "ja": "アルプス・スタンド",
@@ -209,7 +222,8 @@
   },
   {
     "ja": "暗黙のルール",
-    "en": "unwritten rules　不文律のこと。MLBでは大量リードの時の盗塁は認 められないとか、ホームランを打ったあとにガッツポーズをしたり、二塁走者が捕手の サインを盗んで打者に伝えたりした場合、次の打席でビーンボールのお返しを受けたり するなどの暗黙のルールがある。"
+    "en": "unwritten rules　不文律のこと。MLBでは大量リードの時の盗塁は認 められないとか、ホームランを打ったあとにガッツポーズをしたり、二塁走者が捕手の サインを盗んで打者に伝えたりした場合、次の打席でビーンボールのお返しを受けたり するなどの暗黙のルールがある。",
+    "yomi": "あ"
   },
   {
     "ja": "アンラッキー・ゾーン",
@@ -229,19 +243,23 @@
   },
   {
     "ja": "一点差の試合",
-    "en": "one-run game"
+    "en": "one-run game",
+    "yomi": "い"
   },
   {
     "ja": "一番打者",
-    "en": "lead-off batter/hitter/man　；top of the order 各回の先頭打者も英語では同 じ。top batterともいえる。ただし、top batterには｢最高の打者｣の意味もある。上位打 線参照。"
+    "en": "lead-off batter/hitter/man　；top of the order 各回の先頭打者も英語では同 じ。top batterともいえる。ただし、top batterには｢最高の打者｣の意味もある。上位打 線参照。",
+    "yomi": "い"
   },
   {
     "ja": "一塁",
-    "en": "first base　｢一塁ゴロ｣をa grounder to first のようにfirst だけでも使う。"
+    "en": "first base　｢一塁ゴロ｣をa grounder to first のようにfirst だけでも使う。",
+    "yomi": "い"
   },
   {
     "ja": "一塁手",
-    "en": "first baseman　略記号は1B。"
+    "en": "first baseman　略記号は1B。",
+    "yomi": "い"
   },
   {
     "ja": "イニング",
@@ -401,31 +419,38 @@
   },
   {
     "ja": "打つ",
-    "en": "bang, bat, belt, boom, bop, chop, clip, clobber, clout, club, connect, crack, crank　crash, crush, cuff, deliver, drape, drill, drive, dump, erupt, explode, get, hammer, hit, knock, launch, nail, poke, pound, rap, rip, scorch, slam, slap, slash, slug, smack, smash, smoke, sock, spank, squib, stroke, swat, wallop, whack　日本語では「打つ」 のほかには「かっ飛ばす」ぐらいしかないが、英語では如何に多彩な動詞が使われるか がわかる。日本語は「ガツンと」、「バシッと」、「カキーンと」などと「擬音語」を使っ てバリエーションを出しているが、英語の動詞表現の豊富さにはとてもかなわない。"
+    "en": "bang, bat, belt, boom, bop, chop, clip, clobber, clout, club, connect, crack, crank　crash, crush, cuff, deliver, drape, drill, drive, dump, erupt, explode, get, hammer, hit, knock, launch, nail, poke, pound, rap, rip, scorch, slam, slap, slash, slug, smack, smash, smoke, sock, spank, squib, stroke, swat, wallop, whack　日本語では「打つ」 のほかには「かっ飛ばす」ぐらいしかないが、英語では如何に多彩な動詞が使われるか がわかる。日本語は「ガツンと」、「バシッと」、「カキーンと」などと「擬音語」を使っ てバリエーションを出しているが、英語の動詞表現の豊富さにはとてもかなわない。",
+    "yomi": "う"
   },
   {
     "ja": "雨天中止",
-    "en": "rainout　｢今日の試合は雨天中止になった｣はToday’s game was rained out. のように rain out を受け身形で使う。"
+    "en": "rainout　｢今日の試合は雨天中止になった｣はToday’s game was rained out. のように rain out を受け身形で使う。",
+    "yomi": "う"
   },
   {
     "ja": "右翼",
-    "en": "right field　略記号はＲＦ．"
+    "en": "right field　略記号はＲＦ．",
+    "yomi": "う"
   },
   {
     "ja": "右翼手",
-    "en": "right fielder　略記号はＲＦ．"
+    "en": "right fielder　略記号はＲＦ．",
+    "yomi": "う"
   },
   {
     "ja": "裏",
-    "en": "the bottom of an inning, bottom half　対立語は表。"
+    "en": "the bottom of an inning, bottom half　対立語は表。",
+    "yomi": "う"
   },
   {
     "ja": "上手から投げる",
-    "en": "throw over the top　横手から投げる参照。"
+    "en": "throw over the top　横手から投げる参照。",
+    "yomi": "う"
   },
   {
     "ja": "右腕投手",
-    "en": "right-handed pitcher, righty　左腕投手参照。"
+    "en": "right-handed pitcher, righty　左腕投手参照。",
+    "yomi": "み"
   },
   {
     "ja": "エース",
@@ -465,7 +490,8 @@
   },
   {
     "ja": "遠征チーム",
-    "en": "visiting team　主催チーム参照。"
+    "en": "visiting team　主催チーム参照。",
+    "yomi": "え"
   },
   {
     "ja": "エンタイトル",
@@ -477,7 +503,8 @@
   },
   {
     "ja": "延長（戦）",
-    "en": "extra-innings　｢延長戦に入る｣は(to) go into extra-innings。引き分け試合が ある日本のプロ野球とは違って、大リーグでは両リーグ共に引き分けがない。したがっ て、順位表（standings）の項目に引き分け欄がない。アメリカンリーグでは午前１時 を過ぎて新しいイニングには入れないのでその試合の決着は再試合でつけるのだが、ナ ショナルリーグは無制限に試合を続ける。サスペンデッドゲーム参照。"
+    "en": "extra-innings　｢延長戦に入る｣は(to) go into extra-innings。引き分け試合が ある日本のプロ野球とは違って、大リーグでは両リーグ共に引き分けがない。したがっ て、順位表（standings）の項目に引き分け欄がない。アメリカンリーグでは午前１時 を過ぎて新しいイニングには入れないのでその試合の決着は再試合でつけるのだが、ナ ショナルリーグは無制限に試合を続ける。サスペンデッドゲーム参照。",
+    "yomi": "え"
   },
   {
     "ja": "エンドラン",
@@ -489,11 +516,13 @@
   },
   {
     "ja": "抑えの投手",
-    "en": "closer, fireman　｢抑えの切り札｣ともいう。"
+    "en": "closer, fireman　｢抑えの切り札｣ともいう。",
+    "yomi": "お"
   },
   {
     "ja": "押し出しの四球",
-    "en": "bases-loaded walk, run-scoring walk,"
+    "en": "bases-loaded walk, run-scoring walk,",
+    "yomi": "お"
   },
   {
     "ja": "オーナー",
@@ -549,7 +578,8 @@
   },
   {
     "ja": "表（おもて）",
-    "en": "the top of an inning, the top half　対立語は裏。"
+    "en": "the top of an inning, the top half　対立語は裏。",
+    "yomi": "お"
   },
   {
     "ja": "オリオール･パーク･アット･キャムデンヤード",
@@ -573,23 +603,28 @@
   },
   {
     "ja": "快打",
-    "en": "clean hit　クリーンヒット参照。"
+    "en": "clean hit　クリーンヒット参照。",
+    "yomi": "か"
   },
   {
     "ja": "下位打線",
-    "en": "bottom of the order　：7，８，9番打者のことを言う。上位打線参照。"
+    "en": "bottom of the order　：7，８，9番打者のことを言う。上位打線参照。",
+    "yomi": "か"
   },
   {
     "ja": "開幕戦",
-    "en": "opening game, opening round, opener"
+    "en": "opening game, opening round, opener",
+    "yomi": "か"
   },
   {
     "ja": "外野",
-    "en": "outfield"
+    "en": "outfield",
+    "yomi": "が"
   },
   {
     "ja": "外野手",
-    "en": "outfielder　右翼手、中堅手、左翼手のこと。内野手参照。"
+    "en": "outfielder　右翼手、中堅手、左翼手のこと。内野手参照。",
+    "yomi": "が"
   },
   {
     "ja": "カウフマン・スタジアム",
@@ -601,19 +636,23 @@
   },
   {
     "ja": "隠し球",
-    "en": "hidden ball trick"
+    "en": "hidden ball trick",
+    "yomi": "か"
   },
   {
     "ja": "勝ち越し点",
-    "en": "go-ahead run"
+    "en": "go-ahead run",
+    "yomi": "か"
   },
   {
     "ja": "勝ち試合",
-    "en": "game(s) won　対立語は負け試合。"
+    "en": "game(s) won　対立語は負け試合。",
+    "yomi": "か"
   },
   {
     "ja": "勝ち投手",
-    "en": "winning pitcher　規則上は｢勝投手｣と表記している。負け投手参照。"
+    "en": "winning pitcher　規則上は｢勝投手｣と表記している。負け投手参照。",
+    "yomi": "か"
   },
   {
     "ja": "ガッツポーズ",
@@ -637,27 +676,33 @@
   },
   {
     "ja": "空振り",
-    "en": "swing and a miss"
+    "en": "swing and a miss",
+    "yomi": "か"
   },
   {
     "ja": "空振りする",
-    "en": "swing and miss"
+    "en": "swing and miss",
+    "yomi": "か"
   },
   {
     "ja": "空振りの三振",
-    "en": "swinging strikeout"
+    "en": "swinging strikeout",
+    "yomi": "か"
   },
   {
     "ja": "空振りの三振をする",
-    "en": "go down swinging, strike out swinging, swing and out"
+    "en": "go down swinging, strike out swinging, swing and out",
+    "yomi": "か"
   },
   {
     "ja": "観客数",
-    "en": "attendance　略語と記録上はA。"
+    "en": "attendance　略語と記録上はA。",
+    "yomi": "か"
   },
   {
     "ja": "観客収容能力",
-    "en": "(seating) capacity"
+    "en": "(seating) capacity",
+    "yomi": "か"
   },
   {
     "ja": "カンザス・シティ・ロイヤルズ",
@@ -665,43 +710,53 @@
   },
   {
     "ja": "完全試合",
-    "en": "perfect game　日本語でもパーフェクト・ゲームともいう。ノーヒットノー ラン試合参照。"
+    "en": "perfect game　日本語でもパーフェクト・ゲームともいう。ノーヒットノー ラン試合参照。",
+    "yomi": "か"
   },
   {
     "ja": "完投試合",
-    "en": "complete game　略語及び記録表示はCG。"
+    "en": "complete game　略語及び記録表示はCG。",
+    "yomi": "か"
   },
   {
     "ja": "完投シャットアウト",
-    "en": "complete-game shutout"
+    "en": "complete-game shutout",
+    "yomi": "か"
   },
   {
     "ja": "完投する",
-    "en": "go the distance, go the route, pitch a complete game"
+    "en": "go the distance, go the route, pitch a complete game",
+    "yomi": "か"
   },
   {
     "ja": "監督",
-    "en": "manager, field boss, skipper, skip"
+    "en": "manager, field boss, skipper, skip",
+    "yomi": "か"
   },
   {
     "ja": "完封",
-    "en": "shutout"
+    "en": "shutout",
+    "yomi": "か"
   },
   {
     "ja": "完封試合",
-    "en": "shutout game"
+    "en": "shutout game",
+    "yomi": "か"
   },
   {
     "ja": "完封する",
-    "en": "blank, pitch a shutout, shut out, whitewash　カンバス <和 canvas キャンバスとも。１，２，３塁のベース。：和用法。baseはcanvas bagであるところから来ていると思われるが、英語ではbag, sackがベースの俗称であ る。「本塁」にはbag やsack は使わない。"
+    "en": "blank, pitch a shutout, shut out, whitewash　カンバス <和 canvas キャンバスとも。１，２，３塁のベース。：和用法。baseはcanvas bagであるところから来ていると思われるが、英語ではbag, sackがベースの俗称であ る。「本塁」にはbag やsack は使わない。",
+    "yomi": "か"
   },
   {
     "ja": "緩慢な返球",
-    "en": "lackadaisical throw  e.g. The batter-runner turned a double into a　triple thanks to a lackadaisical throw by the left fielder. (打者走者は左翼手の緩慢な 返球のおかげで二塁打が三塁打になった)：:｢緩慢な返球｣は短期決戦シリーズの流れを 変えることがある。"
+    "en": "lackadaisical throw  e.g. The batter-runner turned a double into a　triple thanks to a lackadaisical throw by the left fielder. (打者走者は左翼手の緩慢な 返球のおかげで二塁打が三塁打になった)：:｢緩慢な返球｣は短期決戦シリーズの流れを 変えることがある。",
+    "yomi": "か"
   },
   {
     "ja": "危険球",
-    "en": "intentional pitch at the batter　：打者を狙った投球のことで、野球規則8.02 で、The pitcher shall not Intentionally Pitch at the Batter. として｢危険球｣を禁じて いる。"
+    "en": "intentional pitch at the batter　：打者を狙った投球のことで、野球規則8.02 で、The pitcher shall not Intentionally Pitch at the Batter. として｢危険球｣を禁じて いる。",
+    "yomi": "き"
   },
   {
     "ja": "キーストーン",
@@ -713,39 +768,48 @@
   },
   {
     "ja": "犠牲バント",
-    "en": "sacrifice bunt"
+    "en": "sacrifice bunt",
+    "yomi": "ぎ"
   },
   {
     "ja": "犠飛",
-    "en": "sacrifice fly　＝犠牲フライ"
+    "en": "sacrifice fly　＝犠牲フライ",
+    "yomi": "ぎ"
   },
   {
     "ja": "犠牲フライ",
-    "en": "sacrifice fly"
+    "en": "sacrifice fly",
+    "yomi": "ぎ"
   },
   {
     "ja": "規定打席数",
-    "en": "official at bats, regulation at bats,　説明的にはthe required number of plate appearancesということになろう。"
+    "en": "official at bats, regulation at bats,　説明的にはthe required number of plate appearancesということになろう。",
+    "yomi": "き"
   },
   {
     "ja": "規定投球回数",
-    "en": "official innings pitched, regulation innings pitched"
+    "en": "official innings pitched, regulation innings pitched",
+    "yomi": "き"
   },
   {
     "ja": "擬投",
-    "en": "arm fake　投げるふり参照 ：走者の離塁を誘い出す目的で行う。"
+    "en": "arm fake　投げるふり参照 ：走者の離塁を誘い出す目的で行う。",
+    "yomi": "ぎ"
   },
   {
     "ja": "犠打",
-    "en": "sacrifice hit, sacrifice play　犠牲バント、犠牲フライ参照。"
+    "en": "sacrifice hit, sacrifice play　犠牲バント、犠牲フライ参照。",
+    "yomi": "ぎ"
   },
   {
     "ja": "決め球",
-    "en": "out pitch, money pitch   money pitch　は｢試合を決めるような場面で三振を取 れる球｣の意味もある。bread and butter pitchともいう。マネー・ピッチ参照。"
+    "en": "out pitch, money pitch   money pitch　は｢試合を決めるような場面で三振を取 れる球｣の意味もある。bread and butter pitchともいう。マネー・ピッチ参照。",
+    "yomi": "き"
   },
   {
     "ja": "逆シングル",
-    "en": "backhand side"
+    "en": "backhand side",
+    "yomi": "ぎ"
   },
   {
     "ja": "キャッチ",
@@ -781,39 +845,48 @@
   },
   {
     "ja": "球場整備員",
-    "en": "和groundkeeper 英語ではgroundcrew という。groundkeeperは球場管 理人。"
+    "en": "和groundkeeper 英語ではgroundcrew という。groundkeeperは球場管 理人。",
+    "yomi": "き"
   },
   {
     "ja": "救援登板試合",
-    "en": "game(s) relieved"
+    "en": "game(s) relieved",
+    "yomi": "き"
   },
   {
     "ja": "球場",
-    "en": "ball park, diamond"
+    "en": "ball park, diamond",
+    "yomi": "き"
   },
   {
     "ja": "球速",
-    "en": "velocity　スピード参照。"
+    "en": "velocity　スピード参照。",
+    "yomi": "き"
   },
   {
     "ja": "球団",
-    "en": "(baseball) club"
+    "en": "(baseball) club",
+    "yomi": "き"
   },
   {
     "ja": "強肩",
-    "en": "cannon, (strong) arm  e.g. Ichiro has an arm.　「イチローは肩が強い」"
+    "en": "cannon, (strong) arm  e.g. Ichiro has an arm.　「イチローは肩が強い」",
+    "yomi": "き"
   },
   {
     "ja": "強打者",
-    "en": "power hitter, slugger"
+    "en": "power hitter, slugger",
+    "yomi": "き"
   },
   {
     "ja": "強敵",
-    "en": "nemesis, strong rival"
+    "en": "nemesis, strong rival",
+    "yomi": "き"
   },
   {
     "ja": "強力打線",
-    "en": "overpowering bats, power house"
+    "en": "overpowering bats, power house",
+    "yomi": "き"
   },
   {
     "ja": "キラー",
@@ -833,15 +906,18 @@
   },
   {
     "ja": "草野球",
-    "en": "sandlot baseball"
+    "en": "sandlot baseball",
+    "yomi": "く"
   },
   {
     "ja": "草野球チーム",
-    "en": "sandlot team"
+    "en": "sandlot team",
+    "yomi": "く"
   },
   {
     "ja": "草野球の選手",
-    "en": "sandlotter"
+    "en": "sandlotter",
+    "yomi": "く"
   },
   {
     "ja": "クッション",
@@ -949,23 +1025,28 @@
   },
   {
     "ja": "敬遠の四球",
-    "en": "intentional base on balls　base on ballsという正式名の変わりにwalkが 使われることが多い。 略語と記録表示はIW。規則上は｢故意四球｣という。四球、故意 四球参照。"
+    "en": "intentional base on balls　base on ballsという正式名の変わりにwalkが 使われることが多い。 略語と記録表示はIW。規則上は｢故意四球｣という。四球、故意 四球参照。",
+    "yomi": "け"
   },
   {
     "ja": "警告表示地帯",
-    "en": "warning-track　外野のフェンスの近くは帯状に芝生ではなくてアンツ ーカーにして外野手にフェンスの近くであることを知らせるようになっている。大リー グの球場には必ずある。"
+    "en": "warning-track　外野のフェンスの近くは帯状に芝生ではなくてアンツ ーカーにして外野手にフェンスの近くであることを知らせるようになっている。大リー グの球場には必ずある。",
+    "yomi": "け"
   },
   {
     "ja": "決勝打",
-    "en": "game-winner, game-winning hit/single/shot"
+    "en": "game-winner, game-winning hit/single/shot",
+    "yomi": "け"
   },
   {
     "ja": "決勝点",
-    "en": "game-winner, game-winning run"
+    "en": "game-winner, game-winning run",
+    "yomi": "け"
   },
   {
     "ja": "決勝のホームを踏む",
-    "en": "score a winning run"
+    "en": "score a winning run",
+    "yomi": "け"
   },
   {
     "ja": "ゲッツー",
@@ -985,43 +1066,53 @@
   },
   {
     "ja": "牽制でアウトになる",
-    "en": "to be caught leaning, to be caught off base, to be picked off"
+    "en": "to be caught leaning, to be caught off base, to be picked off",
+    "yomi": "け"
   },
   {
     "ja": "牽制で刺す",
-    "en": "pick off (a base runner)"
+    "en": "pick off (a base runner)",
+    "yomi": "け"
   },
   {
     "ja": "故意四球",
-    "en": "intentional base on balls/walk/pass　「敬遠の四球｣のほうが一般的だが、 規則上は｢故意四球｣という。英語ではinntennshional walk が一番良く使われる。"
+    "en": "intentional base on balls/walk/pass　「敬遠の四球｣のほうが一般的だが、 規則上は｢故意四球｣という。英語ではinntennshional walk が一番良く使われる。",
+    "yomi": "こ"
   },
   {
     "ja": "後逸",
-    "en": "pass(ed) ball　パスボール参照。"
+    "en": "pass(ed) ball　パスボール参照。",
+    "yomi": "こ"
   },
   {
     "ja": "公式記録員",
-    "en": "official scorer　オフィシャル・スコアラー参照。"
+    "en": "official scorer　オフィシャル・スコアラー参照。",
+    "yomi": "こ"
   },
   {
     "ja": "公式試合",
-    "en": "regulation game"
+    "en": "regulation game",
+    "yomi": "こ"
   },
   {
     "ja": "公式戦",
-    "en": "regular season　大リーグでは１シーズン１６２試合を行う。日本のプロ野球 は１４０試合。"
+    "en": "regular season　大リーグでは１シーズン１６２試合を行う。日本のプロ野球 は１４０試合。",
+    "yomi": "こ"
   },
   {
     "ja": "紅白戦(試合)",
-    "en": "intra-squad game　キャンプなどで同一チームが紅白に分かれて行う練 習試合。"
+    "en": "intra-squad game　キャンプなどで同一チームが紅白に分かれて行う練 習試合。",
+    "yomi": "こ"
   },
   {
     "ja": "小細工をする",
-    "en": "do little tricks"
+    "en": "do little tricks",
+    "yomi": "こ"
   },
   {
     "ja": "故障者リスト",
-    "en": "disabled list　略語と記録上はＤＬ。大リーグでは１５日と６０日間の ＤＬ入りがある。"
+    "en": "disabled list　略語と記録上はＤＬ。大リーグでは１５日と６０日間の ＤＬ入りがある。",
+    "yomi": "こ"
   },
   {
     "ja": "コーチ",
@@ -1117,7 +1208,8 @@
   },
   {
     "ja": "最下位",
-    "en": "cellar　シーズン中ずっと最下位にいる球団はcellar dweller, cellar tenant という。 サイクル安打 =　サイクル・ヒット"
+    "en": "cellar　シーズン中ずっと最下位にいる球団はcellar dweller, cellar tenant という。 サイクル安打 =　サイクル・ヒット",
+    "yomi": "さ"
   },
   {
     "ja": "サイクルヒット",
@@ -1141,15 +1233,18 @@
   },
   {
     "ja": "最優秀救援投手賞",
-    "en": "Rolaids Relief Man Award　大リーグのアメリカン、ナショナル両 リーグの最優秀の救援投手に与えられる。日本にも同様の賞がある。ローレイズ・リリ ーフ投手賞参照。"
+    "en": "Rolaids Relief Man Award　大リーグのアメリカン、ナショナル両 リーグの最優秀の救援投手に与えられる。日本にも同様の賞がある。ローレイズ・リリ ーフ投手賞参照。",
+    "yomi": "さ"
   },
   {
     "ja": "最優秀新人賞",
-    "en": "Rookie of the Year Award　大リーグの両リーグから一人ずつ選ばれる。 全米野球記者協会（the Baseball Writers Association of America）に所属する選考委員 の記者達の投票による選出。大リーグ初の黒人選手Jackie Robinsonが始めて受賞した ので、彼の名誉を称えてJackie Robinson Awardといわれるようになった。日本のプロ 野球にも同様の賞がある。"
+    "en": "Rookie of the Year Award　大リーグの両リーグから一人ずつ選ばれる。 全米野球記者協会（the Baseball Writers Association of America）に所属する選考委員 の記者達の投票による選出。大リーグ初の黒人選手Jackie Robinsonが始めて受賞した ので、彼の名誉を称えてJackie Robinson Awardといわれるようになった。日本のプロ 野球にも同様の賞がある。",
+    "yomi": "さ"
   },
   {
     "ja": "最優秀選手賞",
-    "en": "Most Valuable Player Award, MVP　大リーグの両リーグから一人ずつ 選ばれる。全米野球記者協会（the Baseball Writers Association of America）に所属す る選考委員の記者達の投票による選出。日本のプロ野球にも同様の賞がある。"
+    "en": "Most Valuable Player Award, MVP　大リーグの両リーグから一人ずつ 選ばれる。全米野球記者協会（the Baseball Writers Association of America）に所属す る選考委員の記者達の投票による選出。日本のプロ野球にも同様の賞がある。",
+    "yomi": "さ"
   },
   {
     "ja": "サイン(コーチなどからの)",
@@ -1177,7 +1272,8 @@
   },
   {
     "ja": "柵越えをする",
-    "en": "clear the fence　「本塁打を打つ」と同義。"
+    "en": "clear the fence　「本塁打を打つ」と同義。",
+    "yomi": "さ"
   },
   {
     "ja": "サクリファイスバント",
@@ -1201,7 +1297,8 @@
   },
   {
     "ja": "左中間",
-    "en": "left-center gap　｢左中間二塁打｣はa double to the left-center gap。"
+    "en": "left-center gap　｢左中間二塁打｣はa double to the left-center gap。",
+    "yomi": "さ"
   },
   {
     "ja": "サード",
@@ -1237,15 +1334,18 @@
   },
   {
     "ja": "左翼",
-    "en": "left field　略記号はＬＦ．"
+    "en": "left field　略記号はＬＦ．",
+    "yomi": "さ"
   },
   {
     "ja": "左翼手",
-    "en": "left fielder　略記号はＬＦ。"
+    "en": "left fielder　略記号はＬＦ。",
+    "yomi": "さ"
   },
   {
     "ja": "左翼ファール線",
-    "en": "left-field foul line"
+    "en": "left-field foul line",
+    "yomi": "さ"
   },
   {
     "ja": "サヨナラ(勝ち)の",
@@ -1257,31 +1357,38 @@
   },
   {
     "ja": "左腕投手",
-    "en": "left-handed pitcher, left-hander, lefty,  southpaw　右腕投手参照。"
+    "en": "left-handed pitcher, left-hander, lefty,  southpaw　右腕投手参照。",
+    "yomi": "さ"
   },
   {
     "ja": "三者凡退",
-    "en": "one, two, three; three up, three down　｢三者凡退の回｣はone-two-three inning。"
+    "en": "one, two, three; three up, three down　｢三者凡退の回｣はone-two-three inning。",
+    "yomi": "さ"
   },
   {
     "ja": "三者凡退に仕留める",
-    "en": "retire the side in order, retire three in order"
+    "en": "retire the side in order, retire three in order",
+    "yomi": "さ"
   },
   {
     "ja": "三重殺",
-    "en": "triple play　三人の打者・走者がアウトになること。日本語でもトリプル・プレ イともいう。"
+    "en": "triple play　三人の打者・走者がアウトになること。日本語でもトリプル・プレ イともいう。",
+    "yomi": "さ"
   },
   {
     "ja": "三振",
-    "en": "strikeout　｢三振を取る｣｢三振する｣は（to）strike out。"
+    "en": "strikeout　｢三振を取る｣｢三振する｣は（to）strike out。",
+    "yomi": "さ"
   },
   {
     "ja": "三振させる/する",
-    "en": "fan, strike out, whiff"
+    "en": "fan, strike out, whiff",
+    "yomi": "さ"
   },
   {
     "ja": "三振ゲッツー",
-    "en": "strike-‘em-out throw-‘em-out double play"
+    "en": "strike-‘em-out throw-‘em-out double play",
+    "yomi": "さ"
   },
   {
     "ja": "サンディエゴ・パドレス",
@@ -1293,43 +1400,53 @@
   },
   {
     "ja": "三遊間",
-    "en": "through the hole, the gap between the shortstop and the third baseman"
+    "en": "through the hole, the gap between the shortstop and the third baseman",
+    "yomi": "さ"
   },
   {
     "ja": "三塁",
-    "en": "third base　｢三塁ゴロ｣はa ground ball to thirdのようにthirdだけでも使う。 三塁は鋭い打球がいくことからhot cornerともいう。略記号は３Ｂ．"
+    "en": "third base　｢三塁ゴロ｣はa ground ball to thirdのようにthirdだけでも使う。 三塁は鋭い打球がいくことからhot cornerともいう。略記号は３Ｂ．",
+    "yomi": "さ"
   },
   {
     "ja": "三塁手",
-    "en": "third baseman　略記号は３Ｂ．"
+    "en": "third baseman　略記号は３Ｂ．",
+    "yomi": "さ"
   },
   {
     "ja": "残塁",
-    "en": "left on base　英語では｢残塁して｣の意。｢２（走）者残塁だった｣はThe two runners were left on base.となる。｢走者を塁上に残す｣は(to) leave a runner on base という。略語と記録上はLOB。"
+    "en": "left on base　英語では｢残塁して｣の意。｢２（走）者残塁だった｣はThe two runners were left on base.となる。｢走者を塁上に残す｣は(to) leave a runner on base という。略語と記録上はLOB。",
+    "yomi": "ざ"
   },
   {
     "ja": "三塁コーチ",
-    "en": "third-base coach　三塁付近のコーチボックスに立って、走者が本塁へ突 入すべきかどうかの指示を与えるのが主な役目だが、その他のサインも出す。"
+    "en": "third-base coach　三塁付近のコーチボックスに立って、走者が本塁へ突 入すべきかどうかの指示を与えるのが主な役目だが、その他のサインも出す。",
+    "yomi": "さ"
   },
   {
     "ja": "三塁手",
-    "en": "third baseman　略語及び記録上は３Ｂ。三塁打参照。"
+    "en": "third baseman　略語及び記録上は３Ｂ。三塁打参照。",
+    "yomi": "さ"
   },
   {
     "ja": "三塁打",
-    "en": "third-base hit, triple  triple　を使うことが多い。triple bagger, tripletなどと もいう。略語と記録上は３Ｂ。"
+    "en": "third-base hit, triple  triple　を使うことが多い。triple bagger, tripletなどと もいう。略語と記録上は３Ｂ。",
+    "yomi": "さ"
   },
   {
     "ja": "試合を締めくくる",
-    "en": "close out a game　クローザー参照。"
+    "en": "close out a game　クローザー参照。",
+    "yomi": "し"
   },
   {
     "ja": "試合開始宣言",
-    "en": "play　主審が”Play !”と宣言 (call) する。途中で停止した試合を再開する 場合も同じ。試合終了(宣言)、ゲームセット参照。"
+    "en": "play　主審が”Play !”と宣言 (call) する。途中で停止した試合を再開する 場合も同じ。試合終了(宣言)、ゲームセット参照。",
+    "yomi": "し"
   },
   {
     "ja": "試合終了宣言",
-    "en": "game　主審が”Game!”と宣言（call）する。試合開始宣言、ノーゲーム、 プレイボール参照。"
+    "en": "game　主審が”Game!”と宣言（call）する。試合開始宣言、ノーゲーム、 プレイボール参照。",
+    "yomi": "し"
   },
   {
     "ja": "シアトル・マリナーズ",
@@ -1357,35 +1474,43 @@
   },
   {
     "ja": "四球",
-    "en": "base on balls, pass, walk　略語及び記録表示はBB。俗称にはfree pass, free ticketなどがある。フォアボール参照。"
+    "en": "base on balls, pass, walk　略語及び記録表示はBB。俗称にはfree pass, free ticketなどがある。フォアボール参照。",
+    "yomi": "し"
   },
   {
     "ja": "死球",
-    "en": "hit by pitch  hit batter　、hit batsman ともいう。：正岡子規の考案による訳語。デッドボール参照。"
+    "en": "hit by pitch  hit batter　、hit batsman ともいう。：正岡子規の考案による訳語。デッドボール参照。",
+    "yomi": "し"
   },
   {
     "ja": "待球作戦をとる",
-    "en": "wait him out, wait on a pitch, wait out"
+    "en": "wait him out, wait on a pitch, wait out",
+    "yomi": "た"
   },
   {
     "ja": "始球式(で投げる)",
-    "en": "（to throw） a ceremonial first pitch"
+    "en": "（to throw） a ceremonial first pitch",
+    "yomi": "し"
   },
   {
     "ja": "軸足(投手の)",
-    "en": "pivot foot　投手が投球のときに、投手版に触れている足。 ｢全軸足を投 手板に乗せて｣は with the entire pivot foot on the pitcher’s plate。"
+    "en": "pivot foot　投手が投球のときに、投手版に触れている足。 ｢全軸足を投 手板に乗せて｣は with the entire pivot foot on the pitcher’s plate。",
+    "yomi": "じ"
   },
   {
     "ja": "刺殺",
-    "en": "putout　アウトにすること。 ｢打者走者を刺殺する｣は(to) put out a batter-runner。アウト参照。"
+    "en": "putout　アウトにすること。 ｢打者走者を刺殺する｣は(to) put out a batter-runner。アウト参照。",
+    "yomi": "し"
   },
   {
     "ja": "失策",
-    "en": "error, miscue, misplay　略語と記録上はＥ。エラー参照。"
+    "en": "error, miscue, misplay　略語と記録上はＥ。エラー参照。",
+    "yomi": "し"
   },
   {
     "ja": "自主トレーニング",
-    "en": "independent training　自主トレともいう。大リーグでは文字どお りの｢自主｣トレーニングのことで、選手かくじが、個々バラバラに自分の判断で行うも のである。日本のように、球団が｢主導｣して、集団で行うものとは違う。キャンプイン 参照。"
+    "en": "independent training　自主トレともいう。大リーグでは文字どお りの｢自主｣トレーニングのことで、選手かくじが、個々バラバラに自分の判断で行うも のである。日本のように、球団が｢主導｣して、集団で行うものとは違う。キャンプイン 参照。",
+    "yomi": "じ"
   },
   {
     "ja": "シーズンイン",
@@ -1397,7 +1522,8 @@
   },
   {
     "ja": "自責点",
-    "en": "earned run　投手の責任に帰する得点。つまり、失策、捕逸、打撃妨害など、 投手の責任でない得点を除いた点。防御率参照。"
+    "en": "earned run　投手の責任に帰する得点。つまり、失策、捕逸、打撃妨害など、 投手の責任でない得点を除いた点。防御率参照。",
+    "yomi": "じ"
   },
   {
     "ja": "シチズンズ･バンク･パーク",
@@ -1405,11 +1531,13 @@
   },
   {
     "ja": "実況放送",
-    "en": "play-by-play commentary, running commentary　｢実況放送する｣は(to) do a play-by-play commentary/running commentary。"
+    "en": "play-by-play commentary, running commentary　｢実況放送する｣は(to) do a play-by-play commentary/running commentary。",
+    "yomi": "じ"
   },
   {
     "ja": "実況放送アナウンサー",
-    "en": "play-by-play announcer/commentator　大リーグは地域性が強 いで各球団の公式戦の中継は地元のテレビ局とケーブルテレビ極が行い、特定のアナウ ンサーが永く続けるけることが多い。"
+    "en": "play-by-play announcer/commentator　大リーグは地域性が強 いで各球団の公式戦の中継は地元のテレビ局とケーブルテレビ極が行い、特定のアナウ ンサーが永く続けるけることが多い。",
+    "yomi": "じ"
   },
   {
     "ja": "シート",
@@ -1417,7 +1545,8 @@
   },
   {
     "ja": "失投",
-    "en": "mistake pitch"
+    "en": "mistake pitch",
+    "yomi": "し"
   },
   {
     "ja": "シートノック",
@@ -1429,11 +1558,13 @@
   },
   {
     "ja": "指名打者",
-    "en": "designated hitter　略語及び記録表示はDH。 designated batterとはいわ ない。"
+    "en": "designated hitter　略語及び記録表示はDH。 designated batterとはいわ ない。",
+    "yomi": "し"
   },
   {
     "ja": "邪球",
-    "en": "foul ball"
+    "en": "foul ball",
+    "yomi": "じ"
   },
   {
     "ja": "ジャストミート",
@@ -1453,27 +1584,33 @@
   },
   {
     "ja": "首位打者",
-    "en": "batting champion, batting title  leading batter/hitter　はシーズン途中での 首位（を行く）打者のこと。"
+    "en": "batting champion, batting title  leading batter/hitter　はシーズン途中での 首位（を行く）打者のこと。",
+    "yomi": "し"
   },
   {
     "ja": "主催チーム",
-    "en": "home team　遠征チーム参照。"
+    "en": "home team　遠征チーム参照。",
+    "yomi": "し"
   },
   {
     "ja": "主審",
-    "en": "home plate umpire, plate umpire, umpire-in-chief"
+    "en": "home plate umpire, plate umpire, umpire-in-chief",
+    "yomi": "し"
   },
   {
     "ja": "出場試合数",
-    "en": "games played"
+    "en": "games played",
+    "yomi": "し"
   },
   {
     "ja": "出塁する",
-    "en": "get on base, reach base"
+    "en": "get on base, reach base",
+    "yomi": "し"
   },
   {
     "ja": "出塁率",
-    "en": "on-base average/percentage"
+    "en": "on-base average/percentage",
+    "yomi": "し"
   },
   {
     "ja": "シュート",
@@ -1481,39 +1618,48 @@
   },
   {
     "ja": "守備",
-    "en": "fielding"
+    "en": "fielding",
+    "yomi": "し"
   },
   {
     "ja": "守備機会数",
-    "en": "total chances　刺殺、補殺、及び失策の総計。"
+    "en": "total chances　刺殺、補殺、及び失策の総計。",
+    "yomi": "し"
   },
   {
     "ja": "守備のヘマ",
-    "en": "fielding blunder, fielding error"
+    "en": "fielding blunder, fielding error",
+    "yomi": "し"
   },
   {
     "ja": "守備率",
-    "en": "fielding average/percentage"
+    "en": "fielding average/percentage",
+    "yomi": "し"
   },
   {
     "ja": "春季キャンプ",
-    "en": "spring training camp　：秋季キャンプは大リーグはやらない。"
+    "en": "spring training camp　：秋季キャンプは大リーグはやらない。",
+    "yomi": "し"
   },
   {
     "ja": "春季キャンプ地",
-    "en": "spring training base"
+    "en": "spring training base",
+    "yomi": "し"
   },
   {
     "ja": "順位表",
-    "en": "standings　大リーグの順位表には引き分け欄がない。その理由は｢延長 (戦 )｣ 参照。"
+    "en": "standings　大リーグの順位表には引き分け欄がない。その理由は｢延長 (戦 )｣ 参照。",
+    "yomi": "じ"
   },
   {
     "ja": "上位打線",
-    "en": "top batters/hitters of the order　；top of the order 一番打者、下位打線参照。"
+    "en": "top batters/hitters of the order　；top of the order 一番打者、下位打線参照。",
+    "yomi": "じ"
   },
   {
     "ja": "勝利投手",
-    "en": "winning pitcher　勝ち投手参照。"
+    "en": "winning pitcher　勝ち投手参照。",
+    "yomi": "し"
   },
   {
     "ja": "ジョージ･シスラー",
@@ -1541,23 +1687,28 @@
   },
   {
     "ja": "場内放送",
-    "en": "public address system　略語はＰＡ。｢場内放送で発表する｣は(to) announce on the public address system。｢場内放送係｣はPA announcer。"
+    "en": "public address system　略語はＰＡ。｢場内放送で発表する｣は(to) announce on the public address system。｢場内放送係｣はPA announcer。",
+    "yomi": "じ"
   },
   {
     "ja": "勝敗に関係なし",
-    "en": "no-decision　：投手が試合に登板したが勝ち投手にも負け投手にも関 係しないこと。Indians’ Tadano gets no-decision ｢インでフィアンズの多田野勝敗に関 係せず｣（The Asahi Shimbun July 26, 2004 の見出し）"
+    "en": "no-decision　：投手が試合に登板したが勝ち投手にも負け投手にも関 係しないこと。Indians’ Tadano gets no-decision ｢インでフィアンズの多田野勝敗に関 係せず｣（The Asahi Shimbun July 26, 2004 の見出し）",
+    "yomi": "し"
   },
   {
     "ja": "勝負ダマ",
-    "en": "money pitch, winning pitch　決め球参照。"
+    "en": "money pitch, winning pitch　決め球参照。",
+    "yomi": "し"
   },
   {
     "ja": "勝利打点",
-    "en": "game-winning RBI"
+    "en": "game-winning RBI",
+    "yomi": "し"
   },
   {
     "ja": "勝利投手",
-    "en": "game-winner, game-winning pitcher"
+    "en": "game-winner, game-winning pitcher",
+    "yomi": "し"
   },
   {
     "ja": "シリーズ",
@@ -1589,27 +1740,33 @@
   },
   {
     "ja": "人工芝",
-    "en": "artificial grass/turf　ＭＬＢでは人工芝の球場は全３０球団の中でわずか５球 団に過ぎない。天然芝参照。"
+    "en": "artificial grass/turf　ＭＬＢでは人工芝の球場は全３０球団の中でわずか５球 団に過ぎない。天然芝参照。",
+    "yomi": "じ"
   },
   {
     "ja": "新人王賞",
-    "en": "the Rookie of the Year Award  MLB　ではこの賞が設けられて初めて受賞し た黒人で最初の大リーガージャッキーロビンソンを記念してJacky Robinson Awardと 呼ばれるようになった。"
+    "en": "the Rookie of the Year Award  MLB　ではこの賞が設けられて初めて受賞し た黒人で最初の大リーガージャッキーロビンソンを記念してJacky Robinson Awardと 呼ばれるようになった。",
+    "yomi": "し"
   },
   {
     "ja": "審判",
-    "en": "umpire   men in blue　などともいわれる。"
+    "en": "umpire   men in blue　などともいわれる。",
+    "yomi": "し"
   },
   {
     "ja": "審判の判定",
-    "en": "call　英語では｢審判が判定をする｣という動詞としても使う。"
+    "en": "call　英語では｢審判が判定をする｣という動詞としても使う。",
+    "yomi": "し"
   },
   {
     "ja": "進塁",
-    "en": "advancing  e.g. In advancing, a runner shall touch first, second, third and　home in order. (走者は進塁するに当たり、一塁、二塁、三塁、本塁の順序に従って、 各塁に触れなければならない)(規則7.02より)"
+    "en": "advancing  e.g. In advancing, a runner shall touch first, second, third and　home in order. (走者は進塁するに当たり、一塁、二塁、三塁、本塁の順序に従って、 各塁に触れなければならない)(規則7.02より)",
+    "yomi": "し"
   },
   {
     "ja": "進塁する",
-    "en": "advance"
+    "en": "advance",
+    "yomi": "し"
   },
   {
     "ja": "シンシナティ・レッズ",
@@ -1905,7 +2062,8 @@
   },
   {
     "ja": "制球(力 )",
-    "en": "(古) control　現在はlocation。コントロール参照。"
+    "en": "(古) control　現在はlocation。コントロール参照。",
+    "yomi": "せ"
   },
   {
     "ja": "セカンド",
@@ -1925,7 +2083,8 @@
   },
   {
     "ja": "絶好球",
-    "en": "fat pitch, gopher ball　甘い球、ホームランボール参照。"
+    "en": "fat pitch, gopher ball　甘い球、ホームランボール参照。",
+    "yomi": "ぜ"
   },
   {
     "ja": "セットアッパー",
@@ -1941,7 +2100,8 @@
   },
   {
     "ja": "背番号",
-    "en": "player’s number, uniform number　説明的にはplayer’s identification number on the back of the uniformとなろう。"
+    "en": "player’s number, uniform number　説明的にはplayer’s identification number on the back of the uniformとなろう。",
+    "yomi": "せ"
   },
   {
     "ja": "セーフ",
@@ -1965,23 +2125,28 @@
   },
   {
     "ja": "狭い球場",
-    "en": "bandbox stadium　セ・リーグ＝セントラルリーグ ゼロ・ゲーム　<和　zero game 英語ではcomplete-game shutoutが完投完封試合、単に 何人かの投手で完封したのはshutout game。"
+    "en": "bandbox stadium　セ・リーグ＝セントラルリーグ ゼロ・ゲーム　<和　zero game 英語ではcomplete-game shutoutが完投完封試合、単に 何人かの投手で完封したのはshutout game。",
+    "yomi": "せ"
   },
   {
     "ja": "選手",
-    "en": "player　：英語のplayerには｢選ばれたもの｣の意味はない。"
+    "en": "player　：英語のplayerには｢選ばれたもの｣の意味はない。",
+    "yomi": "せ"
   },
   {
     "ja": "選手会長",
-    "en": "player representative"
+    "en": "player representative",
+    "yomi": "せ"
   },
   {
     "ja": "先取点",
-    "en": "opening run"
+    "en": "opening run",
+    "yomi": "せ"
   },
   {
     "ja": "先取点を入れる",
-    "en": "open the scoring"
+    "en": "open the scoring",
+    "yomi": "せ"
   },
   {
     "ja": "センター",
@@ -2005,7 +2170,8 @@
   },
   {
     "ja": "先頭打者",
-    "en": "lead-off batter/hitter/man　一番打者も英語では同じ。 セントラル＝セントラルリーグ参照。"
+    "en": "lead-off batter/hitter/man　一番打者も英語では同じ。 セントラル＝セントラルリーグ参照。",
+    "yomi": "せ"
   },
   {
     "ja": "セントラルリーグ",
@@ -2017,51 +2183,63 @@
   },
   {
     "ja": "先発する",
-    "en": "start"
+    "en": "start",
+    "yomi": "せ"
   },
   {
     "ja": "先発投手",
-    "en": "starter, starting pitcher"
+    "en": "starter, starting pitcher",
+    "yomi": "せ"
   },
   {
     "ja": "先発メンバー",
-    "en": "(和) starting member　英語ではstarting lineup。 starterともいう。"
+    "en": "(和) starting member　英語ではstarting lineup。 starterともいう。",
+    "yomi": "せ"
   },
   {
     "ja": "先発ローテーション",
-    "en": "rotation, starting rotation"
+    "en": "rotation, starting rotation",
+    "yomi": "せ"
   },
   {
     "ja": "全力疾走する",
-    "en": "run it out"
+    "en": "run it out",
+    "yomi": "ぜ"
   },
   {
     "ja": "送球する",
-    "en": "throw　投手が打者に投げるばあいは pitchを普通使うが、野手が送球す る時はpitchを用いない。英語の throwには｢投手をなげさせる｣の意味もある。｢彼を この試合で投げさせるわけにはいかない｣はI can’t throw him this game.となる。"
+    "en": "throw　投手が打者に投げるばあいは pitchを普通使うが、野手が送球す る時はpitchを用いない。英語の throwには｢投手をなげさせる｣の意味もある。｢彼を この試合で投げさせるわけにはいかない｣はI can’t throw him this game.となる。",
+    "yomi": "そ"
   },
   {
     "ja": "送球でアウトにする",
-    "en": "throw out"
+    "en": "throw out",
+    "yomi": "そ"
   },
   {
     "ja": "送球エラー",
-    "en": "errant throw/toss, throwing error/miscue　送球ミス　＝送球エラー参照。"
+    "en": "errant throw/toss, throwing error/miscue　送球ミス　＝送球エラー参照。",
+    "yomi": "そ"
   },
   {
     "ja": "走者",
-    "en": "base runner　：｢走者｣は正岡子規の考案による訳語。"
+    "en": "base runner　：｢走者｣は正岡子規の考案による訳語。",
+    "yomi": "そ"
   },
   {
     "ja": "走者一掃の",
-    "en": "bases-clearing　｢走者一掃の２塁打｣はa bases-clearing doubleとなる。"
+    "en": "bases-clearing　｢走者一掃の２塁打｣はa bases-clearing doubleとなる。",
+    "yomi": "そ"
   },
   {
     "ja": "走者を一掃する",
-    "en": "clear the bases"
+    "en": "clear the bases",
+    "yomi": "そ"
   },
   {
     "ja": "走塁妨害",
-    "en": "obstruction　インターフェアランス参照。 ソフト＝ソフトボール"
+    "en": "obstruction　インターフェアランス参照。 ソフト＝ソフトボール",
+    "yomi": "そ"
   },
   {
     "ja": "ソフトボール",
@@ -2089,19 +2267,23 @@
   },
   {
     "ja": "代走(者)",
-    "en": "pinch runner"
+    "en": "pinch runner",
+    "yomi": "だ"
   },
   {
     "ja": "代走専用選手",
-    "en": "designated runner"
+    "en": "designated runner",
+    "yomi": "だ"
   },
   {
     "ja": "代打(者)",
-    "en": "pinch hitter"
+    "en": "pinch hitter",
+    "yomi": "だ"
   },
   {
     "ja": "代打に出る؀ࠒࠔࠜࠞࢌ࢒࢘੬੸ૄ૎଒ଚஂசத௸ఊత൴ൺ๬๰๸๾༨༮ེྀတဒၴၼႌ႖჌ზዎዜዬጚጜᎂᎠᎴᑤᑨᒂᒌᒎᒒᒜᒞᒬ�췕쓍췫췫ꎫ춫헫黕駫铫ᘉ䉨촪漀Ĩᘉ鉨쌤漀Ĩᘉﵨ쌧漀Ĩᘉ６漀Ĩᔏ６ᘀ띨칉㔀脈ᔒ６ᘀ띨칉㔀脈⡯\u0001ᘌ띨칉㸀Ī⡯\u0001ᔏ녨✺ᘀ띨칉漀Ĩᘉ녨✺漀Ĩᘆ띨칉ᔏ６ᘀ띨칉漀Ĩᘌ띨칉㔀脈⡯\u0001ᘌ띨칉㔀脈࡜ᘏ띨칉㔀脈࡜澁Ĩᘉ띨칉漀Ĩᘝ띨칉㔀脈桥Ą⡯爁࣊＀Ą㘀؀࢒੮૪଼ஔ௤త൴ེ႐ᎄᎌᎠᎼᐎᐾᒎᓢᕄýíííããﴀý�Ý�Ô쬀ºက萏ď萑Ò䑖䑗d葞ď葠Ò摧祚Sࠀ萏Ď葞Ď摧ृ\u0010ࠀ萏Ď葞Ď摧⟽ÃԀ萏Ď葞Ďऀ萏־萑Ò葞־葠Òऀ옍\u0005ခ耎萑Ƥ葠ƤԀ옍\u0005ခ耎Āጀ؀蘆\u0003ýЄĀāᒬᒶᓂᓞᓠᓢᓦᔄᔖᔘᔚᔸᕊᕒᕘᕚᕤᕲᕴᗌᗖᗘᗰᗶᘨᘪᘺᙀᙂᙌᙐᙘᙨᚤᚦឌែ៮៰ᡂᡠᢺᢼᣄ᥊ᥖ᧢᧨ᨄᨔᯀᯜ᯸ᰄᰮퟺ㮝㮝靖뻒�티튣黰黰麙뒙뒔ᘌ띨칉㸀Ī⡯\u0001ᘆ띨칉ᘉ㵨븯漀Ĩᘉ쵨漀Ĩᘉ煨樂漀Ĩᔒ꽨ᘀ꽨㔀脈⡯\u0001ᘌ꽨㔀脈⡯\u0001ᘉͨ眮漀Ĩᘉ牨鐻漀Ĩᔒ牨鐻ᘀ牨鐻㔀脈⡯\u0001ᔒ꽨ᘀ䍨ဉ㔀脈⡯\u0001ᘉ꽨漀Ĩᔏ䍨ဉᘀ䍨ဉ漀Ĩᘌ띨칉㔀脈⡯\u0001ᘉ婨卹漀Ĩᘉﵨ쌧漀Ĩᘉ띨칉漀Ĩᘉ鉨쌤漀Ĩᘉ䍨ဉ漀Ĩ㘀ᕄᖔᗚᘪᙪᛀ᜔ᝪឌ៰ᡂᢖᢼᤌ᥊ᥖ᧤ᩐ᪠ᬆ᭰îè�Û픀Õ픀Ì찀Ì섀Õ�Û뜀­뜀·�ऀ萏ֿ萑敏葞ֿ葠敏ऀ萏־萑既葞־葠既਀萑ɶ䑗Ĭ葠ɶ摧⼽¾ࠀ萑Ò葠Ò摧山ùԀ萑Ò葠ÒĀ਀萑ʅ䑗ĳ葠ʅ摧⸃wԀ萑á葠áက萏ď萑Ò䑖䑗d葞ď葠Ò摧ᆯö᐀᭰ᮢ᯸᱘ᲬᴰᵂᶀᷦḸṎẬἎἸᾒῺ‌⁪⃲ↆ⇮∾⊢⌌⍒⏆␴⑆Ⓔýﴀýýýﴀýý÷ﴀ÷ý÷÷ﴀ÷ﴀý÷ﴀԀ萑Ò葠ÒĀᰀᰮᰴ᰸᱐᱒ᱴᱼᲬᲶ᳔᳞ᴆᴨᵂᵎᵢᵲᵾᶊᶌᶐᶒᶖṎṔἮἴἸὄ῾ ‌‚⇐⇒∦∴∾≊⍂⍆⍈⍎⍒⍠⎖⎤⏘⏞⑆⑔⑚ⒺⓆ┮┰┾╌◖◤◦◴⛦⛨✞✪✬✺⟠⟬⟰⟺⠢⠤⡨⢄⢼⣄⣈⣚⤜⤮⧆﫭쿭ᘌ婨卹㔀脈⡯\u0001ᘌ䉨촪㔀脈⡯\u0001ᘉ쵨漀Ĩᘌ띨칉㔀脈⡯\u0001ᘆ띨칉ᘉ띨칉漀Ĩᔏ６ᘀ띨칉漀Ĩᘉ６漀Ĩ刀Ⓔ├┾▘◦♀⚐⛺✬➄⟞⟰⡞⣈⤦⦂⧚⨼⩤⩾⫨⬺⮆⯪ⰎⱬⲼⴌⵜýﴀýﴀý÷ý÷ﴀýﴀñýﴀýﴀ÷ﴀýﴀý÷Ԁ萑á葠áԀ萑Ò葠ÒĀᰀ⧆⧖⧘⧬⨮⩄⩒⩠⩤⩬⩮⪊⬪⬰⬲⬶⬺⭂⭶⭺⮆⮔⮼⯊⯌⯒⯔⯢⯪⯶ⰎⰜⰴⱌⱎⱠⷖⷜⷢ⸊⸌⸒⺞⺬⻴⼂⼄⼚⼢⼶⽴⽺ㄜㄪㆂ㆒㆚ㆨ㇒㇢㇪ㇶ㊞㊲㊶㊸㋀㋐㋰㋶㍸㍾㎼㏢㑼㒐㒔㒮㓴㔄㔐㔒�íᘉ婨卹漀Ĩᘆ띨칉ᘉ녨✺漀Ĩᘉ難๜漀Ĩᘌ䉨촪㔀脈⡯\u0001ᘌ難๜㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯儁ⵜⶬ⸌⹰⺞⼖⼢⽴⿦ずヂㄜ㆚㇪㉆㊞㋀㌞㎌㏌㐮㑺㒔㓴㔺㖢㗰㙔ù豈÷÷÷ù豈ù÷÷豈÷豈ùù豈÷÷豈èԀ옍\u0005ခ耎ࠀ萑Ò葠Ò摧㆛èĀԀ萑Ò葠Òᬀ㔒㔘㔚㔦㕂㗰㗸㗺㘄㘎㙒㙔㚢㚤㛰㛲㝔㝖㝠㝨㟎㟘㟮㠄㠤㡬㡸㡺㢾㣀㣲㣴㤎㤚㤜㤠㤪㤾㦐㦖㧀㧈㧊㧚㧢㧬㧲㩶㪀㪆㫞㫨㫮㫶㬆㬔㭂㭄㮆㮈㮊㮞㯎㰘�컭쓭뢽Ɪ뢮¢ᘉ坨뽌漀Ĩᘌ坨뽌㔀脈⡯\u0001ᔒ坨뽌ᘀ蔻㔀脈⡯\u0001ᘉ蔻漀Ĩᘌ蔻㔀脈⡯\u0001ᔒ蔻ᘀ蔻㔀脈⡯\u0001ᘌ婨卹㔀脈⡯\u0001ᘉ魨漀Ĩᘉﵨ쌧漀Ĩᘌﵨ쌧㔀脈⡯\u0001ᘌ牨鐻㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯\u0001ᘌ魨㔀脈⡯㼁㙔㚤㛲㝖㝠㞴㟎㠤㡺㣴㤪㦈㦐㧢㩂㪨㬄㬔㮊㯠㰲㰸㲜ððîîß퐀îîîè케Ä쐀Ä਀萑Ò䑗d葠Ò摧䱗¿Ѐ摧㯸਀萑i䑗2葠i摧㆛èࠀ萑Ò葠Ò摧㆛èԀ萑Ò葠ÒĀ฀옍\u0005ခ耎萑Ò䑗d葠Ò摧⟽Ãᘀ㰘㰮㰶㰸㱖㲆㲐㲖㴊㴖㴶㵒㵸㵼㶂㶊㶌㶖㶴㷌㷎㷜㷞㷢㸚㸰㸲㸴㸸㸺㸼㹄䀴䀼䁘䁞䄎䄖䄘䄠䅆䅨䉐䉞䊀䊌䊠䊮䋘䋾䍸䎬䏆䏈䐖䐜䕚䕨䖬훝��짢훝훂뎸뎸횩뎩횸뎸鲤���闢����������ᘌ牨鐻㔀脈⡯\u0001ᔏ੨騃ᘀ੨騃漀Ĩᘉ佨䐶漀Ĩᔒ婨卹ᘀ੨騃㔀脈⡯\u0001ᘉ੨騃漀Ĩᔒ੨騃ᘀ੨騃㔀脈⡯\u0001ᘌ佨䐶㔀脈⡯\u0001ᔏ㡨鵄ᘀ㡨鵄漀Ĩᘉ㡨鵄漀Ĩᘌ婨卹㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯\u0001ᔏ蔻ᘀ蔻漀Ĩᘉ坨뽌漀Ĩᔒ坨뽌ᘀ坨뽌㔀脈⡯㨁㲜㳬㴼㵼㷞㸲㸼㺔㻤㼴㾄㿖䀮䁘䃎䄎䅰䇀䈐䉐䊠䋺䍸䏈䐞䑴ù豈ùéç豈ù豈ù豈ùùù豈ùç豈Þ�ùࠀ萑Ò葠Ò摧䐸Ā਀萑Ò䑗d葠Ò摧祚SЀ摧̊Ԁ萑Ò葠Òᤀ䑴䓚䔪䖄䗌䘬䙖䚢䜄䝞䟘䟞䠼䡨䢔䣸䥈䦘䦸䨘䩚䪸䬄䭬䮲䰔䱢䲌ù豈ù豈÷÷ùîù÷豈ù豈÷÷è÷豈÷Ԁ옍\u0005ခ耎ࠀ萑Ò葠Ò摧䳓ĀԀ萑Ò葠Òᬀ䖬䗊䗌䗚䗶䘆䙖䙪䚐䚘䚠䚢䚼䜜䜢䝜䝪䟖䟘䟞䟪䡨䡲䡴䢂䢊䢌䢎䢐䢔䢠䤈䤒䤠䤬䥸䦄䦢䦮䦸䧄䧆䧌䧾䨌䨒䨘䩈䩚䩦䩨䩮䬄䬒䮲䮼䯂䰸䰾䱎䱞䱠䱢䱮䲌䲔䳸䴀䴖䴶䵲䵸䵺䵼䶄䶊吝林林林林林林林林林吝李�틴엨뻹ùᘌ왨䌚㔀脈⡯\u0001ᘉ왨䌚漀Ĩᔏ퍨葌ᘀ퍨葌漀Ĩᔒ퍨葌ᘀ띨칉㔀脈⡯\u0001ᘉ㵨븯漀Ĩᘌ婨卹㔀脈⡯\u0001ᘉ퍨葌漀Ĩᘌ퍨葌㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䬁䲌䴎䵺䶄一丶五仞会佾侴倎傐僞兀兎兼凖刞劌匂厄厔叼周哪ýﴀòﴀýﴀýﴀýýçÞﴀýﴀýﴀçýﴀýࠀ萑Ò葠Ò摧᫆CԀ萑Ò葠ÒЀ摧᫆C਀萑Ò䑗d葠Ò摧᫆CĀᤀ䶊一丈丶举乤乮五亚京仜仞仨会伪佶佸佼侀侎侞侤侴俀傐傪傺僎儲兄兎兰兼円刎刚刞刨劦劰厔厠叨叴呦呾哴唂唊唌唖唰唼啎啚啞啴嘖嘢嘤嘴噒噶噸嚒嚜嚢嚨圬圸塚塬墔墖壈壔奦奶奸﫝﫳﫮﫳﫮﫳﫳﫳﫳䀘﫳﫳﫳컺컺﫳陼龜龜﫳﫳ᔏ瑨㌾ᘀ띨칉漀Ĩᘉ瑨㌾漀Ĩᔒ牨鐻ᘀ띨칉㔀脈⡯\u0001ᔒ왨䌚ᘀ띨칉㔀脈⡯\u0001ᘌ婨卹㔀脈⡯\u0001ᘉ왨䌚漀Ĩᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ一哪唌啞嗀嘤嚂嚜囸坈垪堦墖壈夢奲奸委娤媒嬒嬞宆宺尢屴峐崂ýﴀýﴀýﴀý÷÷ý÷ﴀ÷ýýý÷਀萑Ò䑗d葠Ò摧⼽¾ࠀ萑Ò葠Ò摧㹴3Ԁ萑Ò葠ÒĀᨀ奸妄婊婌媀媎媒媞嫂嫚嬎嬖嬞嬬孒存实宲宺寎导尐尮层岌岒岞峒峞峨峺崀崂崐崒崘嵚嵦嵨嵮嵸嶂嶄嶊嶲嶴巂州巠巨巪帆帨帴幤幬幾庌庎庨庬庮庸弔弞张弨헟履쯴�헋헋零ꣴꣴᔒ孨椔ᘀ띨칉㔀脈⡯\u0001ᘉ㭨≦漀Ĩᔒ㭨≦ᘀ띨칉㔀脈⡯\u0001ᔒ㭨≦ᘀ㭨≦㔀脈⡯\u0001ᔒ瑨㌾ᘀ띨칉㔀脈⡯\u0001ᔒ瑨㌾ᘀ瑨㌾㔀脈⡯\u0001ᘉ瑨㌾漀Ĩᘌ瑨㌾㔀脈⡯\u0001ᘉ㵨븯漀Ĩᘆ띨칉ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䈁崂嵤嶴巠巸幐庎庰弘徐忨怸悖惤愘慾懐戠扶拚拸挨掐搊搚撀擰数ýîﴀýﴀýﴀèﴀýﴀ÷ý÷÷ýﴀ÷ý÷Ԁ萑á葠áࠀ萑Ò葠Ò摧㹴3Ԁ萑Ò葠ÒĀᬀ弨径後徐徚忨忸怒怘怢怴怸恆恪恺愘愬拸挂挨挲捺掆掠推措掲揶搂搎搖搚搬旌旔旜旬暘暦曮朂朶李杨杪构析桄桒梺棈楄楚楜楞楬楴楺楼榒樼樾檄檎櫔櫢櫦櫴櫼�쫔싛﫳諾襁窱﫳ᔒ孨椔ᘀ띨칉㔀脈⡯\u0001ᘌ졨蹛㔀脈⡯\u0001ᘉ졨蹛漀Ĩᔏ孨椔ᘀ띨칉漀Ĩᔒ孨椔ᘀ孨椔㔀脈⡯\u0001ᘌ婨卹㔀脈⡯\u0001ᘉ孨椔漀Ĩᘉ㭨≦漀Ĩᔒ㭨≦ᘀ띨칉㔀脈⡯\u0001ᘆ띨칉ᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ䐀数旀旜昺暘更朶构柖栬桄梢椊楄楼槢樾檄櫼歜殤毀氞汮泾ù豈÷豈÷÷ù豈÷豈ù÷é�÷÷Ô퐀਀萑Ò䑗d葠Ò摧寈ऀ萏Ò萑Ｎ葞Ò葠Ｎࠀ萑Ò葠Ò摧寈Ѐ摧ᑛiĀԀ萑Ò葠Ò᠀櫼欌歠殂殊殜殤殸毀毈毎毪氢汒汚汬汮汸決泼洈浄浊浒浠液淆淌淚淪淸渀渤渦湎溆溶滤滬滸漊漞澔澖澠澤澲澺濈濊濦濪濰瀚灀炚炤炲炼焄焊璚璢瓤瓦畆畊畸畾疮疰瘈瘊瘎瘜裡林林林林�쫚�엊林暈林샴믴샴僚林林林훴林林林林林ᘉ침漀Ĩᘉ녨✺漀Ĩᘉ蕨렘漀Ĩᘌ蕨렘㔀脈⡯\u0001ᘉ孨椔漀Ĩᘆ띨칉ᘌ婨卹㔀脈⡯\u0001ᘌ牨鐻㔀脈⡯\u0001ᘌ졨蹛㔀脈⡯\u0001ᘉ졨蹛漀Ĩᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䨁泾浒涮淪湎溮滰漼澖澺瀚灬炲焄熴牪猖玨珸瑌璚甔畆畸疮瘎ôòìãòìòÝ�ììòòòԀ萑i葠iࠀ萑Ò葠Ò摧ᢅ¸Ԁ萑Ò葠ÒĀ਀萑Ò䑗d葠Ò摧ᑛiᤀ瘜癊癘癠癨癬癶癸的皆皔皤皦皰皸皾目盾眠眮睤睪矜矼砆砒砼砾硈硐硬硲碊碞碶磆磔磖磨祐禼秚秠秢秶稊税稾穂穐穒穜穞穰穸窼竸竺笨筀筈筞箐箜箤箪篞﫮﫳﫳﫳﫳﫢��훺﫳﫝쟌첽뷇뎸뢽곇﫳盛곳﫳﫳盛盛﫳﫳﫳﫳ᘉ魨漀Ĩᘌ魨㔀脈⡯\u0001ᘉ⑨ꈦ漀Ĩᘉ끨ࠜ漀Ĩᔒ끨ࠜᘀ끨ࠜ㔀脈⡯\u0001ᘉ坨뽌漀Ĩᔒ끨ࠜᘀ坨뽌㔀脈⡯\u0001ᘌ協㔀脈⡯\u0001ᘉͨ眮漀Ĩᔏ졨蹛ᘀ띨칉漀Ĩᘆ띨칉ᘉ침漀Ĩᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ䈀瘎癠皸目眠瞈矘砾碊磪社禎禼秢穒窨竺筈箤篺籴粲紘ýﴀ÷÷íﴀýÕ픀â퀀Å씀Åﴀýﴀýﴀ਀萑Ò䑗d葠Ò摧㆛èЀ摧㆛èఀ옍\u0005ခ耎萑Ò葠Ò摧☤¢਀萑Ò䑗d葠Ò摧Ჰ\bऀ옍\u0005ခ耎萑Ò葠ÒԀ옍\u0005ခ耎Āᘀ篞篢篤篬篮篺簊籈籚籴籾粠粪粲精糖糘糚糢絚絠給絨綞綪綬綰網綶綸綺緂緘縒縔縦縰繖繘红纤纴绌绞缔编罆罐羜羦翆翈翦翮耖耘聒聜聢聮聰肼肾胀胈胎胦胴林林林林��폴폌폌폅林샴샴샴샴零샴林닌²ᘌ⍨⵴㔀脈⡯\u0001ᘌ띨칉㸀Ī⡯\u0001ᘉ蕨렘漀Ĩᘌ㕨〈㔀脈⡯\u0001ᘌ蕨렘㔀脈⡯\u0001ᔒ蕨렘ᘀ띨칉㔀脈⡯\u0001ᘉ㕨〈漀Ĩᘌ띨칉㘀脈⡯\u0001ᘆ띨칉ᘌͨ眮㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䌁紘絨綸緂縦纤编罆翈耘聰胀脂脾膤臮舺芖芾苮荌莲菈ùðáá�É준É준Äùîîù豈Ѐ摧團+฀옍\u0005ခ耎萑Ò䑗d葠Ò摧ᢅ¸ࠀ옍\u0005ခ耎摧ᢅ¸ఀ옍\u0005ခ耎萑Ò葠Ò摧ᢅ¸Āࠀ萑Ò葠Ò摧⤵#Ԁ萑Ò葠Òᘀ胴胺脀脂脌脦脲脶脺脼脾腞臄自臮臸舺艊芖芞芾苔苖苦苮茀荘荮菈菖菺萊萐萒萜萴葂葄葖葤葦蒎蒜蒠蒦蒨蒼蓢蔞蔠薊薌蘈蘊蘰虀虆虎蚌蚜蜢蜮蝐蝚螨螮蟐蟒蠠蠬蠰蠴衆衒衘衤袒袞�åᘉꥨ漀Ĩᘉ덨턀漀Ĩᘉ੨湏漀Ĩᘌ੨湏㔀脈⡯\u0001ᘌ協㔀脈⡯\u0001ᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩᘉ蕨렘漀Ĩᔒ蕨렘ᘀ蕨렘㔀脈⡯䴁菈萜葶蓈蔠薌蘊蘰蚊蜂蜢蝺蟒蠢蠰袒裺襊襠覤訄詖試論諮ýôôÞﴀýﴀý�Ï케ýﴀØ�ýﴀØ�ýﴀࠀ萑Ò葠Ò摧䖩êԀ萑Ò葠Ò਀萑Ò䑗d葠Ò摧³Ñ਀萑i䑗2葠i摧³Ñࠀ萑á葠á摧³ÑĀ᠀袞袠袪補裦襠襪覤覰詐詖詚詞試詸誠誶諌諦諮諼謘謤謶譀譆譊讜讬谨谺谼豊豖豞豦豰貌貘贮贼资赐趤趦趪跖踔踮踼躄躆躒辌辞辦農辸迬述逄逆達遖邲邺郊郌郒郔鄞鄪�폭폎짎뫭òᘉ੨㜵漀Ĩᘌ⍨⵴㔀脈⡯\u0001ᔏ婨罃ᘀ婨罃漀ĨᘉṨ㼣漀Ĩᘉ婨罃漀Ĩᔒ婨罃ᘀ婨罃㔀脈⡯\u0001ᘉ䉨촪漀Ĩᘆ띨칉ᘌ協㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯\u0001ᘌꥨ㔀脈⡯䜁諮譈讜诺豊豦貾贪资趪躆軤轄辦逆遖郌鄞酾鈆鈒鉆銪鋼錖鍢鏆ýýòﴀòýﴀýòﴀççﴀýýﴀýﴀýﴀ਀萑Ò䑗d葠Ò摧㔊7Ԁ萑Ò葠ÒЀ摧⩂ÍĀᨀ鄪酾醌醘鈀鈊鈒鈖鈰鈾鉆鉎銚銢銪銰鋼錂錖錜鍔鍚鍢鍺鎞鎦鎨鎼鏆鏺鐔鐖鐞鐠鐮鐶鑠鑦鑮鑸鑾钄钐钔钢钪钰铜铦锄锌锴锼镀镈閐閘閠閬闔闠集雒雚雠霞霤靎靘靚鞄鞎鞐鞘鞢鞤韂韈頰頶顪顰飬﫬﫬﫬﫬﫬﫬﫬﫬﫬﫬﫬﫬﫠﫠﫠﫬﫳龎﫠𢡊﫬ᔒ⍨⵴ᘀ㥨㔀脈⡯\u0001ᘌ㥨㔀脈⡯\u0001ᘉ㥨漀Ĩᘌ੨㜵㔀脈⡯\u0001ᘌ띨칉㔀脈⡯\u0001ᘌ⍨⵴㔀脈⡯\u0001ᘉ띨칉漀Ĩ刀鏆鐖鐮钄钪铜锄镀閠阒隨雚露鞘韸顈顪飆餚馢騌騖驦髚髮鬚魆魼ùî豈îîîùèîî豈ù豈ùî豈îîԀ萑Ļ葠ĻĀࠀ萑Ò葠Ò摧∹ñԀ萑Ò葠Òᬀ飬飺駖駞駪駶騀騎騖騢騼驘驞驤驦马髠髦髬髮髴鬚鬤魆魒魼鮐鯼鰂鰲鰾鱨鱰鱲鲄鲮鲾鳠鳶鴆鴐鴺鵆鵈鵎鵘鵮鵺鶂鷀鷒鸂鸊鹸鹼麦黄黆黊點黦鼄鼌齪齲龶龼ꁦꁲꄢꄼꅈꇸ훛林林林林林林林紐林林林林紐林林林林林훴林林林林쟴林샴ᔏ쵨ᘀ띨칉漀Ĩᔌ쵨ᘀ띨칉ᔏ畨윤ᘀ띨칉漀Ĩᘌ畨윤㔀脈⡯\u0001ᘉ畨윤漀Ĩᔒ畨윤ᘀ畨윤㔀脈⡯\u0001ᔒ㥨ᘀ㥨㔀脈⡯\u0001ᘉ㥨漀Ĩᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䠁魼鯼鰲鱨鳎鴆鵨鵺鷀鸂鹸黆點鼄齪鿖ꀲꁦꃼꆐꇤꇸꉰꌀꌈꎀꎨꐌýﴀýﴀýﴀýﴀýﴀýﴀýﴀý÷ﴀññﴀñýýԀ萑Ò葠ÒԀ萑i葠iĀᬀꇸꇾꌈꌔꎨꎺꏜꏨꏼꐄꐆꐈꐊꐌꒈꒊ꒮꓀꓈ꓒꓴꓸꔚꔤꔦꔰꕐꕚꘜ꘨ꚖꚚꚰꚺꛤꛨꜪꜴꜶꝀꝈꝎꠎꠔꠖꠜꠤ꠮ꡎꡖ꣄꣢꣦ꣴꦄꦐꧦꧮꧺꨌꨔꨮꨴꨶꩮꩰꪄꫢꫨ꬀ꬂ꬐ꬤꭖꭞꭴꭶꭸꭺꮈꮒꯊꯐ갂갌�林�헴林헴林�林ᘆ띨칉ᔏ⥨圴ᘀ띨칉漀Ĩᘌ⥨圴㔀脈⡯\u0001ᘉ⥨圴漀Ĩᘌ띨칉㘀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯吁ꐌꒊ꓈ꓴꔦꕐꗢꘜꚖꛤꝈꟀꠤꡎꢬ꣦ꥊꦄꧠꧺꩰ꫎꬐ꭺꮈꯤ갾ôòòìæòòòòòòòòԀ옍\u0005ခ耎Ԁ萑Ò葠ÒĀ਀萑Ò䑗d葠Ò摧㐩Wᨀ갌갼갾걆걌걎걚곔고궢궴궼귆길깄깪깮꺘꺜꺴꺼껄껈껌껢껬껲꽨꽮꾞꾢꿒꿚뀠뀦낪낾냜냰냲넄넎넢넶넾녂녊념녠놞놠뇬뇾눂눢눤눬뉆뉎뉐늞늠늺닔닖단닮닰댲댺댾덀덈덎덚덠덪뎀돐��������𥉉𥉉𥉉﫤﫤𥉉커컇﫤﫤﫤ᘌᑨ㔀脈⡯\u0001ᘌ�㔀脈⡯\u0001ᘉᑨ漀Ĩᘉ�漀Ĩᘉ읨㩸漀Ĩᘌ띨칉㔀脈⡯\u0001ᔒ⥨圴ᘀ⥨圴㔀脈⡯\u0001ᘉ⥨圴漀Ĩᘉ띨칉漀Ĩ一갾걎겮괆궢궼기길깪꺘껄껬꽨꾞꿒뀠끼낪넊념놠뇬뉐늠닰덀ôìììòòòòììãØ�Ø਀萑Ò䑗d葠Ò摧ଔìࠀ萑Ò葠Ò摧磇:Ԁ萑Ò葠ÒĀ਀萑Ò䑗d葠Ò摧㐩Wᤀ덀덪돒둀둆둲뒜듂딜땦뗂똬뚨뛸띖럎렠롰뢺뤔륶맴멆면뫘뭔뮤ôíòòòççççòçççԀ萑Ò葠ÒЀ摧ଔìĀ਀萑Ò䑗d葠Ò摧ଔìᨀ돐돔됬됼둆둌둲둾뒜뒨듂듌땊땜땦땰땶뛸뜊뢤뢲뢺룈룚룞뤒뤪멢멬면몈밪밺뱚뱞뱢뱦뱬벀볔볖볾봀봂봒뵔뵨뷄뷈뷐뷤뷸브븴븺빂빢빤빪뺂뺈뺖뺞뺤뺴뻼뼄뼜뽌뿀뿎쀚쀮쀰쁀쁈쁨샂새샎�ퟵퟵퟵ죒ퟵ틵õᔒ२ᘀ२㔀脈⡯\u0001ᘉ२漀Ĩᘉ魨༆漀Ĩᘌ띨칉㸀Ī⡯\u0001ᘆ띨칉ᘌ協㔀脈⡯\u0001ᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩᘉᑨ漀Ĩ伀뮤밊밪뱮볚뵐뵖붼뷐븶빤뺂뺦뻼뽐뾦뿀쀞쁈삮섂섔셒솴숪슘슬쌎ù豈÷÷豈÷÷÷÷ù豈÷÷豈é÷豈ù豈÷ࠀ萑Ò葠Ò摧⬉êЀ摧ڛ\u000fĀԀ萑Ò葠Òᬀ샎샦섀섂섔섢설셄셊셐셢슌슖슘슜슞스슬슼싄쌪썚썢쎐쎺쐒쐠쑢쑦쑮쒒쓆쓒쓔쓜쓞쓰씨앒얂얄얲얾엀없엌엎엘옰옺완왒욜욲울워윶읆읈읪읲잀잜잪제젨젪졆졌졎졔졲裡林林裡裡裡林林�틙틙틙췙췙웙웍뻍裡林林ôᔏ杨ᘀꥨ깍漀Ĩᘌ杨㔀脈⡯\u0001ᘉ杨漀Ĩᘌꥨ깍㔀脈⡯\u0001ᘉꥨ깍漀Ĩᔒꥨ깍ᘀꥨ깍㔀脈⡯\u0001ᘌ२㔀脈⡯\u0001ᘉ२漀Ĩᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䜁쌎썢쎸쐒쑮쓜씲얄엎옦완욮욺윚읪읲쟐제졼죚줶쥔짒쨦쨲ù豈ðé�Þ�îîî豈ùùîîÓ팀਀萑Ò䑗d葠Ò摧ᢿ\u0016਀萑Ò䑗d葠Ò摧୧öЀ摧䶩®Āࠀ萑Ò葠Ò摧⬉êԀ萑Ò葠Ò᠀졲졸좈좐좒좘죚죢줖줜쥆쥌쥒쥔쥞즔즶지짆짦쨆쨒쨚쨞쨠쨤쨦쨪쨰쨲쨾쫺쬂쭘쭠쮞쮰쯜쯤찂찎첬첲쵒최춐출췜췞취췪췾츀츚츜츤츴츼칎컎컘켎켖콦콰쾨쿬쿮쿲퀔퀞훱훑퇇샪닱닱닱닱퇱ᘆ띨칉ᔒ뽨ᘘᘀ띨칉㔀脈⡯\u0001ᘌ뽨ᘘ㔀脈⡯\u0001ᔒ뽨ᘘᘀ뽨ᘘ㔀脈⡯\u0001ᘉ뽨ᘘ漀Ĩᘉ२漀Ĩᔒ協ᘀ協㔀脈⡯\u0001ᘉ協漀Ĩᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩᔒ協ᘀ२㔀脈⡯䘁쨲쪒쫢쫺쭘쮞쯜찶천첬촌쵒춐췶츼컎켎쾈쿮퀦큶킢턂턖텼톆톸툚툮ý÷ﴀýﴀý÷ﴀ÷ﴀýﴀýﴀýﴀýﴀýﴀýﴀ÷ﴀýﴀԀ萑Ò葠ÒĀᰀ퀞퀦퀲큖큮큶큾킢킨턆턎턖턤톆톒톸퇄퇺툂툠툤툮툶튎튘튢튮튶틆틔틖팊팢팮팸펎펢폌폜폞폪폴퐆퐈풆품풦풨퓌퓔퓰퓼픀픂플픜핂핐햞햬홀홂횰훀훢훸휌휐흊흞흠흸히ퟄퟖퟸ����������﫳﫪﫪﫪﫳﫳﫮﫳﫳﫳﫮﫳���ퟺúᘌ띨칉㘀脈⡯\u0001ᘉ赨娻漀Ĩᘌ協㔀脈⡯\u0001ᘆ띨칉ᘉ뽨ᘘ漀Ĩᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ唀툮튆튶팖팮펎폞푀풮퓌플핂햞혀홒횢횰휐흠흸ퟄ�������ýﴀýﴀýﴀý÷ﴀýﴀý÷ýîﴀý÷ýﴀýࠀ萑Ò葠Ò摧㮍ZԀ萑Ò葠ÒĀᬀ��������������������������������������������ᘌ協㔀脈⡯\u0001ᘆ띨칉ᘉ赨娻漀Ĩᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯威�������������������ýﴀ÷÷÷ﴀýîﴀ÷ﴀýﴀýýﴀýﴀýîﴀ÷ࠀ萑Ò葠Ò摧㮍ZԀ萑Ò葠ÒĀᬀù÷ù豈÷豈ùù豈ù豈÷豈ùù豈÷豈÷÷ì਀萑Ò䑗d葠Ò摧㯸ĀԀ萑Ò葠Òᬀ��ퟵõᘌ協㔀脈⡯\u0001ᘌ蔻㔀脈⡯\u0001ᘉ蔻漀Ĩᘆ띨칉ᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩᘉ赨娻漀Ĩ唀úïííííííííííçԀ萑Ò葠ÒĀ਀萑Ò䑗d葠Ò摧㯸Ѐ摧㯸ᨀ復濾領阮兀礼諸免墨靖頻ﮎﮔ﯆﯊ﳚ罹林林林林林林林林林林林林林林林吝吝林林林林ôᘆ띨칉ᘌ蔻㔀脈⡯\u0001ᘌ坨뽌㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯夁蘿復硫靖免靖פּﮎ﯆ﰰﲺﳚ﴾ýﴀýﴀýﴀýﴀýﴀýﴀýﴀýﴀ÷ﴀ÷ýﴀ÷ﴀý÷ﴀԀ萑Ò葠ÒĀᰀﳚﳤﴖﴤﵸﵾﶈﶎﷀﷄﷆ﷌﷔﷚ﹸﹼﺀﺒﺸﻂﻈﻖﻬﻮﻺﻼ＂＆．０６ｆｖｘ､ｬｸﾌﾎﾘﾚﾲﾾ￀ￄￎￚ￠￸\u001e\u0001(\u0001.\u0001\\\u0001p\u0001t\u0001\u0001¬\u0001Ì\u0001Ô\u0001Ē\u0001Ħ\u0001Ĩ\u0001ĸ\u0001Ŋ\u0001Ū\u0001ž\u0001ƀ\u0001ƒ\u0001Ƥ\u0001ǰ\u0001ǲ\u0001Ǻ\u0001Ƞ\u0001Ȯ\u0001Ɏ\u0001ɠ\u0001ʠ\u0001ʴ\u0001˄\u0001林林林林�林�쫏ᘉ푨漀Ĩᔒ푨ᘀ푨㔀脈⡯\u0001ᘌᥨ줣㔀脈⡯\u0001ᘌ協㔀脈⡯\u0001ᘆ끨ࠜᘉ끨ࠜ漀Ĩᘆ띨칉ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯丁﴾ﶈ﷔﹠ﺀﻊＶｬￎ￢@\u0001t\u0001Ø\u0001Ĩ\u0001ĸ\u0001Ƙ\u0001Ǭ\u0001ǲ\u0001Ƞ\u0001ɾ\u0001˄\u0001ͦ\u0001Ϥ\u0001В\u0001Ҟ\u0001ýﴀýﴀýﴀýﴀ÷ﴀ÷ﴀìýﴀìýﴀýﴀÜ툀ऀ萏Ò萑Ｎ葞Ò葠Ｎ਀萑i䑗2葠i摧䶩®Ѐ摧䳔à਀萑Ò䑗d葠Ò摧Ჰ\bԀ萑Ò葠ÒĀ᠀˄\u0001˞\u0001̈\u0001̚\u0001̈́\u0001͢\u0001ͦ\u0001ͪ\u0001Ό\u0001Θ\u0001Ϣ\u0001Ϥ\u0001Ͼ\u0001Њ\u0001В\u0001Ж\u0001Ҋ\u0001Җ\u0001Ҟ\u0001Ү\u0001Ԁ\u0001Ԕ\u0001՞\u0001լ\u0001ت\u0001ج\u0001ؾ\u0001ق\u0001ٖ\u0001ٜ\u0001ھ\u0001ۄ\u0001ی\u0001ې\u0001ܖ\u0001ܜ\u0001ܤ\u0001ܶ\u0001ݤ\u0001ݬ\u0001ݶ\u0001ݾ\u0001ࠢ\u0001࠰\u0001࠸\u0001ࡄ\u0001ࣜ\u0001ࣨ\u0001࣪\u0001ࣴ\u0001ࣾ\u0001ऊ\u0001ल\u0001श\u0001क़\u0001फ़\u0001৖\u0001ড়\u0001৤\u0001਀\u0001ਂ\u0001ਪ\u0001੆\u0001ੈ\u0001ੜ\u0001઼\u0001૘\u0001૞\u0001ૠ\u0001૨\u0001ை\u0001௜\u0001ಶ\u0001಼\u0001ೌ\u0001೎\u0001췕뻈뻈뻈췈Üᔒ鍨�ᘀ鍨�㔀脈⡯\u0001ᘉ鍨�漀Ĩᔏ鍨�ᘀ鍨�漀Ĩᘌ鍨�㔀脈⡯\u0001ᘆ띨칉ᘉꥨ깍漀Ĩᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯\u0001ᘉꙨ贯漀ĨᔒꙨ贯ᘀꙨ贯㔀脈⡯䬁Ҟ\u0001Ԁ\u0001՞\u0001ׂ\u0001ؾ\u0001ڠ\u0001ی\u0001ܤ\u0001ތ\u0001ߞ\u0001࠰\u0001࠸\u0001࢜\u0001ࣾ\u0001क़\u0001শ\u0001৤\u0001੎\u0001ઢ\u0001ૠ\u0001୬\u0001ை\u0001ా\u0001ಒ\u0001ಶ\u0001õóóóííóóä픀Õóó฀옍\u0005ခ耎萑Ò䑗d葠Ò摧んÙࠀ옍\u0005ခ耎摧んÙԀ萑Ò葠ÒĀऀ萏Ò萑Ｎ葞Ò葠Ｎ᠀ಶ\u0001ഒ\u0001൒\u0001൶\u0001ූ\u0001ะ\u0001ຈ\u0001໚\u0001༪\u0001ྡྷ\u0001ྫྷ\u0001࿎\u0001ီ\u0001ၼ\u0001჊\u0001ᄮ\u0001ᆄ\u0001ᇢ\u0001ሶ\u0001ኖ\u0001ዜ\u0001፪\u0001ᎈ\u0001Ꮎ\u0001ᐨ\u0001ᑐ\u0001ᒌ\u0001ᓌ\u0001ýýﴀîﴀ÷ýﴀýﴀ÷ﴀýﴀý÷ýﴀýﴀýﴀýࠀ萑Ò葠Ò摧䶩®Ԁ萑Ò葠ÒĀᬀ೎\u0001഼\u0001ൂ\u0001ൄ\u0001ൊ\u0001൒\u0001ൖ\u0001൶\u0001ං\u0001ะ\u0001ึ\u0001༪\u0001༲\u0001ྫྷ\u0001ྰ\u0001࿎\u0001࿜\u0001࿶\u0001࿸\u0001࿼\u0001ဂ\u0001ၼ\u0001ႆ\u0001჊\u0001გ\u0001ᄮ\u0001ᄼ\u0001ᅒ\u0001ᅖ\u0001ᅸ\u0001ᅼ\u0001ᆄ\u0001ᆒ\u0001ᆰ\u0001ᆶ\u0001ቖ\u0001ቤ\u0001኎\u0001ኞ\u0001ዜ\u0001ዤ\u0001ᎈ\u0001᎔\u0001Ꭺ\u0001Ꮆ\u0001Ꮎ\u0001Ꮒ\u0001ᐨ\u0001ᐲ\u0001ᑐ\u0001ᑘ\u0001ᒌ\u0001ᒒ\u0001ᓌ\u0001ᓔ\u0001ᕌ\u0001ᕚ\u0001ᕜ\u0001ᕨ\u0001ᕪ\u0001ᕾ\u0001ᖆ\u0001ᖊ\u0001ᖠ\u0001ᖪ\u0001ᗌ\u0001ᗐ\u0001ᗒ\u0001ᗖ\u0001ᗜ\u0001ᗠ\u0001ᗪ\u0001ᗴ\u0001ᘺ\u0001ᙀ\u0001ᙼ\u0001ᚊ\u0001ᛞ\u0001᛬\u0001᜚\u0001ᜠ\u0001ᝮ\u0001᝼\u0001ឌ\u0001ប\u0001៼\u0001᠄\u0001᠆\u0001᠎\u0001ᔏ杨ᘀ띨칉漀Ĩᘆ띨칉ᘌꥨ깍㔀脈⡯\u0001ᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ堀ᓌ\u0001ᔤ\u0001ᕴ\u0001ᖆ\u0001ᖠ\u0001ᗪ\u0001ᘺ\u0001ᙼ\u0001ᛞ\u0001᜚\u0001ក\u0001ឌ\u0001᠖\u0001ᡔ\u0001ᣂ\u0001ᤖ\u0001ᥦ\u0001ᦸ\u0001ᨌ\u0001᨜\u0001᪂\u0001᪔\u0001᫘\u0001ᬸ\u0001ᮔ\u0001ᯚ\u0001᰺\u0001Შ\u0001᳾\u0001ý÷ﴀýﴀýﴀýﴀýﴀýﴀ÷÷÷ﴀýﴀýýﴀ÷Ԁ萑Ò葠ÒĀᰀ᠎\u0001᠖\u0001᠞\u0001ᡄ\u0001ᡌ\u0001ᡔ\u0001ᡨ\u0001᨜\u0001ᨤ\u0001ᨴ\u0001ᨼ\u0001ᩈ\u0001ᩘ\u0001᪔\u0001᪤\u0001᪾\u0001ᫎ\u0001᫘\u0001᫠\u0001᫨\u0001ᭂ\u0001᭔\u0001ᮔ\u0001ᮢ\u0001᮰\u0001᮲\u0001ᮼ\u0001ᮾ\u0001ᯚ\u0001ᯢ\u0001ᯪ\u0001ᴜ\u0001ᴤ\u0001᷾\u0001Ḏ\u0001Ṹ\u0001Ṻ\u0001Ἠ\u0001ἰ\u0001Ὤ\u0001ὲ\u0001ὺ\u0001ᾄ\u0001ᾨ\u0001ᾲ\u0001Ὸ\u0001 \u0001⁖\u0001⁞\u0001⁦\u0001⁶\u0001⁸\u0001₄\u0001₌\u0001ₔ\u0001⃤\u0001⃬\u0001℄\u0001ℒ\u0001ℼ\u0001⅌\u0001Ⅾ\u0001ⅼ\u0001ↄ\u0001↌\u0001→\u0001⇆\u0001⇎\u0001⇐\u0001⇘\u0001⇜\u0001⇞\u0001⇢\u0001⇤\u0001∀\u0001∤\u0001∦\u0001⊨\u0001⊪\u0001⋼\u0001⌖\u0001⍈\u0001⍖\u0001⍞\u0001⍬\u0001⎊\u0001⎎\u0001⎦\u0001﫳﫳﫳﫠﫠�﫳﫳úᘆ띨칉ᘉ杨漀Ĩᘌᥨ줣㔀脈⡯\u0001ᘌ띨칉㘀脈⡯\u0001ᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ圀᳾\u0001ᴜ\u0001ᶘ\u0001᷾\u0001Ṝ\u0001Ố\u0001Ἠ\u0001ὺ\u0001ᾨ\u0001Ὸ\u0001⁒\u0001₌\u0001⃤\u0001ℼ\u0001ↄ\u0001⇞\u0001∦\u0001⊪\u0001⋼\u0001⍞\u0001⎺\u0001⑰\u0001ⓜ\u0001⓺\u0001╬\u0001◎\u0001◦\u0001ùùù豈÷÷÷÷÷豈è÷â÷ù豈Ԁ萏Ò葞Òࠀ萑Ò葠Ò摧୧öԀ옍\u0005᠁耕ĀԀ萑Ò葠Òᨀ⎦\u0001⎮\u0001␾\u0001⑄\u0001⑰\u0001⑶\u0001⒨\u0001⒮\u0001⒲\u0001Ⓒ\u0001⓬\u0001⓲\u0001⓺\u0001│\u0001╺\u0001▄\u0001◦\u0001◪\u0001☪\u0001☴\u0001♼\u0001⚂\u0001➰\u0001➸\u0001⟌\u0001⟢\u0001⠆\u0001⠘\u0001⡚\u0001⡾\u0001⢄\u0001⢆\u0001⢒\u0001⢚\u0001⣌\u0001⣞\u0001⥘\u0001⥠\u0001⦼\u0001⧎\u0001⧐\u0001⧘\u0001⧞\u0001⧠\u0001⧨\u0001⧪\u0001⧲\u0001⨼\u0001⨾\u0001⩄\u0001⩊\u0001⮞\u0001⯜\u0001⯞\u0001ⱒ\u0001Ⱡ\u0001ⱨ\u0001ⱬ\u0001ⱸ\u0001Ⲑ\u0001Ⲽ\u0001Ⳃ\u0001Ⳅ\u0001Ⳋ\u0001ⴎ\u0001ⴘ\u0001ⴚ\u0001ⵘ\u0001ⵠ\u0001ⷆ\u0001ⷎ\u0001⺖\u0001⺞\u0001⺦\u0001⼤\u0001⼴\u0001李林林李��林林林쏴쏴林林¿ᘆ띨칉ᘉ穨䱔漀Ĩᔒ杨ᘀ띨칉㔀脈⡯\u0001ᘌ띨칉㸀Ī⡯\u0001ᔏ杨ᘀ띨칉漀Ĩᘌ⍨⵴㔀脈⡯\u0001ᘉ杨漀Ĩᘌ杨㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䬁◦\u0001☪\u0001♼\u0001✜\u0001❾\u0001➰\u0001⟌\u0001⠮\u0001⢆\u0001⢒\u0001⣌\u0001⤰\u0001⥘\u0001⧀\u0001⧐\u0001⧪\u0001⨼\u0001⪨\u0001⬚\u0001⮶\u0001ⱌ\u0001ⱬ\u0001Ⳋ\u0001ⴚ\u0001ⵘ\u0001ⶲ\u0001ýﴀý÷ﴀýﴀìﴀýﴀýﴀýﴀý÷äﴀ÷�ýࠀ萑Ò葠Ò摧呺L܀萑Ò䑗d葠Ò਀萑Ò䑗d葠Ò摧୧öԀ萑Ò葠ÒĀᤀⶲ\u0001ⷆ\u0001⸢\u0001⺎\u0001⺖\u0001⻴\u0001⽐\u0001⾮\u0001⿚\u0001〸\u0001ぶ\u0001ギ\u0001ㄒ\u0001ㅌ\u0001ㆪ\u0001ㇸ\u0001㈎\u0001㉲\u0001㊞\u0001㌂\u0001㍌\u0001㍴\u0001㎤\u0001㏨\u0001㐖\u0001㑺\u0001㒠\u0001㔀\u0001㕐\u0001ýﴀ÷ýﴀýýﴀýﴀýﴀýýﴀý÷ﴀýﴀýﴀýԀ萑Ò葠ÒĀᰀ⼴\u0001⽐\u0001⽚\u0001⽠\u0001⾜\u0001⾦\u0001⿚\u0001⿪\u0001ぶ\u0001む\u0001も\u0001ゐ\u0001゠\u0001ギ\u0001ズ\u0001ツ\u0001ㅌ\u0001ㅔ\u0001㆔\u0001㆜\u0001㆞\u0001ㆨ\u0001㈎\u0001㈘\u0001㊞\u0001㊲\u0001㌲\u0001㌼\u0001㍴\u0001㍾\u0001㎀\u0001㎔\u0001㎚\u0001㎠\u0001㎤\u0001㎮\u0001㏨\u0001㏰\u0001㐖\u0001㐤\u0001㐮\u0001㒠\u0001㒸\u0001㔾\u0001㕆\u0001㕈\u0001㕤\u0001㖠\u0001㖮\u0001㖺\u0001㖼\u0001㗊\u0001㗒\u0001㗚\u0001㗢\u0001㗰\u0001㗺\u0001㘂\u0001㘈\u0001㘐\u0001㘞\u0001㘦\u0001㘶\u0001㘾\u0001㙎\u0001㙔\u0001㛴\u0001㜂\u0001㝠\u0001㝨\u0001㟠\u0001㟰\u0001㠢\u0001㠲\u0001㠺\u0001㡈\u0001﫬﫬﫬﫬�﫬﫬䀹䀹﫬﫬﫬﫬﫬頻﫬﫬엺﫬뻺뻺엺﫬﫬﫬﫬﫬﫬﫬ìᘌ띨칉㘀脈⡯\u0001ᘌᥨ줣㔀脈⡯\u0001ᔏ穨䱔ᘀ띨칉漀Ĩᔒᥨ줣ᘀ띨칉㔀脈⡯\u0001ᘌ瑨젋㔀脈⡯\u0001ᘌ穨䱔㔀脈⡯\u0001ᘌ띨칉㔀脈⡯\u0001ᘌ⍨⵴㔀脈⡯\u0001ᘉ띨칉漀Ĩ䬀㕐\u0001㖠\u0001㗚\u0001㘶\u0001㚲\u0001㛴\u0001㝠\u0001㞸\u0001㠜\u0001㠺\u0001㢨\u0001㢾\u0001㤢\u0001㤬\u0001㥞\u0001㦸\u0001㧾\u0001㪀\u0001㪢\u0001㫼\u0001㭠\u0001㯂\u0001㰔\u0001㱤\u0001㳔\u0001㴤\u0001㵠\u0001ù÷÷÷豈ùù÷÷ù豈÷ñçù豈ऀ옍\u0005ခ耎萑Ò葠ÒԀ옍\u0005ခ耎ĀԀ萑Ò葠Òᨀ㡈\u0001㢴\u0001㢺\u0001㢾\u0001㣆\u0001㤬\u0001㤾\u0001㥞\u0001㥬\u0001㪢\u0001㪮\u0001㭠\u0001㭪\u0001㱒\u0001㱜\u0001㱤\u0001㱲\u0001㲔\u0001㲚\u0001㳪\u0001㴒\u0001㵠\u0001㵪\u0001㶄\u0001㶎\u0001㷘\u0001㷨\u0001㷴\u0001㸂\u0001㸊\u0001㸘\u0001㸨\u0001㸰\u0001㸺\u0001㹈\u0001㹌\u0001㹒\u0001㹔\u0001㹞\u0001㹮\u0001㹴\u0001㹼\u0001㺌\u0001㻺\u0001㼊\u0001㿎\u0001㿘\u0001䁶\u0001䂆\u0001䂈\u0001䂌\u0001䅚\u0001䅪\u0001䅴\u0001䅾\u0001䇂\u0001䇔\u0001䋂\u0001䋌\u0001䌺\u0001䍄\u0001䍆\u0001䍒\u0001䎌\u0001䎖\u0001䐒\u0001䐢\u0001䑄\u0001䑎\u0001䑔\u0001䕶\u0001䕸\u0001䖂\u0001䖎\u0001䘖\u0001䘨\u0001䙊\u0001䙔\u0001䙜\u0001䚄\u0001䚎\u0001䚘\u0001�헺﫩컩﫩﫩úᘌ瑨젋㔀脈⡯\u0001ᘌᥨ줣㔀脈⡯\u0001ᘉ㠷漀Ĩᔏ穨䱔ᘀ띨칉漀Ĩᘌ띨칉㔀脈⡯\u0001ᔒᥨ줣ᘀ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ儀㵠\u0001㶺\u0001㸊\u0001㹚\u0001㹼\u0001㻠\u0001㻺\u0001㽘\u0001㾨\u0001㿎\u0001䀨\u0001䁶\u0001䃨\u0001䄸\u0001䅴\u0001䇐\u0001䉠\u0001䋂\u0001䌞\u0001䎄\u0001䓐\u0001䕸\u0001䗜\u0001䘖\u0001䙊\u0001䚘\u0001䛶\u0001䝐\u0001ý÷ýﴀý÷ﴀýﴀ÷ý÷ﴀýíﴀýﴀýﴀ÷ऀ萏Ò萑ﾗ葞Ò葠ﾗԀ萑Ò葠ÒĀᬀ䚘\u0001䚠\u0001䝤\u0001䝬\u0001䞴\u0001䟆\u0001䠤\u0001䠴\u0001䡜\u0001䡤\u0001䢤\u0001䢬\u0001䣠\u0001䣤\u0001䣬\u0001䣸\u0001䥄\u0001䥆\u0001䥔\u0001䥠\u0001䥢\u0001䥬\u0001䦠\u0001䦢\u0001䧎\u0001䧜\u0001䧾\u0001䨊\u0001䨎\u0001䨐\u0001䪲\u0001䫀\u0001䬼\u0001䭆\u0001䭈\u0001䭔\u0001䭖\u0001䭠\u0001䭢\u0001䭨\u0001䮨\u0001䮬\u0001䯺\u0001䯼\u0001䰌\u0001䰚\u0001䰢\u0001䰴\u0001䲀\u0001䲊\u0001䲌\u0001䲘\u0001䳔\u0001䳜\u0001䳞\u0001䳢\u0001䳨\u0001䳪\u0001䴂\u0001䴸\u0001䵂\u0001䵊\u0001䶘\u0001䶠\u0001䶦\u0001䷚\u0001䷢\u0001䷨\u0001亢\u0001京\u0001你\u0001佮\u0001俤\u0001俲\u0001俼\u0001偀\u0001偔\u0001��硫�劉쟴燎林ᘌᥨ줣㔀脈⡯\u0001ᘌ瑨젋㔀脈⡯\u0001ᔒ㠷ᘀ띨칉㔀脈⡯\u0001ᘌ㠷㔀脈⡯\u0001ᘉ穨䱔漀Ĩᘌ穨䱔㔀脈⡯\u0001ᘆ띨칉ᘉ㠷漀Ĩᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯䰁䝐\u0001䝤\u0001䟀\u0001䠜\u0001䠤\u0001䢎\u0001䢤\u0001䣬\u0001䥆\u0001䦢\u0001䧎\u0001䨶\u0001䪲\u0001䬌\u0001䬼\u0001䮪\u0001䯼\u0001䰢\u0001䱺\u0001䳞\u0001䳪\u0001䴸\u0001䶘\u0001䷚\u0001丶\u0001ùù豈÷豈÷ç÷÷豈÷×Î츀÷÷ࠀ萑Ò葠Ò摧㟱8਀萑Ò䑗d葠Ò摧呺LЀ摧呺L਀萑Ò䑗d葠Ò摧㟱8Ѐ摧㟱8ĀԀ萑Ò葠Ò᠀丶\u0001二\u0001亢\u0001仼\u0001你\u0001侼\u0001俤\u0001偀\u0001儀\u0001儔\u0001兊\u0001冬\u0001処\u0001到\u0001劐\u0001勄\u0001匞\u0001卶\u0001取\u0001各\u0001呠\u0001哮\u0001唔\u0001啶\u0001ù豈÷÷÷Ý÷豈÷ØÍ÷÷豈÷਀萑Ò䑗d葠Ò摧㟱8Ѐ摧ⶑo਀萏Ò䑖d葞Ò摧㟱8฀萏Ò萑Ｎ䑗ﾜ葞Ò葠Ｎ摧㟱8ĀԀ萑Ò葠Òᜀ偔\u0001停\u0001偶\u0001傂\u0001傈\u0001傞\u0001傲\u0001僔\u0001僢\u0001僾\u0001儀\u0001儈\u0001儔\u0001儞\u0001儴\u0001儺\u0001兊\u0001兔\u0001兖\u0001兠\u0001処\u0001凮\u0001刌\u0001划\u0001刔\u0001刨\u0001到\u0001制\u0001券\u0001刾\u0001劎\u0001劒\u0001勄\u0001勎\u0001勶\u0001匄\u0001匒\u0001匘\u0001匜\u0001匞\u0001占\u0001卮\u0001卶\u0001历\u0001各\u0001吐\u0001吮\u0001吼\u0001咐\u0001咜\u0001唔\u0001唬\u0001嗆\u0001嗴\u0001嘴\u0001噀\u0001噆\u0001嚼\u0001囆\u0001因\u0001囦\u0001囨\u0001囪\u0001囼\u0001圄\u0001坴\u0001坺\u0001垀\u0001垔\u0001垬\u0001垶\u0001埌\u0001埒\u0001埔\u0001﫮﫮﫮﫮﫮﫟﫮�﫮䀘﫮﫮﫮﫵﫮﫮﫮﫮﫮﫮䀘쓺폺뫺뫌쳺﫮îᔒ酨漭ᘀ띨칉㔀脈⡯\u0001ᔏ酨漭ᘀ띨칉漀Ĩᘌ瑨젋㔀脈⡯\u0001ᘉ酨漭漀Ĩᘌ酨漭㔀脈⡯\u0001ᔏᥨ줣ᘀ띨칉漀Ĩᘌᥨ줣㔀脈⡯\u0001ᘌ띨칉㔀脈⡯\u0001ᘉ㠷漀Ĩᘉ띨칉漀Ĩ䤀啶\u0001嗆\u0001嘢\u0001嘴\u0001嚜\u0001嚼\u0001圠\u0001坺\u0001埈\u0001埔\u0001塀\u0001塮\u0001壌\u0001奄\u0001妠\u0001妮\u0001娊\u0001婘\u0001婾\u0001嫒\u0001孂\u0001宖\u0001寲\u0001局\u0001屼\u0001峜\u0001峨\u0001嵂\u0001ù豈ù÷ù豈ùî÷ùù豈÷ù豈÷÷÷ࠀ萑Ò葠Ò摧ⶑoĀԀ萑Ò葠Òᬀ埔\u0001埞\u0001埴\u0001塒\u0001塜\u0001塬\u0001塮\u0001塺\u0001壌\u0001壖\u0001壘\u0001壞\u0001夨\u0001夼\u0001奄\u0001奐\u0001妮\u0001妴\u0001妺\u0001娚\u0001娢\u0001娨\u0001娪\u0001娲\u0001婾\u0001媊\u0001媾\u0001嫊\u0001嫒\u0001嫚\u0001嫮\u0001嫲\u0001嫴\u0001嫺\u0001孤\u0001孨\u0001孪\u0001孰\u0001宎\u0001宒\u0001宖\u0001室\u0001寄\u0001寊\u0001寲\u0001寺\u0001射\u0001局\u0001屎\u0001屼\u0001岊\u0001峂\u0001峊\u0001峔\u0001峠\u0001峨\u0001峮\u0001崢\u0001崨\u0001崪\u0001崺\u0001嵂\u0001嵐\u0001嵖\u0001嵨\u0001嶊\u0001嶔\u0001嶞\u0001嶤\u0001嶮\u0001幜\u0001幦\u0001幬\u0001庈\u0001庐\u0001庨\u0001弊\u0001弒\u0001헜헭퇭吝Çᔒ푨ᘀ푨㔀脈⡯\u0001ᘆ띨칉ᘌᥨ줣㔀脈⡯\u0001ᘌ켬㔀脈⡯\u0001ᔒ酨漭ᘀ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯\u0001ᘌ瑨젋㔀脈⡯䴁嵂\u0001嶞\u0001巾\u0001幎\u0001庐\u0001廬\u0001弚\u0001徠\u0001忰\u0001恎\u0001悾\u0001愖\u0001慨\u0001憒\u0001懶\u0001扈\u0001扞\u0001抾\u0001挢\u0001捖\u0001措\u0001揺\u0001搞\u0001摊\u0001摨\u0001據\u0001攔\u0001ýﴀ÷ýﴀýýýﴀîﴀãýﴀ÷ﴀ÷ýﴀýﴀ਀萑Ò䑗d葠Ò摧⳦Ïࠀ萑Ò葠Ò摧⳦ÏԀ萑Ò葠ÒĀᨀ弒\u0001弘\u0001弚\u0001张\u0001弰\u0001弲\u0001彼\u0001彾\u0001忰\u0001忶\u0001忺\u0001忼\u0001怄\u0001怆\u0001恀\u0001恆\u0001悾\u0001惄\u0001慰\u0001憀\u0001憂\u0001憊\u0001憒\u0001憦\u0001懆\u0001懚\u0001懜\u0001懬\u0001懴\u0001懶\u0001懺\u0001懼\u0001成\u0001戒\u0001扜\u0001扞\u0001扪\u0001扰\u0001拀\u0001拆\u0001拈\u0001拎\u0001拔\u0001拚\u0001挸\u0001挾\u0001捆\u0001捌\u0001捖\u0001捜\u0001捤\u0001掮\u0001掴\u0001揈\u0001揎\u0001搞\u0001搦\u0001摊\u0001摌\u0001摎\u0001摔\u0001摖\u0001摠\u0001摬\u0001摮\u0001摴\u0001攔\u0001攚\u0001敤\u0001敬\u0001斜\u0001斢\u0001旀\u0001旎\u0001时\u0001旾\u0001晾\u0001暀\u0001暮\u0001暲\u0001�훮훣훞��쿮쿵죮êᘌ嵨⡛㔀脈⡯\u0001ᘌᥨ줣㔀脈⡯\u0001ᔏ켬ᘀ켬漀Ĩᘉ켬漀Ĩᘌ켬㔀脈⡯\u0001ᘆ띨칉ᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩᘉ푨漀Ĩ伀攔\u0001敤\u0001斜\u0001旀\u0001时\u0001晠\u0001曆\u0001木\u0001杴\u0001枼\u0001栞\u0001桼\u0001梠\u0001椀\u0001楚\u0001榮\u0001樖\u0001橦\u0001橰\u0001檈\u0001櫊\u0001歆\u0001殔\u0001殺\u0001氖\u0001汲\u0001泜\u0001洆\u0001浦\u0001ýﴀýﴀýýﴀýﴀýﴀý÷ﴀ÷ýﴀýﴀýﴀ÷ýﴀԀ萑Ò葠ÒĀᰀ暲\u0001曆\u0001曜\u0001朆\u0001朎\u0001朘\u0001朠\u0001木\u0001朼\u0001杠\u0001杨\u0001杴\u0001枂\u0001枊\u0001枒\u0001枚\u0001果\u0001枼\u0001柌\u0001栎\u0001栖\u0001栞\u0001栦\u0001桢\u0001桪\u0001桺\u0001梆\u0001梈\u0001梘\u0001梠\u0001械\u0001楰\u0001楲\u0001榐\u0001榞\u0001榤\u0001榮\u0001槊\u0001槸\u0001樊\u0001橊\u0001橞\u0001橰\u0001橸\u0001檈\u0001檐\u0001櫊\u0001櫖\u0001歆\u0001歘\u0001殔\u0001殠\u0001殺\u0001毂\u0001毺\u0001氎\u0001氦\u0001氨\u0001沤\u0001沦\u0001泜\u0001泮\u0001洆\u0001洐\u0001浦\u0001浮\u0001浲\u0001浼\u0001涄\u0001涊\u0001淌\u0001淘\u0001湈\u0001湖\u0001湺\u0001溂\u0001溢\u0001溶\u0001溾\u0001滒\u0001滔\u0001滢\u0001漲\u0001漼\u0001潒\u0001潘\u0001潤\u0001﫳﫳﫳﫳﫳﫳﫳﫳﫳﫳﫮﫮﫣﫳﫳﫳﫳﫳﫳﫳﫳﫳﫳﫳﫮龎ᔒ嵨⡛ᘀ띨칉㔀脈⡯\u0001ᘆ띨칉ᘌ嵨⡛㔀脈⡯\u0001ᘉ嵨⡛漀Ĩᘌ띨칉㔀脈⡯\u0001ᘉ띨칉漀Ĩ嘀浦\u0001涄\u0001淌\u0001湈\u0001湺\u0001溾\u0001滔\u0001漲\u0001潤\u0001澮\u0001瀲\u0001灮\u0001烂\u0001焜\u0001焴\u0001煠\u0001熈\u0001熼\u0001燨\u0001ᰚ\u0002ᱜ\u0002᳒\u0002᳞\u0002ᴶ\u0002ᶖ\u0002Ḅ\u0002Ṍ\u0002Ẩ\u0002ἶ\u0002ýﴀýﴀýﴀýýﴀ÷ﴀýýﴀýﴀýﴀýýﴀ÷ýﴀԀ萑Ò葠ÒĀᰀ潤\u0001潪\u0001潸\u0001潼\u0001澌\u0001澐\u0001澒\u0001澦\u0001澬\u0001澮\u0001澲\u0001澴\u0001濈\u0001灖\u0001灠\u0001灢\u0001灦\u0001灮\u0001灲\u0001炘\u0001炞\u0001炤\u0001烂\u0001烌\u0001焔\u0001焜\u0001焠\u0001焦\u0001焴\u0001焾\u0001煘\u0001煞\u0001煠\u0001煪\u0001熈\u0001熔\u0001熼\u0001燆\u0001燨\u0001燲\u0001ᰀ\u0002ᰚ\u0002ᰠ\u0002ᰤ\u0002ᰦ\u0002ᰮ\u0002ᰰ\u0002ᱜ\u0002ᱢ\u0002ᱨ\u0002᳞\u0002᳨\u0002ᴀ\u0002ᴊ\u0002ᴚ\u0002ᴤ\u0002ᴦ\u0002ᴬ\u0002ᴶ\u0002ᵆ\u0002ᵦ\u0002ᵬ\u0002Ḳ\u0002Ṃ\u0002Ṍ\u0002Ṟ\u0002Ẓ\u0002ẜ\u0002ὶ\u0002ᾆ\u0002ᾐ\u0002ᾜ\u0002 \u0002‐\u0002⁤\u0002⁬\u0002ₒ\u0002ₘ\u0002ₚ\u0002吝林林林林��林��ᔏꭨᘀ띨칉漀Ĩᘆ띨칉唃Ĉᘌ퉨썟㔀脈⡯\u0001ᘌꭨ㔀脈⡯\u0001ᘌ띨칉㸀Ī⡯\u0001ᘉ띨칉漀Ĩᘌ띨칉㔀脈⡯丁",
-    "en": "pinch hit"
+    "en": "pinch hit",
+    "yomi": "だ"
   },
   {
     "ja": "タイム",
@@ -2129,11 +2311,13 @@
   },
   {
     "ja": "大リーグ",
-    "en": "big league, major league, steak league　大リーグのことをthe showともい う。対立語はマイナーリーグ。メジャーリーグ参照。"
+    "en": "big league, major league, steak league　大リーグのことをthe showともい う。対立語はマイナーリーグ。メジャーリーグ参照。",
+    "yomi": "だ"
   },
   {
     "ja": "大量リード",
-    "en": "cushy lead　e.g. The Red Sox had a 7-0 cushy lead after five frames . ｢5回以後はレッドソックスは7対0の大量リードをした｣"
+    "en": "cushy lead　e.g. The Red Sox had a 7-0 cushy lead after five frames . ｢5回以後はレッドソックスは7対0の大量リードをした｣",
+    "yomi": "た"
   },
   {
     "ja": "ダイレクト",
@@ -2145,11 +2329,13 @@
   },
   {
     "ja": "代走(者)",
-    "en": "pinch runner"
+    "en": "pinch runner",
+    "yomi": "だ"
   },
   {
     "ja": "代走する",
-    "en": "pinch run"
+    "en": "pinch run",
+    "yomi": "だ"
   },
   {
     "ja": "ダウン",
@@ -2165,35 +2351,43 @@
   },
   {
     "ja": "打撃",
-    "en": "batting, hitting"
+    "en": "batting, hitting",
+    "yomi": "だ"
   },
   {
     "ja": "打撃妨害",
-    "en": "interference"
+    "en": "interference",
+    "yomi": "だ"
   },
   {
     "ja": "打撃ベストテン",
-    "en": "ten-best batters/hitters"
+    "en": "ten-best batters/hitters",
+    "yomi": "だ"
   },
   {
     "ja": "打者",
-    "en": "batter, hitter　：正岡子規の考案による訳語。"
+    "en": "batter, hitter　：正岡子規の考案による訳語。",
+    "yomi": "だ"
   },
   {
     "ja": "打者走者",
-    "en": "batter-runner"
+    "en": "batter-runner",
+    "yomi": "だ"
   },
   {
     "ja": "打者有利の球場",
-    "en": "batter/hitter-friendly park　投手泣かせの球場参照。"
+    "en": "batter/hitter-friendly park　投手泣かせの球場参照。",
+    "yomi": "だ"
   },
   {
     "ja": "打順",
-    "en": "batting order  hitting order　とは言わない。"
+    "en": "batting order  hitting order　とは言わない。",
+    "yomi": "だ"
   },
   {
     "ja": "打数",
-    "en": "at-bat"
+    "en": "at-bat",
+    "yomi": "だ"
   },
   {
     "ja": "ダスター",
@@ -2201,35 +2395,43 @@
   },
   {
     "ja": "打席",
-    "en": "at-bat, plate appearance　アットバットを参照のこと。"
+    "en": "at-bat, plate appearance　アットバットを参照のこと。",
+    "yomi": "だ"
   },
   {
     "ja": "打席で",
-    "en": "at the plate　アットバットを参照のこと。"
+    "en": "at the plate　アットバットを参照のこと。",
+    "yomi": "だ"
   },
   {
     "ja": "打席をはずす",
-    "en": "step out of the box　投手が振りかぶる（windup）前に審判の了解を得 て行う。"
+    "en": "step out of the box　投手が振りかぶる（windup）前に審判の了解を得 て行う。",
+    "yomi": "だ"
   },
   {
     "ja": "打線の援護",
-    "en": "batting/hitting support, offense support　得点の援護参照。"
+    "en": "batting/hitting support, offense support　得点の援護参照。",
+    "yomi": "だ"
   },
   {
     "ja": "打線の爆発",
-    "en": "barrage"
+    "en": "barrage",
+    "yomi": "だ"
   },
   {
     "ja": "奪三振と与四球の割合",
-    "en": "strikeout to walk ratio"
+    "en": "strikeout to walk ratio",
+    "yomi": "だ"
   },
   {
     "ja": "打点",
-    "en": "run(s) batted in　略語及び記録表示ではRBI。ribbie/ribby(リビー；複数形は ribbies)と頭字語としていうこともある。"
+    "en": "run(s) batted in　略語及び記録表示ではRBI。ribbie/ribby(リビー；複数形は ribbies)と頭字語としていうこともある。",
+    "yomi": "だ"
   },
   {
     "ja": "打点付きの内野ゴロアウト",
-    "en": "RBI groundout"
+    "en": "RBI groundout",
+    "yomi": "だ"
   },
   {
     "ja": "タッグ",
@@ -2281,15 +2483,18 @@
   },
   {
     "ja": "打率",
-    "en": "batting average　略語及び記録表示ではAVG(=average)。"
+    "en": "batting average　略語及び記録表示ではAVG(=average)。",
+    "yomi": "だ"
   },
   {
     "ja": "短距離打者",
-    "en": "singles batter/hitter　中距離打者、長距離打者参照。"
+    "en": "singles batter/hitter　中距離打者、長距離打者参照。",
+    "yomi": "た"
   },
   {
     "ja": "単打",
-    "en": "base hit, single"
+    "en": "base hit, single",
+    "yomi": "た"
   },
   {
     "ja": "タンパベイ・デビル・レイズ",
@@ -2313,7 +2518,8 @@
   },
   {
     "ja": "地区シリーズ",
-    "en": "Division Series (the)　地区優勝チームとワイルドカード獲得チームの４ チームによる５回戦制のプレーオフ：３勝したチームがリーグ優勝シリーズに出場す る。.three-of-five game series とも呼ばれる。"
+    "en": "Division Series (the)　地区優勝チームとワイルドカード獲得チームの４ チームによる５回戦制のプレーオフ：３勝したチームがリーグ優勝シリーズに出場す る。.three-of-five game series とも呼ばれる。",
+    "yomi": "ち"
   },
   {
     "ja": "チップ",
@@ -2333,39 +2539,48 @@
   },
   {
     "ja": "中間守備",
-    "en": "double play depth　併殺を取るための守備態勢　ダブル・プレー・シフト参 照。"
+    "en": "double play depth　併殺を取るための守備態勢　ダブル・プレー・シフト参 照。",
+    "yomi": "ち"
   },
   {
     "ja": "中距離打者",
-    "en": "doubles hitter　短距離打者、長距離打者参照。"
+    "en": "doubles hitter　短距離打者、長距離打者参照。",
+    "yomi": "ち"
   },
   {
     "ja": "中堅",
-    "en": "center field　略記号はＣＦ．"
+    "en": "center field　略記号はＣＦ．",
+    "yomi": "ち"
   },
   {
     "ja": "中堅手",
-    "en": "center fielder　略記号はＣＦ．"
+    "en": "center fielder　略記号はＣＦ．",
+    "yomi": "ち"
   },
   {
     "ja": "中前安打",
-    "en": "base hit/single up the middle"
+    "en": "base hit/single up the middle",
+    "yomi": "ち"
   },
   {
     "ja": "中前安打する",
-    "en": "hit a single up the middle"
+    "en": "hit a single up the middle",
+    "yomi": "ち"
   },
   {
     "ja": "長打",
-    "en": "extra-base hit, longball, longhit"
+    "en": "extra-base hit, longball, longhit",
+    "yomi": "ち"
   },
   {
     "ja": "長打率",
-    "en": "slugging average/percentage"
+    "en": "slugging average/percentage",
+    "yomi": "ち"
   },
   {
     "ja": "長距離打者",
-    "en": "slugger, home run batter/hitter, long ball batter/hitter　短距離打者、中距 離打者参照。"
+    "en": "slugger, home run batter/hitter, long ball batter/hitter　短距離打者、中距 離打者参照。",
+    "yomi": "ち"
   },
   {
     "ja": "チョップ",
@@ -2385,7 +2600,8 @@
   },
   {
     "ja": "通算打率",
-    "en": "career batting average"
+    "en": "career batting average",
+    "yomi": "つ"
   },
   {
     "ja": "ツーストライク",
@@ -2453,15 +2669,18 @@
   },
   {
     "ja": "適時打",
-    "en": "RBI hit/single; timely hit/single"
+    "en": "RBI hit/single; timely hit/single",
+    "yomi": "て"
   },
   {
     "ja": "適時二塁打",
-    "en": "RBI double"
+    "en": "RBI double",
+    "yomi": "て"
   },
   {
     "ja": "適時三塁打",
-    "en": "RBI triple"
+    "en": "RBI triple",
+    "yomi": "て"
   },
   {
     "ja": "デーゲーム",
@@ -2477,83 +2696,103 @@
   },
   {
     "ja": "天然芝",
-    "en": "grass, turf　大リーグでは天然芝の球場が多い。 人工芝参照。"
+    "en": "grass, turf　大リーグでは天然芝の球場が多い。 人工芝参照。",
+    "yomi": "て"
   },
   {
     "ja": "投球",
-    "en": "pitch　ピッチ参照。"
+    "en": "pitch　ピッチ参照。",
+    "yomi": "と"
   },
   {
     "ja": "投球回数",
-    "en": "innings pitched　略語及び記録表示はIP。"
+    "en": "innings pitched　略語及び記録表示はIP。",
+    "yomi": "と"
   },
   {
     "ja": "投球数",
-    "en": "pitch count, the number of pitches"
+    "en": "pitch count, the number of pitches",
+    "yomi": "と"
   },
   {
     "ja": "投球数制限",
-    "en": "pitch limit"
+    "en": "pitch limit",
+    "yomi": "と"
   },
   {
     "ja": "投球する",
-    "en": "pitch"
+    "en": "pitch",
+    "yomi": "と"
   },
   {
     "ja": "投球法",
-    "en": "mechanics　：基本的な投球動作やタイミングの取り方のこと。"
+    "en": "mechanics　：基本的な投球動作やタイミングの取り方のこと。",
+    "yomi": "と"
   },
   {
     "ja": "投手",
-    "en": "pitcher, hurler, moundsman　略語号はP。"
+    "en": "pitcher, hurler, moundsman　略語号はP。",
+    "yomi": "と"
   },
   {
     "ja": "投手返しの打球",
-    "en": "comebacker　普通はピッチャーゴロのこと。"
+    "en": "comebacker　普通はピッチャーゴロのこと。",
+    "yomi": "と"
   },
   {
     "ja": "投手コーチ",
-    "en": "pitching coach"
+    "en": "pitching coach",
+    "yomi": "と"
   },
   {
     "ja": "投手の軸足",
-    "en": "pitcher’s pivot foot　軸足参照。"
+    "en": "pitcher’s pivot foot　軸足参照。",
+    "yomi": "と"
   },
   {
     "ja": "投手板",
-    "en": "pitcher’s plate    plate　の代わりに俗にrubberともいう。ピッチャースプ レート参照。"
+    "en": "pitcher’s plate    plate　の代わりに俗にrubberともいう。ピッチャースプ レート参照。",
+    "yomi": "と"
   },
   {
     "ja": "投手泣かせの球場",
-    "en": "pitcher-abusive park　打者有利の球場参照。"
+    "en": "pitcher-abusive park　打者有利の球場参照。",
+    "yomi": "と"
   },
   {
     "ja": "盗塁",
-    "en": "steal, stolen base　略語と記録上はSB。"
+    "en": "steal, stolen base　略語と記録上はSB。",
+    "yomi": "と"
   },
   {
     "ja": "盗塁死になる",
-    "en": "caught stealing   (　ボンズが打席にいるときに一塁走者は盗塁死になっ た)はThe firstbase runner was caught stealing with Bonds at bat. のようになる。(ボ ンズが打席にいるときに一塁走者は盗塁死になった)　略語と記録上はCS。"
+    "en": "caught stealing   (　ボンズが打席にいるときに一塁走者は盗塁死になっ た)はThe firstbase runner was caught stealing with Bonds at bat. のようになる。(ボ ンズが打席にいるときに一塁走者は盗塁死になった)　略語と記録上はCS。",
+    "yomi": "と"
   },
   {
     "ja": "盗塁する",
-    "en": "steal a base　(二塁･三塁に盗塁する)はsteal second/thirdとなる。"
+    "en": "steal a base　(二塁･三塁に盗塁する)はsteal second/thirdとなる。",
+    "yomi": "と"
   },
   {
     "ja": "得点",
-    "en": "run(s)"
+    "en": "run(s)",
+    "yomi": "と"
   },
   {
     "ja": "得点圏",
-    "en": "scoring position　スコアリングポジションともいう。"
+    "en": "scoring position　スコアリングポジションともいう。",
+    "yomi": "と"
   },
   {
     "ja": "得点圏打率",
-    "en": "batting average with runners in scoring position"
+    "en": "batting average with runners in scoring position",
+    "yomi": "と"
   },
   {
     "ja": "得点の援護",
-    "en": "run support"
+    "en": "run support",
+    "yomi": "と"
   },
   {
     "ja": "ドジャー・スタジアム",
@@ -2581,7 +2820,8 @@
   },
   {
     "ja": "止めたバットに当たっての安打(ヒット)",
-    "en": "excuse-me hit, excuse-me swing"
+    "en": "excuse-me hit, excuse-me swing",
+    "yomi": "と"
   },
   {
     "ja": "ドラッグ・バント",
@@ -2641,7 +2881,8 @@
   },
   {
     "ja": "内角胸元の球を投げる",
-    "en": "throw a pitch high and inside"
+    "en": "throw a pitch high and inside",
+    "yomi": "な"
   },
   {
     "ja": "ナイター",
@@ -2653,7 +2894,8 @@
   },
   {
     "ja": "内野安打",
-    "en": "infield hit/single"
+    "en": "infield hit/single",
+    "yomi": "な"
   },
   {
     "ja": "ナイン",
@@ -2661,27 +2903,33 @@
   },
   {
     "ja": "内野手",
-    "en": "infielder　一、二、三塁手と遊撃手のこと。外野手参照。"
+    "en": "infielder　一、二、三塁手と遊撃手のこと。外野手参照。",
+    "yomi": "な"
   },
   {
     "ja": "流し打ちの得意な打者",
-    "en": "opposite field hitter"
+    "en": "opposite field hitter",
+    "yomi": "な"
   },
   {
     "ja": "流し打ちをする",
-    "en": "go the other way, hit to the opposite field"
+    "en": "go the other way, hit to the opposite field",
+    "yomi": "な"
   },
   {
     "ja": "中継ぎ",
-    "en": "middle relief, midrelief　｢中継ぎで投げる｣は(to) pitch in midrelief。"
+    "en": "middle relief, midrelief　｢中継ぎで投げる｣は(to) pitch in midrelief。",
+    "yomi": "な"
   },
   {
     "ja": "中継ぎ投手",
-    "en": "middle reliever, midreliever, setup man　ただし、setup manはcloser(抑 えの投手)の前に登板する投手。"
+    "en": "middle reliever, midreliever, setup man　ただし、setup manはcloser(抑 えの投手)の前に登板する投手。",
+    "yomi": "な"
   },
   {
     "ja": "投げるふり",
-    "en": "arm fake　：走者の離塁を誘い出す目的で行うトリック・プレー。"
+    "en": "arm fake　：走者の離塁を誘い出す目的で行うトリック・プレー。",
+    "yomi": "な"
   },
   {
     "ja": "ナショナルリーグ",
@@ -2701,11 +2949,13 @@
   },
   {
     "ja": "二軍",
-    "en": "farm   MLB　のマイナー・リーグの球団のことをいう。日本では二軍は｢ファーム｣ と呼ぶが、「メジャーリーグ」のような一軍のカタカナの呼称はない。マイナー・リーグ 参照。"
+    "en": "farm   MLB　のマイナー・リーグの球団のことをいう。日本では二軍は｢ファーム｣ と呼ぶが、「メジャーリーグ」のような一軍のカタカナの呼称はない。マイナー・リーグ 参照。",
+    "yomi": "に"
   },
   {
     "ja": "二年目のジンクス",
-    "en": "sophomore jinx"
+    "en": "sophomore jinx",
+    "yomi": "に"
   },
   {
     "ja": "ニューヨーク・メッツ",
@@ -2717,15 +2967,18 @@
   },
   {
     "ja": "二塁",
-    "en": "second base, keystone bag, keystone cushion, keystone sack"
+    "en": "second base, keystone bag, keystone cushion, keystone sack",
+    "yomi": "に"
   },
   {
     "ja": "二塁手",
-    "en": "second baseman, second-sacker, keystoner　略記号は２Ｂ．"
+    "en": "second baseman, second-sacker, keystoner　略記号は２Ｂ．",
+    "yomi": "に"
   },
   {
     "ja": "二塁打",
-    "en": "double　two-base hitともいう。俗称はtwo bagger。"
+    "en": "double　two-base hitともいう。俗称はtwo bagger。",
+    "yomi": "に"
   },
   {
     "ja": "ネクストバッターズ・サークル/ボックス",
@@ -2849,11 +3102,13 @@
   },
   {
     "ja": "敗戦処理投手",
-    "en": "mop up, mop-up man"
+    "en": "mop up, mop-up man",
+    "yomi": "は"
   },
   {
     "ja": "敗戦投手",
-    "en": "losing pitcher　負け投手参照。"
+    "en": "losing pitcher　負け投手参照。",
+    "yomi": "は"
   },
   {
     "ja": "バウンサー",
@@ -2861,7 +3116,8 @@
   },
   {
     "ja": "薄暮のダブルヘッダー",
-    "en": "twi-night double header, twi-nighter  MLB　ではよくダブルヘ ッダーが行われるが、このダブルヘッダーは第一試合が薄暮（twilight）から行われ、 第二試合は夜(night)遅くから行われることが多い。twilightのtwi-とnightを結び付け た表現である。"
+    "en": "twi-night double header, twi-nighter  MLB　ではよくダブルヘ ッダーが行われるが、このダブルヘッダーは第一試合が薄暮（twilight）から行われ、 第二試合は夜(night)遅くから行われることが多い。twilightのtwi-とnightを結び付け た表現である。",
+    "yomi": "は"
   },
   {
     "ja": "パシフィックリーグ",
@@ -3041,15 +3297,18 @@
   },
   {
     "ja": "反則投球",
-    "en": "illegal pitch　イリーガル・ピッチ参照。"
+    "en": "illegal pitch　イリーガル・ピッチ参照。",
+    "yomi": "は"
   },
   {
     "ja": "判定",
-    "en": "call, decision, ruling　ジャッジ参照。"
+    "en": "call, decision, ruling　ジャッジ参照。",
+    "yomi": "は"
   },
   {
     "ja": "判定する",
-    "en": "call, rule"
+    "en": "call, rule",
+    "yomi": "は"
   },
   {
     "ja": "バント",
@@ -3069,7 +3328,8 @@
   },
   {
     "ja": "万能選手",
-    "en": "all-around player/all-round player, total package　：走攻守三拍子そろった 選手。"
+    "en": "all-around player/all-round player, total package　：走攻守三拍子そろった 選手。",
+    "yomi": "ば"
   },
   {
     "ja": "バンビーノの呪い",
@@ -3085,11 +3345,13 @@
   },
   {
     "ja": "控え選手",
-    "en": "backup, bench blanket, bench polisher, bench warmer, replacement　substitute 補欠選手参照。"
+    "en": "backup, bench blanket, bench polisher, bench warmer, replacement　substitute 補欠選手参照。",
+    "yomi": "ひ"
   },
   {
     "ja": "飛球",
-    "en": "fly, fly ball, flyball　：空中高く飛ぶ打球。「飛球」は正岡子規の考案による訳語で あるといわれる。"
+    "en": "fly, fly ball, flyball　：空中高く飛ぶ打球。「飛球」は正岡子規の考案による訳語で あるといわれる。",
+    "yomi": "ひ"
   },
   {
     "ja": "ビジター",
@@ -3101,15 +3363,18 @@
   },
   {
     "ja": "飛邪球",
-    "en": "foul fly　ファウルフライ参照。"
+    "en": "foul fly　ファウルフライ参照。",
+    "yomi": "ひ"
   },
   {
     "ja": "左打者",
-    "en": "left-handed batter/hitter"
+    "en": "left-handed batter/hitter",
+    "yomi": "ひ"
   },
   {
     "ja": "左投手(ひだり投手)",
-    "en": "left-hander, southpaw　左ピッチャーともいう。 左ピッチャー　＝左投手"
+    "en": "left-hander, southpaw　左ピッチャーともいう。 左ピッチャー　＝左投手",
+    "yomi": "ひ"
   },
   {
     "ja": "ピックオフプレー",
@@ -3189,7 +3454,8 @@
   },
   {
     "ja": "引っ張る打者",
-    "en": "pull hitter　pull batterとはいわない。"
+    "en": "pull hitter　pull batterとはいわない。",
+    "yomi": "ひ"
   },
   {
     "ja": "ヒューストン･アストロズ",
@@ -3333,11 +3599,13 @@
   },
   {
     "ja": "封殺",
-    "en": "force out/force-out/forceout　＝フォースアウト参照。"
+    "en": "force out/force-out/forceout　＝フォースアウト参照。",
+    "yomi": "ふ"
   },
   {
     "ja": "封殺にする",
-    "en": "make a force/force out"
+    "en": "make a force/force out",
+    "yomi": "ふ"
   },
   {
     "ja": "フェア",
@@ -3397,11 +3665,13 @@
   },
   {
     "ja": "不規則バウンド",
-    "en": "bad bounce, bad hop　イレギュラー参照。"
+    "en": "bad bounce, bad hop　イレギュラー参照。",
+    "yomi": "ふ"
   },
   {
     "ja": "複数安打試合",
-    "en": "multi-hit game　一試合二安打以上した試合のこと。"
+    "en": "multi-hit game　一試合二安打以上した試合のこと。",
+    "yomi": "ふ"
   },
   {
     "ja": "ブッシュ・スタジアム",
@@ -3457,11 +3727,13 @@
   },
   {
     "ja": "振り逃げ",
-    "en": "dropped third strike　：｢振り逃げ｣といわれているが、実際には一塁が空い ているか二死走者一塁の場合で三番目のストライクが審判に判定されたのに捕手がエラ ーして一塁に打者走者を生かしてしまうことを指していう。振り逃げされても投手には 三振の記録はつく。振り逃げする参照。"
+    "en": "dropped third strike　：｢振り逃げ｣といわれているが、実際には一塁が空い ているか二死走者一塁の場合で三番目のストライクが審判に判定されたのに捕手がエラ ーして一塁に打者走者を生かしてしまうことを指していう。振り逃げされても投手には 三振の記録はつく。振り逃げする参照。",
+    "yomi": "ふ"
   },
   {
     "ja": "振り逃げする",
-    "en": "strike out swinging and reach first on a passed ball"
+    "en": "strike out swinging and reach first on a passed ball",
+    "yomi": "ふ"
   },
   {
     "ja": "フリーバッティング",
@@ -3561,11 +3833,13 @@
   },
   {
     "ja": "併殺",
-    "en": "double play　＝ダブルプレー参照。"
+    "en": "double play　＝ダブルプレー参照。",
+    "yomi": "へ"
   },
   {
     "ja": "併殺打を打つ",
-    "en": "ground/hit into double play"
+    "en": "ground/hit into double play",
+    "yomi": "へ"
   },
   {
     "ja": "ベース",
@@ -3665,11 +3939,13 @@
   },
   {
     "ja": "変化球",
-    "en": "breaking ball/pitch"
+    "en": "breaking ball/pitch",
+    "yomi": "へ"
   },
   {
     "ja": "変化球投手",
-    "en": "breaking ball pitcher"
+    "en": "breaking ball pitcher",
+    "yomi": "へ"
   },
   {
     "ja": "ベンチ",
@@ -3689,19 +3965,23 @@
   },
   {
     "ja": "捕逸",
-    "en": "pass(ed) ball　後逸、パスボール参照。PBと略称。"
+    "en": "pass(ed) ball　後逸、パスボール参照。PBと略称。",
+    "yomi": "ほ"
   },
   {
     "ja": "妨害",
-    "en": "interference　インターフェアランス、オブストラクション参照。"
+    "en": "interference　インターフェアランス、オブストラクション参照。",
+    "yomi": "ぼ"
   },
   {
     "ja": "防御率",
-    "en": "earned run average　略語と記録表示はERA。 投手の自責点を投げた回数で 割った数字。3.00以下の防御率は優秀な投手の記録といわれる。"
+    "en": "earned run average　略語と記録表示はERA。 投手の自責点を投げた回数で 割った数字。3.00以下の防御率は優秀な投手の記録といわれる。",
+    "yomi": "ぼ"
   },
   {
     "ja": "暴投",
-    "en": "1. wild pitch  2. wild throw　１．のwild pitchは捕手がとても取れないような 投球のことで、投手のwild pitchか捕手のpassed ballかは公式記録員の判定による。 ２．のwild throwは野手の暴投のことである。悪送球、ワイルドピッチ参照。"
+    "en": "1. wild pitch  2. wild throw　１．のwild pitchは捕手がとても取れないような 投球のことで、投手のwild pitchか捕手のpassed ballかは公式記録員の判定による。 ２．のwild throwは野手の暴投のことである。悪送球、ワイルドピッチ参照。",
+    "yomi": "ぼ"
   },
   {
     "ja": "ボーク",
@@ -3713,11 +3993,13 @@
   },
   {
     "ja": "補欠選手",
-    "en": "backup, substitute, replacement　控え選手参照。"
+    "en": "backup, substitute, replacement　控え選手参照。",
+    "yomi": "ほ"
   },
   {
     "ja": "補殺",
-    "en": "assist　打者・走者の刺殺を助ける送球。assistは｢補殺する｣という動詞にも用 いる。"
+    "en": "assist　打者・走者の刺殺を助ける送球。assistは｢補殺する｣という動詞にも用 いる。",
+    "yomi": "ほ"
   },
   {
     "ja": "ポジション",
@@ -3725,7 +4007,8 @@
   },
   {
     "ja": "捕手",
-    "en": "catcher　この他にbackstop, backstopper, receiver のようにもいう。home plate の後ろに居ることから、behind-the-plateということもある。略記号はＣ．"
+    "en": "catcher　この他にbackstop, backstopper, receiver のようにもいう。home plate の後ろに居ることから、behind-the-plateということもある。略記号はＣ．",
+    "yomi": "ほ"
   },
   {
     "ja": "ボストン･レッド･ソックス",
@@ -3741,7 +4024,8 @@
   },
   {
     "ja": "没収試合",
-    "en": "forfeited game　規則違反で、球審が試合終了を宣告して、違反のないチー ムが9対0で勝つ試合。規則上は｢フォーフィッテッドゲーム｣としている。"
+    "en": "forfeited game　規則違反で、球審が試合終了を宣告して、違反のないチー ムが9対0で勝つ試合。規則上は｢フォーフィッテッドゲーム｣としている。",
+    "yomi": "ぼ"
   },
   {
     "ja": "ホットコーナー",
@@ -3865,11 +4149,13 @@
   },
   {
     "ja": "本拠地球場",
-    "en": "home field, home grounds  home　と略すことが多い。｢本拠地での試合｣ はa game at homeのようになる。"
+    "en": "home field, home grounds  home　と略すことが多い。｢本拠地での試合｣ はa game at homeのようになる。",
+    "yomi": "ほ"
   },
   {
     "ja": "本拠地での連戦",
-    "en": "homestand"
+    "en": "homestand",
+    "yomi": "ほ"
   },
   {
     "ja": "ボーンヘッド",
@@ -3877,23 +4163,28 @@
   },
   {
     "ja": "本塁",
-    "en": "home base, home plate, plate   plate　が特によく使われる。俗称はdish。ホー ムプレート参照。"
+    "en": "home base, home plate, plate   plate　が特によく使われる。俗称はdish。ホー ムプレート参照。",
+    "yomi": "ほ"
   },
   {
     "ja": "本塁打",
-    "en": "home run, homer   homer　は｢ホームランを打つ｣という動詞でも使われる。 俗称にはcircuit belt/blow/clout/drive /smash/tripper/wallop, dinger, four bagger, round-tripper, taterなどがある。その他にblast, shotも本塁打の意味になる。 called shotといえば、｢予告本塁打｣のことだが、１９３２年のベーブルースのthe cold shot は語り種となっている。"
+    "en": "home run, homer   homer　は｢ホームランを打つ｣という動詞でも使われる。 俗称にはcircuit belt/blow/clout/drive /smash/tripper/wallop, dinger, four bagger, round-tripper, taterなどがある。その他にblast, shotも本塁打の意味になる。 called shotといえば、｢予告本塁打｣のことだが、１９３２年のベーブルースのthe cold shot は語り種となっている。",
+    "yomi": "ほ"
   },
   {
     "ja": "本塁打を打つ",
-    "en": "hit a home run, go deep, go yard　「打つ」は多彩な表現があるので打 つ参照。"
+    "en": "hit a home run, go deep, go yard　「打つ」は多彩な表現があるので打 つ参照。",
+    "yomi": "ほ"
   },
   {
     "ja": "本塁打率",
-    "en": "home run-to-at-bat ratio　｢彼の本塁打率は１５打席に一本の割合である｣は His home run-to-at-bat ratio is an average of one homer every 15.00 at bats. である。"
+    "en": "home run-to-at-bat ratio　｢彼の本塁打率は１５打席に一本の割合である｣は His home run-to-at-bat ratio is an average of one homer every 15.00 at bats. である。",
+    "yomi": "ほ"
   },
   {
     "ja": "本塁ベース",
-    "en": "home base, home plate　ホームベース参照。"
+    "en": "home base, home plate　ホームベース参照。",
+    "yomi": "ほ"
   },
   {
     "ja": "マイナー",
@@ -3917,11 +4208,13 @@
   },
   {
     "ja": "負け試合",
-    "en": "game(s) lost　対立語は勝ち試合。"
+    "en": "game(s) lost　対立語は勝ち試合。",
+    "yomi": "ま"
   },
   {
     "ja": "負け投手",
-    "en": "losing pitcher　敗戦投手。規則上は｢敗投手｣としている。"
+    "en": "losing pitcher　敗戦投手。規則上は｢敗投手｣としている。",
+    "yomi": "ま"
   },
   {
     "ja": "マジック",
@@ -3937,7 +4230,8 @@
   },
   {
     "ja": "待てのサイン",
-    "en": "take sign　コーチから打者へ出される｢打つな｣のサイン。このtakeは ボールを選ぶ意味である。 マネージャー [manager] 野球では「監督」をさす。俗称ではskipper。skipともいう。 :ホームチームのマネージャーは home manager, ビジティングチームのマネージャーは visiting managerという。"
+    "en": "take sign　コーチから打者へ出される｢打つな｣のサイン。このtakeは ボールを選ぶ意味である。 マネージャー [manager] 野球では「監督」をさす。俗称ではskipper。skipともいう。 :ホームチームのマネージャーは home manager, ビジティングチームのマネージャーは visiting managerという。",
+    "yomi": "ま"
   },
   {
     "ja": "マネーピッチ",
@@ -3945,19 +4239,23 @@
   },
   {
     "ja": "満員の観客",
-    "en": "capacity crowd"
+    "en": "capacity crowd",
+    "yomi": "ま"
   },
   {
     "ja": "満塁",
-    "en": "bases full, bases-loaded, full house　フルベース参照。"
+    "en": "bases full, bases-loaded, full house　フルベース参照。",
+    "yomi": "ま"
   },
   {
     "ja": "満塁本塁打",
-    "en": "grand slam, grand salami"
+    "en": "grand slam, grand salami",
+    "yomi": "ま"
   },
   {
     "ja": "右投手（みぎ投手）",
-    "en": "right-hander　右ピッチャーともいう。 右ピッチャー　＝　右投手"
+    "en": "right-hander　右ピッチャーともいう。 右ピッチャー　＝　右投手",
+    "yomi": "う"
   },
   {
     "ja": "ミスジャッジ",
@@ -3985,11 +4283,13 @@
   },
   {
     "ja": "見逃しの三振",
-    "en": "strikeout looking, called strikeout, called third strike　空振りの三振 を参照。"
+    "en": "strikeout looking, called strikeout, called third strike　空振りの三振 を参照。",
+    "yomi": "み"
   },
   {
     "ja": "見逃しの三振をする",
-    "en": "go down looking, strike out looking"
+    "en": "go down looking, strike out looking",
+    "yomi": "み"
   },
   {
     "ja": "ミラー･パーク",
@@ -4001,11 +4301,13 @@
   },
   {
     "ja": "無走者",
-    "en": "bases empty　「ソロホームラン」はbases-empty home run。"
+    "en": "bases empty　「ソロホームラン」はbases-empty home run。",
+    "yomi": "む"
   },
   {
     "ja": "無安打無得点試合",
-    "en": "no-hitter　この試合では失策、四死球による出塁はある。完全試合 参照。 メージャー ＝メジャー。マイナー参照。"
+    "en": "no-hitter　この試合では失策、四死球による出塁はある。完全試合 参照。 メージャー ＝メジャー。マイナー参照。",
+    "yomi": "む"
   },
   {
     "ja": "メジャー リーガー",
@@ -4025,7 +4327,8 @@
   },
   {
     "ja": "猛攻撃",
-    "en": "onslaught"
+    "en": "onslaught",
+    "yomi": "も"
   },
   {
     "ja": "モーション",
@@ -4037,15 +4340,18 @@
   },
   {
     "ja": "野球",
-    "en": "baseball　：ベースボールを｢野球｣と言い習わすようになったのは、明治2９年(189 ５)発行の｢第一高等学校校友会雑誌｣号外｢一高野球部史｣(中馬庚著)からといわれる。野 球そのものは明治5年(1872)開成学校(東京大学の前身)の米国人教師ホーレス・ウィル ソンによって紹介されたとされる。ホーレス･ウィルソン参照。"
+    "en": "baseball　：ベースボールを｢野球｣と言い習わすようになったのは、明治2９年(189 ５)発行の｢第一高等学校校友会雑誌｣号外｢一高野球部史｣(中馬庚著)からといわれる。野 球そのものは明治5年(1872)開成学校(東京大学の前身)の米国人教師ホーレス・ウィル ソンによって紹介されたとされる。ホーレス･ウィルソン参照。",
+    "yomi": "や"
   },
   {
     "ja": "野球場",
-    "en": "baseball field, ball park　（the）diamond ということもあるが、選手がプレ イする場所の意味ではplayingfield という。"
+    "en": "baseball field, ball park　（the）diamond ということもあるが、選手がプレ イする場所の意味ではplayingfield という。",
+    "yomi": "や"
   },
   {
     "ja": "野球殿堂",
-    "en": "the National Baseball Hall of Fame　野球に貢献した選手･関係者を顕彰して、 その人たちのレリーフが飾ってあるほか、野球関係のさまざまな記念品を収めていると ころ。アメリカ大リーグ機構が１９３９年６月１２日に｢野球発祥の地｣とされるニュー ヨーク州のクーパースタウンに開設した。｢殿堂入り｣する選手の資格は最低10年間の プレイした経験を持ち、引退後5年経過した選手で、10年以上の取材経験を持つ野球記 者の投票で75％以上の支持が必要となる。クーパースタウン参照。日本でもほぼ同じ趣 旨で、１９５９年旧後楽園球場の側に｢野球体育博物館｣が開設され、その後１９８８年 から東京ドーム内に移設された。この博物館の中に｢野球殿堂｣がある。"
+    "en": "the National Baseball Hall of Fame　野球に貢献した選手･関係者を顕彰して、 その人たちのレリーフが飾ってあるほか、野球関係のさまざまな記念品を収めていると ころ。アメリカ大リーグ機構が１９３９年６月１２日に｢野球発祥の地｣とされるニュー ヨーク州のクーパースタウンに開設した。｢殿堂入り｣する選手の資格は最低10年間の プレイした経験を持ち、引退後5年経過した選手で、10年以上の取材経験を持つ野球記 者の投票で75％以上の支持が必要となる。クーパースタウン参照。日本でもほぼ同じ趣 旨で、１９５９年旧後楽園球場の側に｢野球体育博物館｣が開設され、その後１９８８年 から東京ドーム内に移設された。この博物館の中に｢野球殿堂｣がある。",
+    "yomi": "や"
   },
   {
     "ja": "ヤジ将軍",
@@ -4053,11 +4359,13 @@
   },
   {
     "ja": "野手",
-    "en": "fielder, position player　フィールダー、ポジション参照。"
+    "en": "fielder, position player　フィールダー、ポジション参照。",
+    "yomi": "や"
   },
   {
     "ja": "野手選択",
-    "en": "fielder’s choice =　フィルダースチョイス参照。 野選　＝　野手選択　参照。"
+    "en": "fielder’s choice =　フィルダースチョイス参照。 野選　＝　野手選択　参照。",
+    "yomi": "や"
   },
   {
     "ja": "ヤンキー・スタジアム",
@@ -4065,7 +4373,8 @@
   },
   {
     "ja": "遊撃手",
-    "en": "shortstop　略記号はＳＳ．キーストンコンビ参照。"
+    "en": "shortstop　略記号はＳＳ．キーストンコンビ参照。",
+    "yomi": "ゆ"
   },
   {
     "ja": "ゆうゆうとセーフの三塁打",
@@ -4081,19 +4390,23 @@
   },
   {
     "ja": "用具係",
-    "en": "equipment manager　バット、グラブ、捕手の防具などの用具を管理する人。"
+    "en": "equipment manager　バット、グラブ、捕手の防具などの用具を管理する人。",
+    "yomi": "よ"
   },
   {
     "ja": "横手から投げる",
-    "en": "sidearm　上手から投げる参照。"
+    "en": "sidearm　上手から投げる参照。",
+    "yomi": "よ"
   },
   {
     "ja": "四番打者",
-    "en": "cleanup, cleanup hitter, cleanup position　｢クリーンアップ｣は日本ではクリ ーンアップトリオと同義に使われるが、英語では四番打者のこと。"
+    "en": "cleanup, cleanup hitter, cleanup position　｢クリーンアップ｣は日本ではクリ ーンアップトリオと同義に使われるが、英語では四番打者のこと。",
+    "yomi": "し"
   },
   {
     "ja": "四番を打つ",
-    "en": "bat/hit cleanup"
+    "en": "bat/hit cleanup",
+    "yomi": "し"
   },
   {
     "ja": "ライト",
@@ -4157,7 +4470,8 @@
   },
   {
     "ja": "乱闘(騒ぎ)",
-    "en": "brawl　｢ベンチ総出の乱闘｣は a bench-clearing brawl"
+    "en": "brawl　｢ベンチ総出の乱闘｣は a bench-clearing brawl",
+    "yomi": "ら"
   },
   {
     "ja": "ランナー",
@@ -4225,11 +4539,13 @@
   },
   {
     "ja": "塁",
-    "en": "base　この他にbag, cushion, sackなどの俗称がある。詳細はベース参照。"
+    "en": "base　この他にbag, cushion, sackなどの俗称がある。詳細はベース参照。",
+    "yomi": "る"
   },
   {
     "ja": "塁打数",
-    "en": "total bases  e.g. Ichiro’s 285 total bases were the league leading figures. (　イ チローの285塁打数はリーグトップの数字であった)"
+    "en": "total bases  e.g. Ichiro’s 285 total bases were the league leading figures. (　イ チローの285塁打数はリーグトップの数字であった)",
+    "yomi": "る"
   },
   {
     "ja": "ルーキー",
@@ -4249,7 +4565,8 @@
   },
   {
     "ja": "零対零の均衡を破る",
-    "en": "break a scoreless tie"
+    "en": "break a scoreless tie",
+    "yomi": "れ"
   },
   {
     "ja": "レインアウト",
@@ -4297,27 +4614,33 @@
   },
   {
     "ja": "連勝(する)",
-    "en": "sweep　連続安打　＝　連続ヒット（参照）"
+    "en": "sweep　連続安打　＝　連続ヒット（参照）",
+    "yomi": "れ"
   },
   {
     "ja": "連続安打(試合)",
-    "en": "hitting streak　｢３４試合連続安打｣はa 34-game hitting streak。"
+    "en": "hitting streak　｢３４試合連続安打｣はa 34-game hitting streak。",
+    "yomi": "れ"
   },
   {
     "ja": "連続試合出場(記録)",
-    "en": "consecutive games streak (record)　カル・リプケン・ジュニア（Cal Ripken Jr.）は１９９５年９月６日、元ヤンキースのルー・ゲーリッグ(Lou Gehrig)の 持つ記録を破る２１３１試合出場を達成した。１９９８年９月１９日で記録は止まり、 ２６３２試合であった。なお、日本記録は衣笠祥雄の２２１５試合。"
+    "en": "consecutive games streak (record)　カル・リプケン・ジュニア（Cal Ripken Jr.）は１９９５年９月６日、元ヤンキースのルー・ゲーリッグ(Lou Gehrig)の 持つ記録を破る２１３１試合出場を達成した。１９９８年９月１９日で記録は止まり、 ２６３２試合であった。なお、日本記録は衣笠祥雄の２２１５試合。",
+    "yomi": "れ"
   },
   {
     "ja": "連続ヒット",
-    "en": "back-to-back hits/singles　「連続の」はback-to-back。"
+    "en": "back-to-back hits/singles　「連続の」はback-to-back。",
+    "yomi": "れ"
   },
   {
     "ja": "連続本塁打",
-    "en": "back-to-back homers/home runs"
+    "en": "back-to-back homers/home runs",
+    "yomi": "れ"
   },
   {
     "ja": "連破(する)",
-    "en": "sweep　＝連勝(する)参照。"
+    "en": "sweep　＝連勝(する)参照。",
+    "yomi": "れ"
   },
   {
     "ja": "ロサンゼルス・ドジャーズ",
