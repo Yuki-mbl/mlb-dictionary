@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>MLB野球用語辞典</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    :root {
+      --bg:     #0e1c27;
+      --bg2:    #122233;
+      --bg3:    #1c3348;
+      --bg4:    #102030;
+      --border: #2a4a63;
+      --accent: #e8715a;
+      --blue:   #3db8b0;
+      --blue-light: #7ddbd5;
+      --text:   #e6edf3;
+      --text2:  #7ab8c4;
+      --text3:  #5a8090;
+      --green:  #5ec97a;
+      --red:    #e8715a;
+      --yellow: #f0a84a;
+      --header-h: 52px;
+      --tab-h: 44px;
+      --bottom-nav-h: 56px;
+    }
+
+    html, body { height: 100%; background: var(--bg); }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      color: var(--text);
+    }
+
+    #app {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      background: var(--bg);
+      overflow: hidden;
+      height: 100vh;
+      height: 100svh;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      height: var(--header-h);
+      background: linear-gradient(135deg, #1a3a5c, #0e2a45);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14px;
+      border-bottom: 3px solid var(--accent);
+      flex-shrink: 0;
+      position: relative;
+      z-index: 30;
+    }
+    .header-title { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
+    .header-actions { display: flex; gap: 4px; }
+    .icon-btn {
+      width: 36px; height: 36px;
+      border: none; background: rgba(255,255,255,0.1);
+      border-radius: 50%; color: #fff; font-size: 16px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+    }
+    .icon-btn:active { background: rgba(255,255,255,0.25); }
+
+    /* Search overlay */
+    .search-overlay {
+      position: absolute; top: 0; left: 0; right: 0;
+      height: var(--header-h);
+      background: #1a3a5c;
+      display: flex; align-items: center; padding: 0 12px; gap: 8px;
+      transform: translateY(-100%);
+      transition: transform 0.25s ease;
+      z-index: 31;
+    }
+    .search-overlay.open { transform: translateY(0); }
+    .search-overlay input {
+      flex: 1; padding: 8px 14px; border-radius: 20px;
+      border: 1px solid var(--blue);
+      background: rgba(255,255,255,0.1); color: #fff; font-size: 15px; outline: none;
+    }
+    .search-overlay input::placeholder { color: rgba(255,255,255,0.5); }
+    .search-cancel { background: none; border: none; color: #90caf9; font-size: 14px; cursor: pointer; padding: 4px; white-space: nowrap; }
+
+    /* ===== TABS ===== */
+    .tab-bar {
+      height: var(--tab-h); display: flex;
+      background: var(--bg2); border-bottom: 1px solid var(--border); flex-shrink: 0;
+    }
+    .tab-btn {
+      flex: 1; background: none; border: none; color: var(--text2);
+      font-size: 13px; font-weight: 600; cursor: pointer;
+      border-bottom: 3px solid transparent; transition: all 0.2s;
+      display: flex; align-items: center; justify-content: center; gap: 4px;
+    }
+    .tab-btn.active { color: #fff; border-bottom-color: var(--accent); background: rgba(255,255,255,0.04); }
+
+    /* ===== SCREENS ===== */
+    .screen { display: none; flex: 1; overflow: hidden; flex-direction: column; }
+    .screen.active { display: flex; }
+
+    /* ===== DICT SCREEN ===== */
+    .dict-main { display: flex; flex: 1; overflow: hidden; }
+
+    .index-strip {
+      width: 30px; background: var(--bg2);
+      border-right: 1px solid var(--border);
+      overflow: hidden; flex-shrink: 0;
+      display: flex; flex-direction: column;
+    }
+    .idx-btn {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      width: 100%; text-align: center; font-size: 10px; font-weight: 700;
+      color: var(--text2); cursor: pointer; border: none; background: none;
+      border-bottom: 1px solid rgba(255,255,255,0.03); transition: all 0.15s;
+      min-height: 0;
+    }
+    .idx-btn:active { background: var(--bg3); }
+    .idx-btn.active { color: #fff; background: var(--accent); }
+    .idx-btn.empty { color: #2a4060; cursor: default; }
+    .idx-sep { flex: 0.8; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;
+      font-size: 7px; color: #2a4060; line-height: 1; }
+
+    .entry-list { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+    .entry-list::-webkit-scrollbar { display: none; }
+
+    .section-head {
+      padding: 5px 12px; background: var(--bg4);
+      font-size: 11px; font-weight: 700; color: var(--blue);
+      text-transform: uppercase; letter-spacing: 1px;
+      position: sticky; top: 0; z-index: 5;
+    }
+    .entry-item {
+      padding: 11px 12px 10px; border-bottom: 1px solid #0d1b2e; cursor: pointer;
+    }
+    .entry-item:active { background: var(--bg3); }
+    .entry-en { font-size: 15px; font-weight: 600; color: var(--blue-light); line-height: 1.3; }
+    .entry-ja-preview { font-size: 12px; color: var(--text1); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    /* ===== DEFINITION PANEL ===== */
+    .def-panel {
+      position: fixed; bottom: var(--bottom-nav-h); left: 50%;
+      transform: translateX(-50%) translateY(100%);
+      width: 100%; max-width: 480px;
+      background: var(--bg3); border-top: 2px solid var(--blue);
+      border-radius: 16px 16px 0 0; padding: 16px 16px 24px;
+      max-height: 55vh; overflow-y: auto; z-index: 200;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .def-panel.open { transform: translateX(-50%) translateY(0); }
+    .def-panel::-webkit-scrollbar { display: none; }
+    .def-handle { width: 36px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px; margin: 0 auto 14px; }
+    .def-en { font-size: 20px; font-weight: 700; color: #64b5f6; margin-bottom: 10px; }
+    .def-body { font-size: 14px; line-height: 1.8; color: var(--text); }
+    .def-body .def-main { margin-bottom: 8px; }
+    .def-body .def-cf { font-size: 12px; color: var(--text2); border-top: 1px solid var(--border); padding-top: 8px; margin-top: 8px; }
+    .def-body .def-eg { font-size: 12px; color: #a5d6a7; background: rgba(76,175,80,0.08); border-radius: 6px; padding: 8px 10px; margin-top: 8px; }
+
+    /* ===== OVERLAY ===== */
+    .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 150; }
+    .overlay.show { display: block; }
+
+    /* ===== CONFETTI ===== */
+    .confetti-container {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none; z-index: 999; overflow: hidden;
+    }
+    .confetti-piece {
+      position: absolute; top: -20px; border-radius: 2px;
+      animation: confettiFall linear forwards;
+    }
+    @keyframes confettiFall {
+      0%   { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
+      80%  { opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg) scale(0.5); opacity: 0; }
+    }
+
+    /* ===== QUIZ SCREEN ===== */
+    /* Quiz Home */
+    .quiz-home {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-start;
+      padding: 10px 16px 16px; gap: 6px; overflow-y: auto;
+    }
+    .quiz-home-icon { font-size: 32px; }
+    .quiz-home-title { font-size: 20px; font-weight: 700; color: #fff; }
+    .quiz-home-desc { font-size: 12px; color: var(--text2); text-align: center; line-height: 1.4; margin: 2px 0; }
+    .quiz-mode-list { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 320px; }
+    .quiz-mode-btn {
+      padding: 10px 14px; border-radius: 12px;
+      border: 1px solid var(--border); background: var(--bg3);
+      color: var(--text); cursor: pointer;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 2px; text-align: center; transition: all 0.2s;
+    }
+    .quiz-mode-btn:active { background: var(--blue); border-color: var(--blue); }
+    .qm-icon { font-size: 22px; line-height: 1; }
+    .qm-title { font-size: 14px; font-weight: 700; color: #fff; }
+    .qm-sub { font-size: 11px; color: var(--text2); margin-top: 1px; }
+
+    /* Score badge on quiz home */
+    .quiz-stats-wrap {
+      display: flex; gap: 8px; width: 100%; max-width: 320px;
+    }
+    .quiz-stats {
+      flex: 1; display: flex; gap: 8px; justify-content: center;
+      background: var(--bg3); border-radius: 12px; padding: 10px 8px;
+      flex-direction: column; align-items: center;
+    }
+    .qs-section-label { font-size: 9px; color: var(--text3); letter-spacing: 0.5px; margin-bottom: 2px; }
+    .qs-row { display: flex; gap: 10px; }
+    .qs-item { text-align: center; }
+    .qs-num { font-size: 18px; font-weight: 700; color: var(--blue-light); }
+    .qs-label { font-size: 9px; color: var(--text3); margin-top: 1px; }
+
+    /* Hint button */
+    .hint-btn {
+      padding: 10px 16px; border-radius: 20px;
+      border: 1px dashed var(--border);
+      background: none; color: var(--text2);
+      font-size: 13px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      transition: all 0.2s; align-self: center;
+    }
+    .hint-btn:active { background: var(--bg3); border-color: var(--blue); color: var(--blue-light); }
+    .hint-display {
+      background: var(--bg4); border-radius: 10px; padding: 12px 16px;
+      font-size: 16px; line-height: 2; letter-spacing: 2px;
+      color: var(--text); text-align: center;
+      border: 1px solid var(--border);
+    }
+    .hint-display .revealed { color: var(--blue-light); font-weight: 700; }
+    .hint-display .masked {
+      display: inline-block; width: 1.2em; text-align: center;
+      border-bottom: 2px solid var(--text3); color: transparent;
+    }
+
+    /* Quiz Active */
+    .quiz-active {
+      display: none; flex: 1; flex-direction: column;
+      padding: 16px; gap: 12px; overflow-y: auto;
+    }
+    .quiz-active.show { display: flex; }
+
+    .quiz-progress-bar {
+      height: 4px; background: var(--border); border-radius: 2px; overflow: hidden;
+    }
+    .quiz-progress-fill {
+      height: 100%; background: var(--blue);
+      transition: width 0.4s ease; border-radius: 2px;
+    }
+    .quiz-counter {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .quiz-counter-text { font-size: 12px; color: var(--text3); }
+    .quiz-score-text { font-size: 13px; font-weight: 700; color: var(--green); }
+
+    .quiz-card {
+      background: var(--bg3); border-radius: 16px;
+      padding: 20px; text-align: center;
+    }
+    .quiz-mode-label {
+      font-size: 11px; color: var(--text2); margin-bottom: 10px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .quiz-question {
+      font-size: 22px; font-weight: 700; color: var(--blue-light);
+      line-height: 1.3; margin-bottom: 4px;
+    }
+    .quiz-hint { font-size: 11px; color: var(--text3); margin-top: 8px; }
+
+    /* Free text input mode */
+    .quiz-input-area { display: flex; flex-direction: column; gap: 10px; }
+    .quiz-text-input {
+      width: 100%; padding: 14px 16px;
+      border-radius: 12px; border: 2px solid var(--border);
+      background: var(--bg3); color: var(--text);
+      font-size: 16px; outline: none;
+      transition: border-color 0.2s;
+    }
+    .quiz-text-input:focus { border-color: var(--blue); }
+    .quiz-text-input.correct { border-color: var(--green); background: rgba(102,187,106,0.1); }
+    .quiz-text-input.wrong { border-color: var(--red); background: rgba(239,83,80,0.1); }
+
+    .quiz-submit-btn {
+      padding: 14px; border-radius: 12px;
+      border: none; background: var(--blue);
+      color: #fff; font-size: 16px; font-weight: 700;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .quiz-submit-btn:active { background: #357abd; }
+    .quiz-submit-btn:disabled { background: var(--border); color: var(--text3); }
+
+    /* 4-choice mode */
+    .quiz-choices { display: flex; flex-direction: column; gap: 10px; }
+    .quiz-choice {
+      padding: 14px 16px; border-radius: 12px;
+      border: 2px solid var(--border); background: var(--bg3);
+      color: var(--text); font-size: 14px; text-align: left;
+      cursor: pointer; transition: all 0.2s; line-height: 1.4;
+    }
+    .quiz-choice:active { background: var(--bg); }
+    .quiz-choice.correct { border-color: var(--green); background: rgba(102,187,106,0.15); color: #fff; }
+    .quiz-choice.wrong { border-color: var(--red); background: rgba(239,83,80,0.12); color: var(--text3); }
+    .quiz-choice.disabled { pointer-events: none; }
+
+    /* Answer reveal */
+    .quiz-answer-box {
+      display: none; background: var(--bg4);
+      border-radius: 12px; padding: 14px; border-left: 4px solid var(--green);
+    }
+    .quiz-answer-box.show { display: block; }
+    .quiz-answer-box.show-wrong { display: block; border-left-color: var(--red); }
+    .quiz-answer-label { font-size: 11px; color: var(--text2); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .quiz-answer-text { font-size: 14px; color: var(--text); line-height: 1.6; }
+
+    .quiz-result-badge {
+      text-align: center; padding: 8px;
+      font-size: 18px; font-weight: 700;
+    }
+    .quiz-result-badge.correct-badge { color: var(--green); }
+    .quiz-result-badge.wrong-badge { color: var(--red); }
+
+    .quiz-next-btn {
+      padding: 14px; border-radius: 12px;
+      border: none; background: var(--blue);
+      color: #fff; font-size: 16px; font-weight: 700;
+      cursor: pointer; display: none;
+    }
+    .quiz-next-btn.show { display: block; }
+    .quiz-next-btn:active { background: #357abd; }
+
+    /* Quiz Results screen */
+    .quiz-results {
+      display: none; flex: 1; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 24px; gap: 14px; text-align: center;
+    }
+    .quiz-results.show { display: flex; }
+    .qr-icon {
+      font-size: 72px; line-height: 1;
+      animation: popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+    .qr-title {
+      font-size: 26px; font-weight: 700; color: #fff;
+      animation: slideUp 0.4s ease 0.1s both;
+    }
+    .qr-score-circle {
+      width: 140px; height: 140px; border-radius: 50%;
+      border: 6px solid var(--blue);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      background: var(--bg3);
+      animation: popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.2s both;
+      box-shadow: 0 0 30px rgba(61,184,176,0.3);
+    }
+    .qr-score-num { font-size: 36px; font-weight: 700; color: var(--blue-light); }
+    .qr-score-label { font-size: 11px; color: var(--text2); margin-top: 2px; }
+    .qr-rate {
+      font-size: 18px; font-weight: 700; color: var(--yellow);
+      animation: slideUp 0.4s ease 0.4s both;
+    }
+    .qr-detail {
+      font-size: 13px; color: var(--text2); line-height: 1.8;
+      animation: slideUp 0.4s ease 0.5s both;
+    }
+    .qr-breakdown {
+      display: flex; gap: 12px;
+      animation: slideUp 0.4s ease 0.55s both;
+    }
+    .qr-stat {
+      background: var(--bg3); border-radius: 10px;
+      padding: 10px 16px; text-align: center; min-width: 70px;
+    }
+    .qr-stat-num { font-size: 20px; font-weight: 700; }
+    .qr-stat-label { font-size: 10px; color: var(--text3); margin-top: 2px; }
+    .qr-btn {
+      padding: 14px 32px; border-radius: 12px;
+      border: none; font-size: 16px; font-weight: 700;
+      cursor: pointer; width: 100%; max-width: 280px;
+      animation: slideUp 0.4s ease 0.6s both;
+    }
+    .qr-btn-retry { background: var(--blue); color: #fff; margin-bottom: 8px; }
+    .qr-btn-home { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
+
+    @keyframes shake {
+      0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)} 40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)}
+    }
+    .shake { animation: shake 0.4s ease; border-color: var(--accent) !important; }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.5); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== FAVORITES SCREEN ===== */
+    .fav-empty {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 12px; color: var(--text3); text-align: center; padding: 40px;
+    }
+    .fav-empty .fav-ei { font-size: 48px; }
+    .fav-empty .fav-et { font-size: 15px; color: var(--text2); }
+    .fav-empty .fav-es { font-size: 13px; line-height: 1.6; }
+
+    /* Star button in definition panel */
+    .def-actions { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+    .fav-btn {
+      background: none; border: none; font-size: 22px; cursor: pointer;
+      padding: 4px 8px; border-radius: 8px; transition: transform 0.2s;
+    }
+    .fav-btn:active { transform: scale(1.3); }
+
+    /* ===== BOTTOM NAV ===== */
+    .bottom-nav {
+      height: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
+      padding-bottom: env(safe-area-inset-bottom);
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      display: flex; flex-shrink: 0; z-index: 20;
+    }
+    .nav-btn {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 3px;
+      background: none; border: none; cursor: pointer;
+      color: var(--text3); font-size: 10px; font-weight: 600;
+      transition: color 0.15s;
+    }
+    .nav-icon { font-size: 20px; line-height: 1; }
+    .nav-btn.active { color: var(--blue-light); }
+
+    /* ===== EMPTY STATE ===== */
+    .empty-state {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; height: 100%;
+      color: #3a5575; gap: 10px; padding: 40px; text-align: center;
+    }
+    .empty-state .ei { font-size: 48px; }
+    .empty-state .et { font-size: 15px; }
+    .empty-state .es { font-size: 12px; }
+
+    .search-mode .index-strip { display: none; }
+  </style>
+</head>
+<body>
+<div id="app">
+
+<!-- Header -->
+<header>
+  <div class="header-title">⚾ MLB 野球用語辞典</div>
+  <div class="header-actions">
+    <button class="icon-btn" onclick="toggleSearch()" title="検索">🔍</button>
+  </div>
+  <div class="search-overlay" id="searchOverlay">
+    <input type="text" id="searchInput" placeholder="英語・日本語で検索..."
+           oninput="onSearch(this.value)" autocomplete="off" autocorrect="off">
+    <button class="search-cancel" onclick="closeSearch()">キャンセル</button>
+  </div>
+</header>
+
+<!-- Dict tab switcher -->
+<div class="tab-bar" id="dictTabs">
+  <button class="tab-btn active" onclick="switchDictTab('en')" id="tabEn">🔤 英語→日本語</button>
+  <button class="tab-btn" onclick="switchDictTab('ja')" id="tabJa">🈳 日本語→英語</button>
+</div>
+
+<!-- ===== SCREEN: Dictionary ===== -->
+<div class="screen active" id="screenDict">
+  <div class="dict-main">
+    <div class="index-strip" id="indexStrip"></div>
+    <div class="entry-list" id="entryList"></div>
+  </div>
+</div>
+
+<!-- ===== SCREEN: Quiz ===== -->
+<div class="screen no-tabs" id="screenQuiz">
+
+  <!-- Quiz Home -->
+  <div class="quiz-home" id="quizHome">
+    <div class="quiz-home-icon">🎯</div>
+    <div class="quiz-home-title">クイズモード</div>
+
+    <div class="quiz-stats-wrap">
+      <div class="quiz-stats">
+        <div class="qs-section-label">🔤 英語 → 日本語</div>
+        <div class="qs-row">
+          <div class="qs-item">
+            <div class="qs-num" id="statTotalEJ">0/2285</div>
+            <div class="qs-label">挑戦数</div>
+          </div>
+          <div class="qs-item">
+            <div class="qs-num" id="statCorrectEJ" style="color:var(--green)">0</div>
+            <div class="qs-label">正解</div>
+          </div>
+          <div class="qs-item">
+            <div class="qs-num" id="statRateEJ" style="color:var(--yellow)">-</div>
+            <div class="qs-label">正解率</div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-stats">
+        <div class="qs-section-label">🈳 日本語 → 英語</div>
+        <div class="qs-row">
+          <div class="qs-item">
+            <div class="qs-num" id="statTotalJE">0/1107</div>
+            <div class="qs-label">挑戦数</div>
+          </div>
+          <div class="qs-item">
+            <div class="qs-num" id="statCorrectJE" style="color:var(--green)">0</div>
+            <div class="qs-label">正解</div>
+          </div>
+          <div class="qs-item">
+            <div class="qs-num" id="statRateJE" style="color:var(--yellow)">-</div>
+            <div class="qs-label">正解率</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-home-desc">出題方法を選んでください</div>
+
+    <div style="width:100%;max-width:320px">
+      <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;padding-left:4px">🔤 英語 → 日本語</div>
+      <div class="quiz-mode-list" style="margin-bottom:6px">
+        <button class="quiz-mode-btn" onclick="startQuiz('input')">
+          <span class="qm-icon">✍️</span>
+          <div>
+            <div class="qm-title">入力クイズ</div>
+            <div class="qm-sub">英語を見て日本語キーワードを入力</div>
+          </div>
+        </button>
+        <button class="quiz-mode-btn" onclick="startQuiz('choice')">
+          <span class="qm-icon">📝</span>
+          <div>
+            <div class="qm-title">四択クイズ</div>
+            <div class="qm-sub">4つの選択肢から正解を選ぶ</div>
+          </div>
+        </button>
+      </div>
+
+      <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;padding-left:4px">🈳 日本語 → 英語</div>
+      <div class="quiz-mode-list" style="margin-bottom:6px">
+        <button class="quiz-mode-btn" onclick="startQuiz('ja-input')">
+          <span class="qm-icon">✍️</span>
+          <div>
+            <div class="qm-title">Input Quiz</div>
+            <div class="qm-sub">日本語を見て英語キーワードを入力</div>
+          </div>
+        </button>
+        <button class="quiz-mode-btn" onclick="startQuiz('ja-choice')">
+          <span class="qm-icon">📝</span>
+          <div>
+            <div class="qm-title">4-Choice Quiz</div>
+            <div class="qm-sub">4つの選択肢から英語の正解を選ぶ</div>
+          </div>
+        </button>
+      </div>
+
+      <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;padding-left:4px">⭐ お気に入り</div>
+      <div class="quiz-mode-list">
+        <button class="quiz-mode-btn" id="favQuizBtn" onclick="startFavQuiz()" style="border-color:var(--yellow);opacity:0.5" disabled>
+          <span class="qm-icon">⭐</span>
+          <div>
+            <div class="qm-title">お気に入りクイズ</div>
+            <div class="qm-sub" id="favQuizSub">お気に入りを5件以上登録すると解放</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <button onclick="resetStats()" style="background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;padding:8px;margin-top:4px;opacity:0.6;">↺ 記録をリセット</button>
+  </div>
+
+  <!-- Quiz Active -->
+  <div class="quiz-active" id="quizActive">
+    <div class="quiz-progress-bar">
+      <div class="quiz-progress-fill" id="quizProgressFill" style="width:0%"></div>
+    </div>
+    <div class="quiz-counter">
+      <span class="quiz-counter-text" id="quizCounterText">1 / 10</span>
+      <span class="quiz-score-text" id="quizScoreText">正解: 0</span>
+    </div>
+
+    <div class="quiz-card">
+      <div class="quiz-mode-label" id="quizModeLabel">英語 → 日本語</div>
+      <div class="quiz-question" id="quizQuestion">ace</div>
+      <div class="quiz-hint" id="quizHintText"></div>
+    </div>
+
+    <!-- Input mode -->
+    <div class="quiz-input-area" id="quizInputArea" style="display:none">
+      <div class="hint-display" id="hintDisplay" style="display:none"></div>
+      <input type="text" class="quiz-text-input" id="quizTextInput"
+             placeholder="日本語で答えてください..."
+             onkeydown="if(event.key==='Enter')submitInput()">
+      <div style="display:flex;gap:8px">
+        <button class="hint-btn" id="hintBtn" onclick="showHint()">💡 ヒント</button>
+        <button class="quiz-submit-btn" id="quizSubmitBtn" onclick="submitInput()" style="flex:1">答える</button>
+      </div>
+    </div>
+
+    <!-- Choice mode -->
+    <div class="quiz-choices" id="quizChoicesArea" style="display:none"></div>
+
+    <!-- Answer reveal -->
+    <div class="quiz-answer-box" id="quizAnswerBox">
+      <div class="quiz-answer-label">✅ 正解・解説</div>
+      <div class="quiz-answer-text" id="quizAnswerText"></div>
+    </div>
+
+    <div class="quiz-result-badge" id="quizResultBadge"></div>
+
+    <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuestion()">次の問題 →</button>
+
+    <button style="padding:10px;background:none;border:none;color:var(--text3);font-size:12px;cursor:pointer;margin-top:auto;" onclick="quitQuiz()">クイズをやめる</button>
+  </div>
+
+  <!-- Quiz Results -->
+  <div class="quiz-results" id="quizResults">
+    <div class="qr-icon" id="qrIcon">🎉</div>
+    <div class="qr-title" id="qrTitle">結果発表！</div>
+    <div class="qr-score-circle">
+      <div class="qr-score-num" id="qrScoreNum">0</div>
+      <div class="qr-score-label" id="qrScoreLabel">/ 10 問正解</div>
+    </div>
+    <div class="qr-rate" id="qrRate">0%</div>
+    <div class="qr-breakdown">
+      <div class="qr-stat">
+        <div class="qr-stat-num" style="color:var(--green)" id="qrCorrectNum">0</div>
+        <div class="qr-stat-label">正解</div>
+      </div>
+      <div class="qr-stat">
+        <div class="qr-stat-num" style="color:var(--red)" id="qrWrongNum">0</div>
+        <div class="qr-stat-label">不正解</div>
+      </div>
+      <div class="qr-stat">
+        <div class="qr-stat-num" style="color:var(--yellow)" id="qrTotalAllNum">0</div>
+        <div class="qr-stat-label">通算正解</div>
+      </div>
+    </div>
+    <div class="qr-detail" id="qrDetail"></div>
+    <button class="qr-btn qr-btn-retry" id="qrRetryBtn" onclick="retryQuiz()">もう一度</button>
+    <button class="qr-btn qr-btn-home" onclick="quitQuiz()">ホームに戻る</button>
+  </div>
+
+</div>
+
+<!-- ===== SCREEN: Favorites ===== -->
+<div class="screen no-tabs" id="screenFav">
+  <div class="entry-list" id="favList" style="flex:1;overflow-y:auto;"></div>
+</div>
+
+<!-- Confetti -->
+<div class="confetti-container" id="confettiContainer"></div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeDefinition()"></div>
+
+<!-- Definition panel -->
+<div class="def-panel" id="defPanel">
+  <div class="def-handle"></div>
+  <div class="def-actions">
+    <button class="fav-btn" id="favBtn" onclick="toggleFavorite()" title="お気に入り">⭐</button>
+  </div>
+  <div class="def-en" id="defEn"></div>
+  <div class="def-body" id="defBody"></div>
+</div>
+
+<!-- Bottom nav -->
+<div class="bottom-nav">
+  <button class="nav-btn active" id="navDict" onclick="showScreen('dict')">
+    <span class="nav-icon">📖</span>辞書
+  </button>
+  <button class="nav-btn" id="navQuiz" onclick="showScreen('quiz')">
+    <span class="nav-icon">🎯</span>クイズ
+  </button>
+  <button class="nav-btn" id="navFav" onclick="showScreen('fav')">
+    <span class="nav-icon">⭐</span>お気に入り
+  </button>
+</div>
+
+<script>
+// =====================
+//  DATA & STATE
+// =====================
+let allEntries = [];
+let ejEntries = [];
+let jaeEntries = [];
+let quizPool = [];
+
+// Extract short English term from jae entry (e.g. "out　打者が..." → "out")
+function extractEnTerm(en) {
+  let s = en.replace(/^[（(]?[和古][）)\s]+/, '').trim();
+  const i = s.indexOf('　');
+  if (i > 0) return s.substring(0, i).trim();
+  const m = s.match(/^[A-Za-z][A-Za-z0-9\/\-\.'\s\(\)]+/);
+  return m ? m[0].trim() : s.substring(0, 40).trim();
+}
+let favorites = JSON.parse(localStorage.getItem('mlb_favs') || '[]');
+let quizStats = JSON.parse(localStorage.getItem('mlb_quiz_stats') || '{"total":0,"correct":0}');
+let quizStatsEJ = JSON.parse(localStorage.getItem('mlb_quiz_stats_ej') || '{"total":0,"correct":0}');
+let quizStatsJE = JSON.parse(localStorage.getItem('mlb_quiz_stats_je') || '{"total":0,"correct":0}');
+
+let dictTab = 'en';
+let searchQuery = '';
+let currentScreen = 'dict';
+let currentDefEntry = null;
+
+// Quiz state
+let quizMode = 'input';
+let quizCurrent = null;       // current question entry
+let quizDeck = [];            // shuffled pool for this session
+let quizDeckIndex = 0;
+let quizReviewQueue = [];     // [{entry, reviewAfter}]
+let quizSessionCount = 0;    // total questions answered this session
+let quizSessionCorrect = 0;
+let quizQuestionStartTime = 0;
+let quizScore = 0;
+let quizAnswered = false;
+let hintLevel = 0;
+let quizStage = 'choice';
+let sectionOffsets = {};
+let quizFromFav = false;
+// Legacy – kept for compatibility
+let quizQuestions = [];
+let quizIndex = 0;
+
+
+
+// =====================
+//  iOS SAFARI HEIGHT FIX
+// =====================
+(function() {
+  const isIOS = /iP(hone|ad|od)/.test(navigator.userAgent);
+  if (!isIOS) return;
+  // iOS 26 Liquid Glass bar overlaps the bottom of the viewport.
+  // Shrink app height to keep nav above the glass overlay.
+  const GLASS_OFFSET = 55;
+  const app = document.getElementById('app');
+  app.style.height = (window.innerHeight - GLASS_OFFSET) + 'px';
+  window.addEventListener('resize', () => {
+    app.style.height = (window.innerHeight - GLASS_OFFSET) + 'px';
+  });
+})();
+
+// =====================
+//  DATA LOADING
+// =====================
+Promise.all([
+  fetch('baseball_data.json').then(r => r.json()).catch(() => SAMPLE),
+  fetch('jae_data.json').then(r => r.json()).catch(() => [])
+]).then(([ejData, jaeData]) => {
+  ejEntries = ejData.filter(e => e.en && e.ja);
+  jaeEntries = jaeData.filter(e => e.ja && e.en).map(e => ({
+    ...e,
+    en_quiz: extractEnTerm(e.en)
+  }));
+  quizPool = [...ejEntries, ...jaeEntries];
+  allEntries = ejEntries;
+  buildIndex();
+  renderList();
+  updateQuizStats();
+});
+
+// =====================
+//  SCREEN NAVIGATION
+// =====================
+function showScreen(name) {
+  currentScreen = name;
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen' + cap(name)).classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('nav' + cap(name)).classList.add('active');
+  document.getElementById('dictTabs').style.display = name === 'dict' ? '' : 'none';
+  closeDefinition();
+
+  if (name === 'fav') renderFavList();
+  if (name === 'quiz') {
+    showQuizHome();
+    updateQuizStats();
+  }
+}
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+// =====================
+//  DICT TAB
+// =====================
+function switchDictTab(tab) {
+  dictTab = tab;
+  allEntries = tab === 'en' ? ejEntries : jaeEntries;
+  document.getElementById('tabEn').classList.toggle('active', tab === 'en');
+  document.getElementById('tabJa').classList.toggle('active', tab === 'ja');
+  buildIndex();
+  renderList();
+  closeDefinition();
+}
+
+// =====================
+//  SEARCH
+// =====================
+function toggleSearch() {
+  const o = document.getElementById('searchOverlay');
+  if (o.classList.contains('open')) { closeSearch(); return; }
+  o.classList.add('open');
+  setTimeout(() => document.getElementById('searchInput').focus(), 200);
+}
+function closeSearch() {
+  document.getElementById('searchOverlay').classList.remove('open');
+  document.getElementById('searchInput').value = '';
+  searchQuery = '';
+  document.getElementById('entryList').parentElement.classList.remove('search-mode');
+  buildIndex();
+  renderList();
+}
+function onSearch(val) {
+  searchQuery = val.trim();
+  document.getElementById('entryList').parentElement.classList.toggle('search-mode', !!searchQuery);
+  if (!searchQuery) buildIndex();
+  renderList();
+}
+
+// =====================
+//  JAPANESE READING
+// =====================
+function kata2hira(s) {
+  return s.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
+}
+function jaReading(ja, entry) {
+  if (entry && entry.yomi) return entry.yomi;
+  const m = ja.match(/[ぁ-ん]/);
+  if (m) return m[0];
+  const m2 = ja.match(/[ァ-ヶ]/);
+  if (m2) return kata2hira(m2[0]);
+  return 'ん';
+}
+
+// =====================
+//  INDEX PANEL
+// =====================
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+// 行頭のみ表示。各行に含まれる文字（スクロール先検索用）
+const JA_ROWS = [
+  { label: 'あ', chars: ['あ','い','う','え','お'] },
+  { label: 'か', chars: ['か','き','く','け','こ'] },
+  { label: 'さ', chars: ['さ','し','す','せ','そ'] },
+  { label: 'た', chars: ['た','ち','つ','て','と'] },
+  { label: 'な', chars: ['な','に','ぬ','ね','の'] },
+  { label: 'は', chars: ['は','ひ','ふ','へ','ほ'] },
+  { label: 'ま', chars: ['ま','み','む','め','も'] },
+  { label: 'や', chars: ['や','ゆ','よ'] },
+  { label: 'ら', chars: ['ら','り','る','れ','ろ'] },
+  { label: 'わ', chars: ['わ','を','ん'] },
+];
+
+function buildIndex() {
+  const strip = document.getElementById('indexStrip');
+  strip.innerHTML = '';
+
+  if (dictTab === 'en') {
+    ALPHABET.forEach(k => {
+      const has = allEntries.some(e => e.en.toUpperCase().startsWith(k));
+      const btn = document.createElement('button');
+      btn.className = 'idx-btn' + (has ? '' : ' empty');
+      btn.textContent = k;
+      btn.dataset.group = k;
+      if (has) btn.onclick = () => scrollToGroup(k);
+      strip.appendChild(btn);
+    });
+  } else {
+    JA_ROWS.forEach((row, i) => {
+      const hasAny = row.chars.some(c => allEntries.some(e => jaReading(e.ja) === c));
+      const btn = document.createElement('button');
+      btn.className = 'idx-btn' + (hasAny ? '' : ' empty');
+      btn.textContent = row.label;
+      btn.dataset.group = row.label;
+      if (hasAny) btn.onclick = () => scrollToGroup(row.label);
+      strip.appendChild(btn);
+
+      if (i < JA_ROWS.length - 1) {
+        const sep = document.createElement('div');
+        sep.className = 'idx-sep';
+        sep.innerHTML = '<span>・</span><span>・</span><span>・</span><span>・</span>';
+        strip.appendChild(sep);
+      }
+    });
+  }
+}
+
+function scrollToGroup(key) {
+  const container = document.getElementById('entryList');
+  let offset = null;
+
+  if (dictTab === 'ja') {
+    const row = JA_ROWS.find(r => r.label === key);
+    if (row) {
+      for (const c of row.chars) {
+        if (sectionOffsets[c] !== undefined) { offset = sectionOffsets[c]; break; }
+      }
+    }
+  } else {
+    if (sectionOffsets[key] !== undefined) offset = sectionOffsets[key];
+  }
+
+  if (offset !== null) container.scrollTop = offset;
+
+  document.querySelectorAll('.idx-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.group === key));
+}
+
+// =====================
+//  ENTRY LIST
+// =====================
+function getFiltered() {
+  let list = [...allEntries];
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    list = list.filter(e => e.en.toLowerCase().includes(q) || e.ja.includes(searchQuery));
+  }
+  if (dictTab === 'en') {
+    list.sort((a, b) => a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
+  } else {
+    list.sort((a, b) => jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
+  }
+  return list;
+}
+
+function renderList() {
+  const list = document.getElementById('entryList');
+  const entries = getFiltered();
+  if (!entries.length) {
+    list.innerHTML = `<div class="empty-state"><div class="ei">🔍</div><div class="et">見つかりませんでした</div><div class="es">別のキーワードで試してください</div></div>`;
+    return;
+  }
+  const html = [];
+  let lastGroup = null;
+  entries.forEach(e => {
+    const group = dictTab === 'en'
+      ? (e.en[0].toUpperCase().match(/[A-Z]/) ? e.en[0].toUpperCase() : '#')
+      : jaReading(e.ja, e);
+    if (group !== lastGroup && !searchQuery) {
+      html.push(`<div class="section-head" data-group="${group}">${group}</div>`);
+      lastGroup = group;
+    }
+    const isFav = favorites.includes(e.en);
+    const idx = allEntries.indexOf(e);
+    if (searchQuery) {
+      const p = dictTab === 'en' ? e.en : e.ja;
+      const s = dictTab === 'en' ? e.ja : e.en;
+      const sPreview = s.replace(/\s+/g,' ').substring(0,38) + (s.length > 38 ? '…' : '');
+      html.push(`<div class="entry-item" data-idx="${idx}">
+        <div class="entry-en">${esc(p)}${isFav ? ' ⭐' : ''}</div>
+        <div class="entry-ja-preview">${esc(sPreview)}</div>
+      </div>`);
+    } else {
+      const primary = dictTab === 'en' ? e.en : e.ja.replace(/\s+/g,' ').substring(0,40);
+      const secondary = dictTab === 'en'
+        ? e.ja.replace(/\s+/g,' ').substring(0,38) + (e.ja.length > 38 ? '…' : '')
+        : e.en;
+      html.push(`<div class="entry-item" data-idx="${idx}">
+        <div class="entry-en">${esc(primary)}${isFav ? ' ⭐' : ''}</div>
+        <div class="entry-ja-preview">${esc(secondary)}</div>
+      </div>`);
+    }
+  });
+  list.innerHTML = html.join('');
+  list.scrollTop = 0;
+  list.querySelectorAll('.section-head').forEach(el => {
+    sectionOffsets[el.dataset.group] = el.offsetTop - list.offsetTop;
+  });
+  list.querySelectorAll('.entry-item').forEach(el => {
+    const idx = parseInt(el.dataset.idx);
+    el.addEventListener('click', () => {
+      const e = allEntries[idx];
+      if (e) showDef(e.en, e.ja);
+    });
+  });
+}
+
+function esc(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// =====================
+//  DEFINITION PANEL
+// =====================
+function showDef(en, ja) {
+  currentDefEntry = { en, ja };
+  // In J→E tab, ja is the headword and en is the definition body
+  const title = dictTab === 'ja' ? ja : en;
+  const body  = dictTab === 'ja' ? en : ja;
+  document.getElementById('defEn').textContent = title;
+
+  const full = body.replace(/\s+/g,' ').trim();
+  const cfMatch = full.match(/cf\..+$/s);
+  const egMatches = [...full.matchAll(/e\.g\.[^。]*[。」\)）]*/gi)];
+  let main = full;
+  let cfText = '';
+  const egTexts = [];
+
+  if (cfMatch) { main = full.slice(0, cfMatch.index).trim(); cfText = cfMatch[0]; }
+  egMatches.forEach(m => { egTexts.push(m[0].replace(/^e\.g\.\s*/i,'').trim()); main = main.replace(m[0],'').trim(); });
+
+  let bodyHtml = `<div class="def-main">${esc(main)}</div>`;
+  egTexts.forEach(eg => { bodyHtml += `<div class="def-eg">💬 ${esc(eg)}</div>`; });
+  if (cfText) bodyHtml += `<div class="def-cf">🔗 ${esc(cfText)}</div>`;
+
+  document.getElementById('defBody').innerHTML = bodyHtml;
+
+  // Update favorite star
+  const isFav = favorites.includes(en);
+  document.getElementById('favBtn').textContent = isFav ? '⭐' : '☆';
+
+  document.getElementById('defPanel').classList.add('open');
+  document.getElementById('overlay').classList.add('show');
+}
+
+function closeDefinition() {
+  document.getElementById('defPanel').classList.remove('open');
+  document.getElementById('overlay').classList.remove('show');
+  currentDefEntry = null;
+}
+
+// =====================
+//  FAVORITES
+// =====================
+function toggleFavorite() {
+  if (!currentDefEntry) return;
+  const en = currentDefEntry.en;
+  const idx = favorites.indexOf(en);
+  if (idx >= 0) {
+    favorites.splice(idx, 1);
+    document.getElementById('favBtn').textContent = '☆';
+  } else {
+    favorites.push(en);
+    document.getElementById('favBtn').textContent = '⭐';
+  }
+  localStorage.setItem('mlb_favs', JSON.stringify(favorites));
+  if (currentScreen === 'dict') renderList();
+  if (currentScreen === 'fav') renderFavList();
+}
+
+function renderFavList() {
+  const list = document.getElementById('favList');
+  if (!favorites.length) {
+    list.innerHTML = `<div class="fav-empty">
+      <div class="fav-ei">⭐</div>
+      <div class="fav-et">お気に入りがありません</div>
+      <div class="fav-es">辞書で用語を開き、☆ボタンで<br>お気に入りに追加できます</div>
+    </div>`;
+    return;
+  }
+  const entries = allEntries.filter(e => favorites.includes(e.en));
+  const html = entries.map((e, i) => {
+    const preview = e.ja.replace(/\s+/g,' ').substring(0,38);
+    return `<div class="entry-item" data-fav-idx="${i}">
+      <div class="entry-en">⭐ ${esc(e.en)}</div>
+      <div class="entry-ja-preview">${esc(preview)}…</div>
+    </div>`;
+  });
+  list.innerHTML = html.join('');
+  list.querySelectorAll('.entry-item').forEach(el => {
+    const i = parseInt(el.dataset.favIdx);
+    el.addEventListener('click', () => { const e = entries[i]; if (e) showDef(e.en, e.ja); });
+  });
+}
+
+// =====================
+//  QUIZ - SETUP
+// =====================
+function showQuizHome() {
+  document.getElementById('quizHome').style.display = '';
+  document.getElementById('quizActive').classList.remove('show');
+  document.getElementById('quizResults').classList.remove('show');
+  updateFavQuizBtn();
+}
+
+function updateQuizStats() {
+  const ejTotal = ejEntries.length || 2285;
+  const jeTotal = jaeEntries.length || 1107;
+  document.getElementById('statTotalEJ').textContent = quizStatsEJ.total + '/' + ejTotal;
+  document.getElementById('statCorrectEJ').textContent = quizStatsEJ.correct;
+  document.getElementById('statRateEJ').textContent = quizStatsEJ.total > 0 ? Math.round(quizStatsEJ.correct / quizStatsEJ.total * 100) + '%' : '-';
+  document.getElementById('statTotalJE').textContent = quizStatsJE.total + '/' + jeTotal;
+  document.getElementById('statCorrectJE').textContent = quizStatsJE.correct;
+  document.getElementById('statRateJE').textContent = quizStatsJE.total > 0 ? Math.round(quizStatsJE.correct / quizStatsJE.total * 100) + '%' : '-';
+}
+
+function resetStats() {
+  if (!confirm('挑戦数・正解数をリセットしますか？')) return;
+  quizStats = { total: 0, correct: 0 };
+  quizStatsEJ = { total: 0, correct: 0 };
+  quizStatsJE = { total: 0, correct: 0 };
+  localStorage.removeItem('mlb_quiz_stats');
+  localStorage.removeItem('mlb_quiz_stats_ej');
+  localStorage.removeItem('mlb_quiz_stats_je');
+  updateQuizStats();
+}
+
+function updateFavQuizBtn() {
+  const btn = document.getElementById('favQuizBtn');
+  const sub = document.getElementById('favQuizSub');
+  const count = favorites.length;
+  if (count >= 5) {
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    sub.textContent = `登録済み ${count}件 — 入力 or 四択で出題`;
+  } else {
+    btn.disabled = true;
+    btn.style.opacity = '0.5';
+    sub.textContent = `お気に入りを5件以上登録すると解放（現在${count}件）`;
+  }
+}
+
+function startQuiz(mode) {
+  quizMode = mode;
+  quizFromFav = false;
+  quizScore = 0;
+  quizSessionCount = 0;
+  quizSessionCorrect = 0;
+  quizAnswered = false;
+  quizReviewQueue = [];
+
+  const pool = quizPool.filter(e => e.ja.match(/[ぁ-んァ-ン一-鿿]/));
+  quizDeck = shuffle([...pool]);
+  quizDeckIndex = 0;
+
+  document.getElementById('quizHome').style.display = 'none';
+  document.getElementById('quizResults').classList.remove('show');
+  document.getElementById('quizActive').classList.add('show');
+  renderQuestion();
+}
+
+function getNextQuestion() {
+  // Due review items come first
+  const due = quizReviewQueue.filter(r => r.reviewAfter <= quizSessionCount);
+  if (due.length > 0) {
+    const item = due[0];
+    quizReviewQueue = quizReviewQueue.filter(r => r !== item);
+    return item.entry;
+  }
+  // Otherwise pick from deck, re-shuffle when exhausted
+  if (quizDeckIndex >= quizDeck.length) {
+    quizDeck = shuffle([...quizDeck]);
+    quizDeckIndex = 0;
+  }
+  return quizDeck[quizDeckIndex++];
+}
+
+function isJaMode() { return quizMode === 'ja-input' || quizMode === 'ja-choice'; }
+
+function startFavQuiz() {
+  const favEntries = quizPool.filter(e => favorites.includes(e.en) && e.ja.match(/[ぁ-んァ-ン一-鿿]/));
+  if (favEntries.length < 5) return;
+  quizMode = favEntries.length >= 8 ? 'choice' : 'input';
+  quizFromFav = true;
+  quizScore = 0;
+  quizSessionCount = 0;
+  quizSessionCorrect = 0;
+  quizAnswered = false;
+  quizReviewQueue = [];
+  quizDeck = shuffle([...favEntries]);
+  quizDeckIndex = 0;
+
+  document.getElementById('quizHome').style.display = 'none';
+  document.getElementById('quizResults').classList.remove('show');
+  document.getElementById('quizActive').classList.add('show');
+  renderQuestion();
+}
+
+// =====================
+//  QUIZ - QUESTION
+// =====================
+function renderQuestion() {
+  quizCurrent = getNextQuestion();
+  const q = quizCurrent;
+  quizAnswered = false;
+  quizQuestionStartTime = Date.now();
+
+  // Progress
+  const reviewDue = quizReviewQueue.filter(r => r.reviewAfter <= quizSessionCount).length;
+  const reviewTotal = quizReviewQueue.length;
+  document.getElementById('quizProgressFill').style.width = '0%';
+  const reviewLabel = reviewTotal > 0 ? ` 🔁${reviewTotal}` : '';
+  document.getElementById('quizCounterText').textContent = `問 ${quizSessionCount + 1}${reviewLabel}`;
+  document.getElementById('quizScoreText').textContent = `正解: ${quizSessionCorrect}`;
+
+  // Question card
+  const labels = {
+    'input':     '英語 → 日本語を入力',
+    'choice':    '英語 → 日本語を選択',
+    'ja-input':  '日本語 → 英語を入力',
+    'ja-choice': '日本語 → 英語を選択',
+  };
+  document.getElementById('quizModeLabel').textContent = labels[quizMode] || '';
+
+  if (isJaMode()) {
+    // Show Japanese definition as question
+    const jaShort = getKeyword(q.ja);
+    document.getElementById('quizQuestion').textContent = jaShort;
+    document.getElementById('quizQuestion').style.fontSize = jaShort.length > 12 ? '16px' : '20px';
+  } else {
+    document.getElementById('quizQuestion').textContent = q.en_quiz || q.en;
+    document.getElementById('quizQuestion').style.fontSize = '';
+  }
+  document.getElementById('quizHintText').textContent = '';
+
+  // Reset answer/result UI
+  const ansBox = document.getElementById('quizAnswerBox');
+  ansBox.className = 'quiz-answer-box';
+  document.getElementById('quizResultBadge').textContent = '';
+  document.getElementById('quizResultBadge').className = 'quiz-result-badge';
+  document.getElementById('quizNextBtn').classList.remove('show');
+
+  if (quizMode === 'input' || quizMode === 'ja-input') {
+    // Start at input stage; switch to choice if they get it wrong
+    quizStage = 'input';
+    document.getElementById('quizChoicesArea').style.display = 'none';
+    document.getElementById('quizInputArea').style.display = '';
+    const inp = document.getElementById('quizTextInput');
+    inp.placeholder = isJaMode() ? '英語で答えてください...' : '日本語で答えてください...';
+    inp.value = '';
+    inp.className = 'quiz-text-input';
+    inp.disabled = false;
+    document.getElementById('quizSubmitBtn').disabled = false;
+    document.getElementById('quizSubmitBtn').textContent = '答える';
+    hintLevel = 0;
+    const hintDisplay = document.getElementById('hintDisplay');
+    hintDisplay.style.display = 'none';
+    hintDisplay.innerHTML = '';
+    const hintBtn = document.getElementById('hintBtn');
+    hintBtn.style.display = isJaMode() ? 'none' : '';
+    hintBtn.textContent = '💡 ヒント';
+    hintBtn.style.opacity = '';
+    setTimeout(() => inp.focus(), 100);
+  } else {
+    quizStage = 'choice';
+    document.getElementById('quizInputArea').style.display = 'none';
+    document.getElementById('quizChoicesArea').style.display = '';
+    if (isJaMode()) renderJaChoices(q);
+    else renderChoices(q);
+  }
+}
+
+function switchToChoiceStage(q) {
+  quizStage = 'choice';
+  quizAnswered = false;
+  document.getElementById('quizInputArea').style.display = 'none';
+  document.getElementById('hintDisplay').style.display = 'none';
+
+  const labels = { 'input': '英語 → 日本語を選択', 'ja-input': '日本語 → 英語を選択' };
+  document.getElementById('quizModeLabel').textContent = labels[quizMode] || '';
+
+  const choicesArea = document.getElementById('quizChoicesArea');
+  choicesArea.style.display = '';
+  if (isJaMode()) renderJaChoices(q);
+  else renderChoices(q);
+}
+
+// =====================
+//  QUIZ - HINT
+// =====================
+function getKeyword(ja) {
+  let core = ja.replace(/\s+/g,' ').trim();
+  core = core.split(/：|。|cf\.|e\.g\./)[0].trim();
+  core = core.replace(/[１２３４５６７８９０][\．\.]/g,'').trim();
+  core = core.replace(/（[^）]*）/g,'').replace(/\([^\)]*\)/g,'').trim();
+  // Fallback: if stripping parens left nothing, use original first segment
+  if (!core) {
+    core = ja.replace(/\s+/g,' ').split(/：|。|cf\.|e\.g\./)[0].trim();
+  }
+  return core || ja.trim();
+}
+
+function showHint() {
+  if (quizAnswered) return;
+  const q = quizCurrent;
+  const keyword = getKeyword(q.ja);
+  const chars = [...keyword]; // Unicode-safe split
+  hintLevel++;
+
+  const hintDisplay = document.getElementById('hintDisplay');
+  const hintBtn = document.getElementById('hintBtn');
+  hintDisplay.style.display = '';
+
+  // Level 1: first char + blanks
+  // Level 2: short word(<=3) → all; long word → first 60%
+  // Level 3: all revealed (give up)
+  let html = '';
+  chars.forEach((c, i) => {
+    const isSpace = c === ' ' || c === '　' || c === '、' || c === '・';
+    let reveal = false;
+    if (hintLevel >= 3) {
+      reveal = true;
+    } else if (hintLevel >= 2) {
+      const threshold = chars.length <= 3 ? chars.length : Math.ceil(chars.length * 0.6);
+      reveal = (i < threshold);
+    } else {
+      reveal = (i === 0);
+    }
+
+    if (isSpace) {
+      html += '<span> </span>';
+    } else if (reveal) {
+      html += `<span class="revealed">${c}</span>`;
+    } else {
+      html += `<span class="masked">＿</span>`;
+    }
+  });
+  hintDisplay.innerHTML = html;
+
+  if (hintLevel >= 3) {
+    hintBtn.textContent = '💡 全表示中';
+    hintBtn.style.opacity = '0.4';
+  } else if (hintLevel === 2) {
+    hintBtn.textContent = '💡 もっとヒント';
+  } else {
+    hintBtn.textContent = '💡 もっとヒント';
+  }
+}
+
+// =====================
+//  QUIZ - INPUT MODE
+// =====================
+function judgeInput(userInput, ja) {
+  const full = ja.replace(/\s+/g,' ');
+  const keyword = getKeyword(ja);
+  const user = userInput.trim();
+  if (!user) return false;
+
+  // Exact match with full definition
+  if (full.includes(user)) return true;
+
+  // Match against keyword (core meaning)
+  if (keyword.includes(user) && user.length >= 2) return true;
+
+  // User typed the keyword partially (4+ chars)
+  if (user.length >= 4 && keyword.startsWith(user)) return true;
+
+  // Reverse: keyword starts in user input
+  if (keyword.length >= 2 && user.includes(keyword.substring(0, Math.min(4, keyword.length)))) return true;
+
+  return false;
+}
+
+function submitInput() {
+  if (quizAnswered) return;
+  const q = quizCurrent;
+  const inp = document.getElementById('quizTextInput');
+  const userInput = inp.value.trim();
+  if (!userInput.replace(/[　 ​\s]/g, "")) {
+    inp.classList.add('shake');
+    setTimeout(() => inp.classList.remove('shake'), 400);
+    return;
+  }
+
+  quizAnswered = true;
+  let grade;
+
+  if (isJaMode()) {
+    grade = gradeEnInput(userInput, q.en_quiz || q.en);
+  } else {
+    grade = gradeJaInput(userInput, q.ja);
+  }
+
+  const isCorrect = grade !== 'wrong';
+
+  document.getElementById('hintBtn').style.display = 'none';
+  showQuizFeedback(isCorrect, q, 'input', userInput, grade);
+}
+
+// =====================
+//  SMART GRADING
+// =====================
+function levenshtein(a, b) {
+  const m = a.length, n = b.length;
+  if (!m) return n; if (!n) return m;
+  let prev = Array.from({length: n+1}, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const curr = [i];
+    for (let j = 1; j <= n; j++)
+      curr[j] = a[i-1] === b[j-1] ? prev[j-1] : 1 + Math.min(prev[j], curr[j-1], prev[j-1]);
+    prev = curr;
+  }
+  return prev[n];
+}
+
+function diffHighlight(correct, user, mainColor, errColor) {
+  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const c = correct.toLowerCase();
+  const u = user.trim().toLowerCase();
+  if (c === u) return `<span style="color:${mainColor}">${esc(correct)}</span>`;
+
+  if (c.length === u.length) {
+    return [...correct].map((ch, i) =>
+      c[i] === u[i]
+        ? `<span style="color:${mainColor}">${esc(ch)}</span>`
+        : `<span style="color:${errColor}">${esc(ch)}</span>`
+    ).join('');
+  }
+  // Find longest common prefix/suffix to locate the diff region
+  let p = 0;
+  while (p < c.length && p < u.length && c[p] === u[p]) p++;
+  let s = 0;
+  const maxS = Math.min(c.length - p, u.length - p);
+  while (s < maxS && c[c.length-1-s] === u[u.length-1-s]) s++;
+
+  return [...correct].map((ch, i) => {
+    const inDiff = i >= p && i < correct.length - s;
+    return `<span style="color:${inDiff ? errColor : mainColor}">${esc(ch)}</span>`;
+  }).join('');
+}
+
+function colorizedFeedback(userInput, correctAnswer, grade) {
+  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  if (grade === 'wrong')    return `<span style="color:#FF4444">${esc(correctAnswer)}</span>`;
+  if (grade === 'perfect')  return `<span style="color:#FFD700">${esc(correctAnswer)}</span>`;
+  const mainColor = '#FFA500';
+  const errColor  = '#FF4444';
+  return diffHighlight(correctAnswer, userInput, mainColor, errColor);
+}
+
+function gradeEnInput(userInput, en) {
+  const u = userInput.trim().toLowerCase();
+  const term = en.split(/[　\t]/)[0].trim().toLowerCase();
+  const eCore = term.replace(/\s*[\(（][^)）]*[\)）]/g,'').trim();
+  if (!u) return 'wrong';
+  if (u === term || u === eCore) return 'perfect';
+  const uNorm = u.replace(/[\s\-]/g,''), eNorm = eCore.replace(/[\s\-]/g,'');
+  if (uNorm === eNorm) return 'perfect';
+  if (levenshtein(u, term) <= 1 || levenshtein(u, eCore) <= 1) return 'close';
+  if (term.includes(u) && u.length >= 3) return 'semantic';
+  if (u.includes(eCore) && eCore.length >= 3) return 'semantic';
+  if (eCore.includes(u) && u.length >= 3) return 'semantic';
+  if (levenshtein(u, eCore) === 2 && u.length >= 5) return 'semantic';
+  return 'wrong';
+}
+
+function gradeJaInput(userInput, ja) {
+  const keyword = getKeyword(ja);
+  const full = ja.replace(/\s+/g,' ');
+  const user = userInput.trim();
+  if (!user) return 'wrong';
+  if (user === keyword || full.includes(user) && user === keyword) return 'perfect';
+  if (full.includes(user) && user.length >= 2) return 'semantic';
+  if (keyword.includes(user) && user.length >= 2) return 'semantic';
+  if (user.length >= 3 && keyword.startsWith(user.substring(0, user.length - 1))) return 'semantic';
+  return 'wrong';
+}
+
+// legacy wrapper
+function judgeEnInput(userInput, en) {
+  return gradeEnInput(userInput, en) !== 'wrong';
+}
+
+// =====================
+//  QUIZ - CHOICE MODE
+// =====================
+let _choiceCorrect = '';
+let _choiceQ = null;
+
+function renderChoices(q) {
+  const container = document.getElementById('quizChoicesArea');
+  const wrong = shuffle(quizPool.filter(e => e.en !== q.en && e.ja.match(/[ぁ-んァ-ン]/)))
+    .slice(0, 3)
+    .map(e => getKeyword(e.ja));
+  const correct = getKeyword(q.ja);
+  _choiceCorrect = correct;
+  _choiceQ = q;
+  const choices = shuffle([correct, ...wrong]);
+
+  container.innerHTML = '';
+  choices.forEach((c, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-choice';
+    btn.textContent = c;
+    btn.dataset.choice = c;
+    btn.addEventListener('click', () => selectChoice(btn, c));
+    container.appendChild(btn);
+  });
+}
+
+function renderJaChoices(q) {
+  const container = document.getElementById('quizChoicesArea');
+  const wrong = shuffle(quizPool.filter(e => e.en !== q.en))
+    .slice(0, 3)
+    .map(e => e.en_quiz || e.en);
+  const correct = q.en_quiz || q.en;
+  _choiceCorrect = correct;
+  _choiceQ = q;
+  const choices = shuffle([correct, ...wrong]);
+
+  container.innerHTML = '';
+  choices.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-choice';
+    btn.textContent = c;
+    btn.dataset.choice = c;
+    btn.addEventListener('click', () => selectChoice(btn, c));
+    container.appendChild(btn);
+  });
+}
+
+function selectChoice(btn, selected) {
+  if (quizAnswered) return;
+  quizAnswered = true;
+  const correct = _choiceCorrect;
+  const q = _choiceQ;
+  const isCorrect = selected === correct;
+
+  document.querySelectorAll('.quiz-choice').forEach(b => {
+    b.classList.add('disabled');
+    if (b.dataset.choice === correct) b.classList.add('correct');
+    else if (b === btn && !isCorrect) b.classList.add('wrong');
+  });
+
+  showQuizFeedback(isCorrect, q, 'choice', selected, isCorrect ? 'perfect' : 'wrong');
+}
+
+// =====================
+//  QUIZ - FEEDBACK
+// =====================
+function showQuizFeedback(isCorrect, q, mode, userAnswer, grade) {
+  // Spaced repetition
+  const elapsed = Date.now() - quizQuestionStartTime;
+  if (!isCorrect) {
+    quizReviewQueue.push({entry: q, reviewAfter: quizSessionCount + 20});
+  } else if (elapsed > 60000) {
+    quizReviewQueue.push({entry: q, reviewAfter: quizSessionCount + 30});
+  }
+  quizSessionCount++;
+  if (isCorrect) quizSessionCorrect++;
+
+  // Persistent stats
+  if (isCorrect) quizStats.correct++;
+  quizStats.total++;
+  localStorage.setItem('mlb_quiz_stats', JSON.stringify(quizStats));
+  const isJE = quizMode === 'ja-input' || quizMode === 'ja-choice';
+  if (isJE) {
+    if (isCorrect) quizStatsJE.correct++;
+    quizStatsJE.total++;
+    localStorage.setItem('mlb_quiz_stats_je', JSON.stringify(quizStatsJE));
+  } else {
+    if (isCorrect) quizStatsEJ.correct++;
+    quizStatsEJ.total++;
+    localStorage.setItem('mlb_quiz_stats_ej', JSON.stringify(quizStatsEJ));
+  }
+
+  // Score display
+  document.getElementById('quizScoreText').textContent = `正解: ${quizSessionCorrect}`;
+
+  // Input field style
+  if (mode === 'input' || mode === 'ja-input') {
+    const inp = document.getElementById('quizTextInput');
+    inp.className = 'quiz-text-input ' + (isCorrect ? 'correct' : 'wrong');
+    inp.disabled = true;
+    document.getElementById('quizSubmitBtn').disabled = true;
+  }
+
+  // Result badge
+  const badge = document.getElementById('quizResultBadge');
+  let badgeText = '❌ 不正解';
+  if (grade === 'perfect')  badgeText = '⭕ 正解！';
+  else if (grade === 'close') badgeText = '⭕ 正解！（1文字違い）';
+  else if (grade === 'semantic') badgeText = '⭕ 正解！（ニュアンス一致）';
+  badge.textContent = badgeText;
+  badge.className = 'quiz-result-badge ' + (isCorrect ? 'correct-badge' : 'wrong-badge');
+
+  // Answer reveal with color
+  const ansBox = document.getElementById('quizAnswerBox');
+  ansBox.className = 'quiz-answer-box ' + (isCorrect ? 'show' : 'show-wrong');
+  const ansEl = document.getElementById('quizAnswerText');
+
+  if ((mode === 'input' || mode === 'ja-input') && grade) {
+    const correctStr = isJaMode()
+      ? (q.en_quiz || q.en.split(/[　\t]/)[0].trim())
+      : getKeyword(q.ja);
+    // For input modes: colorized display
+    if (grade === 'wrong') {
+      ansEl.innerHTML = `<span style="color:#FF4444">${esc(correctStr)}</span>`;
+    } else if (grade === 'perfect') {
+      ansEl.innerHTML = `<span style="color:#FFD700">${esc(correctStr)}</span>`;
+    } else {
+      // close or semantic: diff-highlighted
+      ansEl.innerHTML = colorizedFeedback(userAnswer || '', correctStr, grade);
+    }
+    // Also show full ja explanation below
+    const fullJa = isJaMode()
+      ? (q.en || '').replace(/\s+/g,' ').trim()
+      : q.ja.replace(/\s+/g,' ').trim();
+    if (fullJa && fullJa !== correctStr) {
+      ansEl.innerHTML += `<div style="font-size:12px;color:var(--text2);margin-top:6px;text-align:left;">${esc(fullJa.substring(0,120))}${fullJa.length>120?'…':''}</div>`;
+    }
+  } else {
+    ansEl.textContent = isJaMode()
+      ? (q.en_quiz || q.en)
+      : q.ja.replace(/\s+/g,' ').trim();
+  }
+
+  // Next button (no fixed end)
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = '次の問題 →';
+  nextBtn.classList.add('show');
+}
+
+// =====================
+//  QUIZ - NAVIGATION
+// =====================
+function nextQuestion() {
+  renderQuestion();
+}
+
+function showResults() {
+  document.getElementById('quizActive').classList.remove('show');
+  const results = document.getElementById('quizResults');
+  results.classList.add('show');
+
+  const total = quizSessionCount;
+  const pct = total > 0 ? Math.round(quizSessionCorrect / total * 100) : 0;
+
+  let icon = '😢', title = 'もう少し！';
+  if (pct >= 90) { icon = '🏆'; title = '完璧！すごい！'; }
+  else if (pct >= 70) { icon = '🎉'; title = 'よくできました！'; }
+  else if (pct >= 50) { icon = '😊'; title = 'まあまあです！'; }
+
+  document.getElementById('qrIcon').textContent = icon;
+  document.getElementById('qrTitle').textContent = title;
+
+  const scoreEl = document.getElementById('qrScoreNum');
+  scoreEl.textContent = '0';
+  animateCount(0, quizSessionCorrect, scoreEl, `/${total}`);
+
+  const rateEl = document.getElementById('qrRate');
+  rateEl.textContent = '0%';
+  animateCount(0, pct, rateEl, '%');
+
+  document.getElementById('qrCorrectNum').textContent = quizSessionCorrect;
+  document.getElementById('qrWrongNum').textContent = total - quizSessionCorrect;
+  document.getElementById('qrTotalAllNum').textContent = quizStats.correct;
+  document.getElementById('qrDetail').innerHTML =
+    `通算: ${quizStats.correct}/${quizStats.total}問正解`;
+
+  const modeLabel = { 'input': '入力', 'choice': '四択', 'ja-input': '日→英入力', 'ja-choice': '日→英四択' };
+  document.getElementById('qrRetryBtn').textContent = `もう一度（${modeLabel[quizMode] || '入力'}）`;
+
+  if (pct >= 70) launchConfetti();
+
+  updateQuizStats();
+}
+
+function animateCount(from, to, el, suffix) {
+  suffix = suffix || '';
+  const duration = 800;
+  const steps = 30;
+  const step = (to - from) / steps;
+  let current = from;
+  let count = 0;
+  const id = setInterval(() => {
+    count++;
+    current += step;
+    if (count >= steps) { clearInterval(id); el.textContent = to + suffix; return; }
+    el.textContent = Math.round(current) + suffix;
+  }, duration / steps);
+}
+
+function launchConfetti() {
+  const container = document.getElementById('confettiContainer');
+  container.innerHTML = '';
+  const colors = ['#e8715a','#3db8b0','#f0a84a','#5ec97a','#7ddbd5','#ffffff','#f5c6bc'];
+  for (let i = 0; i < 80; i++) {
+    const el = document.createElement('div');
+    el.className = 'confetti-piece';
+    el.style.left = Math.random() * 100 + 'vw';
+    el.style.background = colors[Math.floor(Math.random() * colors.length)];
+    el.style.animationDuration = (1 + Math.random() * 2) + 's';
+    el.style.animationDelay = (Math.random() * 0.8) + 's';
+    el.style.width = (6 + Math.random() * 8) + 'px';
+    el.style.height = (6 + Math.random() * 8) + 'px';
+    el.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    container.appendChild(el);
+  }
+  setTimeout(() => { container.innerHTML = ''; }, 4000);
+}
+
+function retryQuiz() { quizFromFav ? startFavQuiz() : startQuiz(quizMode); }
+
+function quitQuiz() {
+  if (quizSessionCount > 0) {
+    showResults();
+  } else {
+    showQuizHome();
+    updateQuizStats();
+  }
+}
+
+// =====================
+//  UTILITIES
+// =====================
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeDefinition(); closeSearch(); }
+});
+
+// Swipe down to close definition
+let touchStartY = 0;
+document.getElementById('defPanel').addEventListener('touchstart', e => {
+  touchStartY = e.touches[0].clientY;
+}, { passive: true });
+document.getElementById('defPanel').addEventListener('touchmove', e => {
+  if (e.touches[0].clientY - touchStartY > 60) closeDefinition();
+}, { passive: true });
+
+// =====================
+//  SAMPLE FALLBACK
+// =====================
+const SAMPLE = [
+  {en:"ace", ja:"チーム最高の先発投手：cf. bullpen ace, relief ace"},
+  {en:"at bat", ja:"打席に立つ。e.g. He stepped up to bat.（彼は打席に立った）"},
+  {en:"balk", ja:"ボーク：投手の反則投球。走者を惑わせる行為。"},
+  {en:"batting average", ja:"打率：安打数÷打数で計算。e.g. .300 average （3割打率）"},
+  {en:"closer", ja:"抑え投手：試合終盤を締めくくる投手。cf. set-up man"},
+  {en:"double play", ja:"ダブルプレー、併殺打：一度のプレーで2アウトを取ること。"},
+  {en:"ERA", ja:"防御率：Earned Run Averageの略。e.g. ERA 2.50"},
+  {en:"fastball", ja:"速球、直球：最も基本的な投球。"},
+  {en:"home run", ja:"本塁打、ホームラン：打球がフェンスを超えること。"},
+  {en:"inning", ja:"イニング、回：攻守各3アウトで1イニング。"}
+];
+</script>
+
+</div><!-- #app -->
+</body>
+</html>
