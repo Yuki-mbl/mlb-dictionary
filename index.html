@@ -690,7 +690,7 @@
     <!-- EN→JP -->
     <div class="quiz-section">
       <div class="quiz-section-label">
-        <span class="qs-badge">abc</span> 英語 → 日本語
+        <span class="qs-badge">abc</span> 英語 → 日本語　<span style="font-size:12px;color:#5efff4;font-weight:600;">日本語でこたえて</span>
       </div>
       <div class="quiz-mode-list">
         <button class="quiz-mode-btn" onclick="startQuiz('input')">
@@ -715,7 +715,7 @@
     <!-- JP→EN -->
     <div class="quiz-section">
       <div class="quiz-section-label">
-        <span class="qs-badge qs-badge-red">あ</span> 日本語 → 英語
+        <span class="qs-badge qs-badge-red">あ</span> 日本語 → 英語　<span style="font-size:12px;color:#ff8a65;font-weight:600;">英語でこたえて</span>
       </div>
       <div class="quiz-mode-list">
         <button class="quiz-mode-btn" onclick="startQuiz('ja-input')">
@@ -796,7 +796,7 @@
 
     <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuestion()">次の問題 →</button>
 
-    <button style="padding:10px;background:none;border:none;color:var(--text3);font-size:12px;cursor:pointer;" onclick="quitQuiz()">← 最初の画面に戻る</button>
+    <button style="padding:10px;background:none;border:none;color:var(--text3);font-size:12px;cursor:pointer;" onclick="showQuizHome();updateQuizStats()">← 最初の画面に戻る</button>
   </div>
 
   <!-- Quiz Results -->
@@ -824,7 +824,7 @@
     </div>
     <div class="qr-detail" id="qrDetail"></div>
     <button class="qr-btn qr-btn-retry" id="qrRetryBtn" onclick="retryQuiz()">もう一度</button>
-    <button class="qr-btn qr-btn-home" onclick="quitQuiz()">ホームに戻る</button>
+    <button class="qr-btn qr-btn-home" onclick="showQuizHome();updateQuizStats()">ホームに戻る</button>
   </div>
 
 </div>
