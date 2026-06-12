@@ -967,8 +967,8 @@ window.addEventListener('resize', setAppHeight);
 //  DATA LOADING
 // =====================
 Promise.all([
-  fetch('baseball_data.json').then(r => r.json()).catch(() => SAMPLE),
-  fetch('jae_data.json').then(r => r.json()).catch(() => [])
+  fetch('baseball_data.json', {cache:'no-store'}).then(r => r.json()).catch(() => SAMPLE),
+  fetch('jae_data.json', {cache:'no-store'}).then(r => r.json()).catch(() => [])
 ]).then(([ejData, jaeData]) => {
   ejEntries = ejData.filter(e => e.en && e.ja);
   jaeEntries = jaeData.filter(e => e.ja && e.en).map(e => ({
@@ -1054,6 +1054,17 @@ function jaReading(ja, entry) {
   return 'ん';
 }
 
+// 濁点・半濁点を除いてどの行ラベルに属するか返す
+function jaGroup(ja, entry) {
+  const first = jaReading(ja, entry);
+  if (!first) return 'ん';
+  const base = first.normalize('NFD').replace(/[゙゚]/g, '');
+  for (const row of JA_ROWS) {
+    if (row.chars.includes(base)) return row.label;
+  }
+  return first;
+}
+
 // =====================
 //  INDEX PANEL
 // =====================
@@ -1070,7 +1081,7 @@ const JA_ROWS = [
   { label: 'ま', chars: ['ま','み','む','め','も'] },
   { label: 'や', chars: ['や','ゆ','よ'] },
   { label: 'ら', chars: ['ら','り','る','れ','ろ'] },
-  { label: 'わ', chars: ['わ','を','ん'] },
+  { label: 'わ', chars: ['わ','ゐ','ゑ','を','ん'] },
 ];
 
 function buildIndex() {
@@ -1089,7 +1100,7 @@ function buildIndex() {
     });
   } else {
     JA_ROWS.forEach((row, i) => {
-      const hasAny = row.chars.some(c => allEntries.some(e => jaReading(e.ja) === c));
+      const hasAny = allEntries.some(e => jaGroup(e.ja, e) === row.label);
       const btn = document.createElement('button');
       btn.className = 'idx-btn' + (hasAny ? '' : ' empty');
       btn.textContent = row.label;
@@ -1112,12 +1123,7 @@ function scrollToGroup(key) {
   let offset = null;
 
   if (dictTab === 'ja') {
-    const row = JA_ROWS.find(r => r.label === key);
-    if (row) {
-      for (const c of row.chars) {
-        if (sectionOffsets[c] !== undefined) { offset = sectionOffsets[c]; break; }
-      }
-    }
+    if (sectionOffsets[key] !== undefined) offset = sectionOffsets[key];
   } else {
     if (sectionOffsets[key] !== undefined) offset = sectionOffsets[key];
   }
@@ -1180,7 +1186,7 @@ function renderList() {
   entries.forEach(e => {
     const group = dictTab === 'en'
       ? (e.en[0].toUpperCase().match(/[A-Z]/) ? e.en[0].toUpperCase() : '#')
-      : jaReading(e.ja, e);
+      : jaGroup(e.ja, e);
     if (group !== lastGroup && !searchQuery) {
       html.push(`<div class="section-head" data-group="${group}">${group}</div>`);
       lastGroup = group;
