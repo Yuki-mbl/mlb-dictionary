@@ -41,8 +41,9 @@
       max-width: 480px;
       margin: 0 auto;
       background: var(--bg);
-      overflow: hidden;
       height: 100%;
+      padding-bottom: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
+      box-sizing: border-box;
     }
 
     /* ===== HEADER ===== */
@@ -422,11 +423,13 @@
 
     /* ===== BOTTOM NAV ===== */
     .bottom-nav {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
       height: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
       padding-bottom: env(safe-area-inset-bottom);
       background: var(--bg2);
       border-top: 1px solid var(--border);
-      display: flex; flex-shrink: 0; z-index: 20;
+      display: flex; z-index: 100;
     }
     .nav-btn {
       flex: 1; display: flex; flex-direction: column;
@@ -675,18 +678,6 @@
   <div class="def-body" id="defBody"></div>
 </div>
 
-<!-- Bottom nav -->
-<div class="bottom-nav">
-  <button class="nav-btn active" id="navDict" onclick="showScreen('dict')">
-    <span class="nav-icon">📖</span>辞書
-  </button>
-  <button class="nav-btn" id="navQuiz" onclick="showScreen('quiz')">
-    <span class="nav-icon">🎯</span>クイズ
-  </button>
-  <button class="nav-btn" id="navFav" onclick="showScreen('fav')">
-    <span class="nav-icon">⭐</span>お気に入り
-  </button>
-</div>
 
 <script>
 // =====================
@@ -1752,5 +1743,18 @@ const SAMPLE = [
 </script>
 
 </div><!-- #app -->
+
+<!-- Bottom nav - outside #app to avoid overflow clipping -->
+<div class="bottom-nav">
+  <button class="nav-btn active" id="navDict" onclick="showScreen('dict')">
+    <span class="nav-icon">📖</span>辞書
+  </button>
+  <button class="nav-btn" id="navQuiz" onclick="showScreen('quiz')">
+    <span class="nav-icon">🎯</span>クイズ
+  </button>
+  <button class="nav-btn" id="navFav" onclick="showScreen('fav')">
+    <span class="nav-icon">⭐</span>お気に入り
+  </button>
+</div>
 </body>
 </html>
