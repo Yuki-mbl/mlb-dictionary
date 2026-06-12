@@ -1135,12 +1135,28 @@ function getFiltered() {
   let list = [...allEntries];
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
-    list = list.filter(e => e.en.toLowerCase().includes(q) || e.ja.includes(searchQuery));
-    // 短い単語から表示（検索語に近い短さ優先、同じ長さは辞書順）
     if (dictTab === 'en') {
-      list.sort((a, b) => a.en.length - b.en.length || a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
+      // 見出し(en)一致 → 説明(ja)一致の順、各グループ内は見出し文字数の短い順
+      const headMatches = [];
+      const descMatches = [];
+      list.forEach(e => {
+        if (e.en.toLowerCase().includes(q)) headMatches.push(e);
+        else if (e.ja.toLowerCase().includes(q)) descMatches.push(e);
+      });
+      headMatches.sort((a, b) => a.en.length - b.en.length || a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
+      descMatches.sort((a, b) => a.en.length - b.en.length || a.en.toLowerCase().localeCompare(b.en.toLowerCase()));
+      list = [...headMatches, ...descMatches];
     } else {
-      list.sort((a, b) => a.ja.length - b.ja.length || jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
+      // 見出し(ja)一致 → 説明(en)一致の順、各グループ内は見出し文字数の短い順
+      const headMatches = [];
+      const descMatches = [];
+      list.forEach(e => {
+        if (e.ja.includes(searchQuery)) headMatches.push(e);
+        else if (e.en.toLowerCase().includes(q)) descMatches.push(e);
+      });
+      headMatches.sort((a, b) => a.ja.length - b.ja.length || jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
+      descMatches.sort((a, b) => a.ja.length - b.ja.length || jaReading(a.ja, a).localeCompare(jaReading(b.ja, b), 'ja'));
+      list = [...headMatches, ...descMatches];
     }
   } else {
     if (dictTab === 'en') {
