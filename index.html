@@ -561,6 +561,27 @@
     .fav-empty .fav-et { font-size: 15px; color: var(--text2); }
     .fav-empty .fav-es { font-size: 13px; line-height: 1.6; }
 
+    /* Fav section headers */
+    .fav-section-head {
+      padding: 8px 12px 6px;
+      font-size: 12px; font-weight: 700; color: var(--blue-light);
+      background: var(--bg4); border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 5; letter-spacing: 0.3px;
+    }
+    .fav-empty-section {
+      padding: 16px 16px;
+      font-size: 12px; color: var(--text3); text-align: center;
+    }
+
+    /* Quiz fav button in quiz screen */
+    .quiz-fav-btn {
+      background: none; border: 1px solid var(--border); border-radius: 20px;
+      color: var(--text2); font-size: 13px; cursor: pointer;
+      padding: 6px 14px; display: flex; align-items: center; gap: 6px;
+      transition: all 0.2s; align-self: center;
+    }
+    .quiz-fav-btn.active { color: var(--yellow); border-color: var(--yellow); }
+
     /* Star button in definition panel */
     .def-actions { display: flex; justify-content: flex-end; margin-bottom: 8px; }
     .fav-btn {
@@ -794,6 +815,8 @@
 
     <div class="quiz-result-badge" id="quizResultBadge"></div>
 
+    <button class="quiz-fav-btn" id="quizFavBtn" onclick="toggleQuizFav()" style="display:none">⭐ お気に入りに追加</button>
+
     <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuestion()">次の問題 →</button>
 
     <button style="padding:10px;background:none;border:none;color:var(--text3);font-size:12px;cursor:pointer;" onclick="showQuizHome();updateQuizStats()">← 最初の画面に戻る</button>
@@ -831,7 +854,12 @@
 
 <!-- ===== SCREEN: Favorites ===== -->
 <div class="screen no-tabs" id="screenFav">
-  <div class="entry-list" id="favList" style="flex:1;overflow-y:auto;"></div>
+  <div style="flex:1;overflow-y:auto;" id="favList">
+    <div class="fav-section-head">📖 辞書のお気に入り</div>
+    <div id="favDictList"></div>
+    <div class="fav-section-head" style="margin-top:4px;">🎯 クイズのお気に入り</div>
+    <div id="favQuizList"></div>
+  </div>
 </div>
 
 <!-- Confetti -->
@@ -869,6 +897,7 @@ function extractEnTerm(en) {
   return m ? m[0].trim() : s.substring(0, 40).trim();
 }
 let favorites = JSON.parse(localStorage.getItem('mlb_favs') || '[]');
+let quizFavs = JSON.parse(localStorage.getItem('mlb_quiz_favs') || '[]');
 let quizStats = JSON.parse(localStorage.getItem('mlb_quiz_stats') || '{"total":0,"correct":0}');
 let quizStatsEJ = JSON.parse(localStorage.getItem('mlb_quiz_stats_ej') || '{"total":0,"correct":0}');
 let quizStatsJE = JSON.parse(localStorage.getItem('mlb_quiz_stats_je') || '{"total":0,"correct":0}');
@@ -1219,29 +1248,61 @@ function toggleFavorite() {
   if (currentScreen === 'fav') renderFavList();
 }
 
-function renderFavList() {
-  const list = document.getElementById('favList');
-  if (!favorites.length) {
-    list.innerHTML = `<div class="fav-empty">
-      <div class="fav-ei">⭐</div>
-      <div class="fav-et">お気に入りがありません</div>
-      <div class="fav-es">辞書で用語を開き、☆ボタンで<br>お気に入りに追加できます</div>
-    </div>`;
-    return;
+function toggleQuizFav() {
+  if (!quizCurrent) return;
+  const en = quizCurrent.en;
+  const idx = quizFavs.indexOf(en);
+  const btn = document.getElementById('quizFavBtn');
+  if (idx >= 0) {
+    quizFavs.splice(idx, 1);
+    btn.textContent = '⭐ お気に入りに追加';
+    btn.classList.remove('active');
+  } else {
+    quizFavs.push(en);
+    btn.textContent = '⭐ お気に入り済み';
+    btn.classList.add('active');
   }
-  const entries = allEntries.filter(e => favorites.includes(e.en));
-  const html = entries.map((e, i) => {
-    const preview = e.ja.replace(/\s+/g,' ').substring(0,38);
-    return `<div class="entry-item" data-fav-idx="${i}">
-      <div class="entry-en">⭐ ${esc(e.en)}</div>
-      <div class="entry-ja-preview">${esc(preview)}…</div>
-    </div>`;
-  });
-  list.innerHTML = html.join('');
-  list.querySelectorAll('.entry-item').forEach(el => {
-    const i = parseInt(el.dataset.favIdx);
-    el.addEventListener('click', () => { const e = entries[i]; if (e) showDef(e.en, e.ja); });
-  });
+  localStorage.setItem('mlb_quiz_favs', JSON.stringify(quizFavs));
+}
+
+function renderFavList() {
+  // Dict favorites
+  const dictEl = document.getElementById('favDictList');
+  if (favorites.length) {
+    const entries = allEntries.filter(e => favorites.includes(e.en));
+    dictEl.innerHTML = entries.map((e, i) => {
+      const preview = e.ja.replace(/\s+/g,' ').substring(0,38);
+      return `<div class="entry-item" data-fav-idx="${i}">
+        <div class="entry-en">⭐ ${esc(e.en)}</div>
+        <div class="entry-ja-preview">${esc(preview)}…</div>
+      </div>`;
+    }).join('');
+    dictEl.querySelectorAll('.entry-item').forEach(el => {
+      const i = parseInt(el.dataset.favIdx);
+      el.addEventListener('click', () => { const e = entries[i]; if (e) showDef(e.en, e.ja); });
+    });
+  } else {
+    dictEl.innerHTML = `<div class="fav-empty-section">辞書で用語を開き、☆ボタンで追加できます</div>`;
+  }
+
+  // Quiz favorites
+  const quizEl = document.getElementById('favQuizList');
+  if (quizFavs.length) {
+    const qEntries = allEntries.filter(e => quizFavs.includes(e.en));
+    quizEl.innerHTML = qEntries.map((e, i) => {
+      const preview = e.ja.replace(/\s+/g,' ').substring(0,38);
+      return `<div class="entry-item" data-qfav-idx="${i}">
+        <div class="entry-en">⭐ ${esc(e.en)}</div>
+        <div class="entry-ja-preview">${esc(preview)}…</div>
+      </div>`;
+    }).join('');
+    quizEl.querySelectorAll('.entry-item').forEach(el => {
+      const i = parseInt(el.dataset.qfavIdx);
+      el.addEventListener('click', () => { const e = qEntries[i]; if (e) showDef(e.en, e.ja); });
+    });
+  } else {
+    quizEl.innerHTML = `<div class="fav-empty-section">クイズ中に⭐ボタンで追加できます</div>`;
+  }
 }
 
 // =====================
@@ -1390,6 +1451,7 @@ function renderQuestion() {
   document.getElementById('quizResultBadge').textContent = '';
   document.getElementById('quizResultBadge').className = 'quiz-result-badge';
   document.getElementById('quizNextBtn').classList.remove('show');
+  document.getElementById('quizFavBtn').style.display = 'none';
 
   if (quizMode === 'input' || quizMode === 'ja-input') {
     // Start at input stage; switch to choice if they get it wrong
@@ -1774,6 +1836,15 @@ function showQuizFeedback(isCorrect, q, mode, userAnswer, grade) {
     ansEl.textContent = isJaMode()
       ? (q.en_quiz || q.en)
       : q.ja.replace(/\s+/g,' ').trim();
+  }
+
+  // Quiz fav button
+  const favBtn = document.getElementById('quizFavBtn');
+  if (quizCurrent) {
+    const isAdded = quizFavs.includes(quizCurrent.en);
+    favBtn.textContent = isAdded ? '⭐ お気に入り済み' : '⭐ お気に入りに追加';
+    favBtn.className = 'quiz-fav-btn' + (isAdded ? ' active' : '');
+    favBtn.style.display = '';
   }
 
   // Next button (no fixed end)
