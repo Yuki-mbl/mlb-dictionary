@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>MLB野球用語英和・和英辞典</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
@@ -201,7 +203,7 @@
 
     /* Hero */
     .quiz-hero {
-      width: 100%; height: 200px; position: relative;
+      width: 100%; height: 160px; position: relative;
       display: flex; align-items: center; justify-content: center;
       overflow: hidden; flex-shrink: 0;
       background: #030c18;
@@ -243,21 +245,27 @@
       clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
     }
     .quiz-hero-content {
-      position: relative; text-align: center; z-index: 2;
+      position: relative; z-index: 2;
+      display: flex; align-items: center;
+      width: 100%; padding: 0 24px;
+      justify-content: space-between;
     }
     .quiz-hero-ball {
-      font-size: 68px; line-height: 1; margin-bottom: 10px;
-      filter:
-        drop-shadow(0 0 28px rgba(255,255,255,0.4))
-        drop-shadow(0 6px 12px rgba(0,0,0,0.7));
+      width: 150px; height: 150px;
+      filter: drop-shadow(0 0 18px rgba(255,255,255,0.25));
+      object-fit: contain; flex-shrink: 0;
     }
     .quiz-hero-title {
-      font-size: 26px; font-weight: 900; color: #fff;
-      letter-spacing: 3px;
-      text-shadow:
-        0 0 24px rgba(61,220,210,0.55),
-        0 0 8px rgba(61,220,210,0.3),
-        0 3px 10px rgba(0,0,0,0.9);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 72px; font-weight: 400;
+      letter-spacing: 8px;
+      line-height: 1;
+      background: linear-gradient(175deg, #ffffff 0%, #b0fff8 30%, #1ee8d8 60%, #00a8c8 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      filter:
+        drop-shadow(0 0 20px rgba(61,220,210,0.8))
+        drop-shadow(0 0 40px rgba(61,220,210,0.4))
+        drop-shadow(0 3px 8px rgba(0,0,0,0.9));
     }
 
     /* Stats boxes */
@@ -676,8 +684,8 @@
     <div class="quiz-hero">
       <div class="quiz-hero-beams"></div>
       <div class="quiz-hero-content">
-        <div class="quiz-hero-ball">⚾</div>
-        <div class="quiz-hero-title">クイズモード</div>
+        <div class="quiz-hero-title">Quiz</div>
+        <img class="quiz-hero-ball" src="baseball_hero.png?v=3" alt="baseball">
       </div>
     </div>
 
