@@ -88,27 +88,32 @@
     }
     .icon-btn:active { background: rgba(255,255,255,0.2); transform: scale(0.93); }
 
-    /* Search overlay */
-    .search-overlay {
-      position: absolute; top: 0; left: 0; right: 0;
-      height: var(--header-h);
-      background: rgba(0,0,0,0.92);
-      backdrop-filter: saturate(180%) blur(24px);
-      -webkit-backdrop-filter: saturate(180%) blur(24px);
-      display: flex; align-items: center; padding: 0 14px; gap: 10px;
-      transform: translateY(-100%);
-      transition: transform 0.25s ease;
-      z-index: 31;
+    /* Search bar inline */
+    .search-bar-inline-wrap {
+      padding: 8px 12px 6px;
+      background: var(--bg);
+      border-bottom: 0.5px solid rgba(255,255,255,0.07);
+      flex-shrink: 0;
     }
-    .search-overlay.open { transform: translateY(0); }
-    .search-overlay input {
-      flex: 1; padding: 9px 16px; border-radius: 980px;
-      border: none;
-      background: rgba(255,255,255,0.13); color: #fff; font-size: 15px; outline: none;
-      letter-spacing: -0.3px;
+    .search-bar-inline {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 980px; padding: 0 14px; height: 38px;
     }
-    .search-overlay input::placeholder { color: rgba(255,255,255,0.3); }
-    .search-cancel { background: none; border: none; color: var(--blue-light); font-size: 15px; font-weight: 500; cursor: pointer; padding: 4px 0; white-space: nowrap; letter-spacing: -0.3px; }
+    .search-bar-icon { font-size: 14px; opacity: 0.5; flex-shrink: 0; }
+    .search-bar-inline input {
+      flex: 1; background: none; border: none; outline: none;
+      color: #fff; font-size: 15px; letter-spacing: -0.3px;
+      font-family: inherit;
+    }
+    .search-bar-inline input::placeholder { color: rgba(255,255,255,0.35); }
+    .search-clear-btn {
+      background: rgba(255,255,255,0.25); border: none; color: #fff;
+      width: 18px; height: 18px; border-radius: 50%; font-size: 11px;
+      display: none; align-items: center; justify-content: center;
+      cursor: pointer; flex-shrink: 0; line-height: 1;
+    }
+    .search-clear-btn.visible { display: flex; }
 
     /* ===== TABS — iOS Segmented Control ===== */
     .tab-bar {
@@ -148,27 +153,27 @@
     .dict-main { display: flex; flex: 1; overflow: hidden; }
 
     .index-strip {
-      width: 26px; background: #000;
-      border-right: 0.5px solid rgba(255,255,255,0.07);
+      width: 34px; background: #000;
+      border-left: 0.5px solid rgba(255,255,255,0.07);
       overflow: hidden; flex-shrink: 0;
       display: flex; flex-direction: column;
     }
     .idx-btn {
       flex: 1; display: flex; align-items: center; justify-content: center;
-      width: 100%; text-align: center; font-size: 9px; font-weight: 600;
+      width: 100%; text-align: center; font-size: 11px; font-weight: 700;
       color: rgba(235,235,245,0.3); cursor: pointer; border: none; background: none;
       transition: all 0.15s;
-      min-height: 0; letter-spacing: -0.2px;
+      min-height: 0;
     }
-    .idx-btn:active { color: var(--blue-light); }
+    .idx-btn:active { color: var(--blue-light); background: rgba(94,212,206,0.1); }
     .idx-btn.active {
       color: #000; background: var(--blue-light);
-      border-radius: 5px; margin: 1px 3px;
-      width: calc(100% - 6px);
+      border-radius: 6px; margin: 1px 4px;
+      width: calc(100% - 8px);
     }
     .idx-btn.empty { color: rgba(255,255,255,0.1); cursor: default; }
     .idx-sep { flex: 0.8; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;
-      font-size: 6px; color: rgba(255,255,255,0.1); line-height: 1; }
+      font-size: 7px; color: rgba(255,255,255,0.1); line-height: 1; }
 
     .entry-list { flex: 1; overflow-y: auto; overflow-x: hidden; touch-action: pan-y; -webkit-overflow-scrolling: touch; }
     .entry-list::-webkit-scrollbar { display: none; }
@@ -215,12 +220,24 @@
     }
     .def-panel.open { transform: translateX(-50%) translateY(0); }
     .def-panel::-webkit-scrollbar { display: none; }
-    .def-handle { width: 40px; height: 4px; background: rgba(255,255,255,0.15); border-radius: 2px; margin: 0 auto 16px; }
-    .def-en { font-size: 26px; font-weight: 600; color: #64b5f6; margin-bottom: 12px; letter-spacing: -0.5px; }
-    .def-body { font-size: 18px; line-height: 1.9; color: var(--text); }
+    .def-header-row {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .def-handle { width: 40px; height: 4px; background: rgba(255,255,255,0.15); border-radius: 2px; }
+    .def-close-btn {
+      width: 30px; height: 30px; border-radius: 50%;
+      background: rgba(255,255,255,0.12); border: none;
+      color: rgba(255,255,255,0.7); font-size: 16px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: background 0.15s; flex-shrink: 0;
+    }
+    .def-close-btn:active { background: rgba(255,255,255,0.25); }
+    .def-en { font-size: 28px; font-weight: 600; color: #64b5f6; margin-bottom: 12px; letter-spacing: -0.5px; }
+    .def-body { font-size: 20px; line-height: 2.0; color: var(--text); }
     .def-body .def-main { margin-bottom: 8px; }
-    .def-body .def-cf { font-size: 13px; color: var(--text2); border-top: 1px solid rgba(255,255,255,0.07); padding-top: 10px; margin-top: 10px; }
-    .def-body .def-eg { font-size: 13px; color: #a5d6a7; background: rgba(76,175,80,0.07); border-radius: 10px; padding: 10px 12px; margin-top: 10px; border: 1px solid rgba(76,175,80,0.15); }
+    .def-body .def-cf { font-size: 15px; color: var(--text2); border-top: 1px solid rgba(255,255,255,0.07); padding-top: 10px; margin-top: 10px; }
+    .def-body .def-eg { font-size: 15px; color: #a5d6a7; background: rgba(76,175,80,0.07); border-radius: 10px; padding: 10px 12px; margin-top: 10px; border: 1px solid rgba(76,175,80,0.15); }
 
     /* ===== OVERLAY ===== */
     .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 150; }
@@ -403,42 +420,61 @@
       background: rgba(239,83,80,0.15); color: #ef9a9a;
     }
 
-    /* Quiz mode buttons - horizontal rows */
-    .quiz-mode-list { display: flex; flex-direction: column; gap: 8px; width: 100%; }
-    .quiz-mode-btn {
-      width: 100%; padding: 13px 16px; border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.08);
+    /* Quiz big cards */
+    .quiz-big-card {
+      width: 100%; border-radius: 18px; overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .quiz-big-card-header {
+      padding: 14px 16px 10px;
+      display: flex; flex-direction: column; gap: 2px;
+    }
+    .quiz-big-card-ej .quiz-big-card-header {
+      background: linear-gradient(135deg, rgba(30,90,160,0.6), rgba(10,50,110,0.8));
+      border-bottom: 1px solid rgba(94,212,206,0.2);
+    }
+    .quiz-big-card-je .quiz-big-card-header {
+      background: linear-gradient(135deg, rgba(160,30,40,0.6), rgba(100,10,20,0.8));
+      border-bottom: 1px solid rgba(255,100,80,0.2);
+    }
+    .quiz-big-card-title { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .quiz-big-card-sub { font-size: 12px; color: rgba(255,255,255,0.55); letter-spacing: -0.1px; }
+    .quiz-big-card-btns {
+      display: flex; gap: 0;
       background: rgba(255,255,255,0.04);
-      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-      color: var(--text); cursor: pointer;
-      display: flex; flex-direction: row; align-items: center;
-      gap: 14px; text-align: left; transition: all 0.18s;
     }
-    .quiz-mode-btn:active { background: rgba(61,184,176,0.1); border-color: rgba(61,184,176,0.3); transform: scale(0.98); }
-    .qm-icon-wrap {
-      width: 52px; height: 52px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 26px; flex-shrink: 0;
+    .quiz-big-btn {
+      flex: 1; padding: 16px 8px; border: none; background: none;
+      color: #fff; cursor: pointer; transition: all 0.15s;
+      display: flex; flex-direction: column; align-items: center; gap: 5px;
+      border-right: 0.5px solid rgba(255,255,255,0.07);
     }
-    .qm-icon-blue {
-      background: linear-gradient(145deg, #1e6ab8, #0a3570);
-      box-shadow: 0 4px 18px rgba(30,106,184,0.6), 0 0 0 1px rgba(100,181,246,0.2) inset;
-      border: 1px solid rgba(100,181,246,0.35);
+    .quiz-big-btn:last-child { border-right: none; }
+    .quiz-big-btn:active { background: rgba(255,255,255,0.08); transform: scale(0.97); }
+    .quiz-big-btn-icon { font-size: 28px; }
+    .quiz-big-btn-label { font-size: 13px; font-weight: 600; letter-spacing: -0.2px; }
+    .quiz-big-btn-desc { font-size: 10px; color: rgba(255,255,255,0.45); }
+
+    /* Fav quiz button */
+    .quiz-fav-card {
+      width: 100%; padding: 14px 16px; border-radius: 14px;
+      background: rgba(255,193,7,0.06); border: 1px solid rgba(255,193,7,0.2);
+      display: flex; align-items: center; gap: 12px;
+      cursor: pointer; transition: all 0.15s;
     }
-    .qm-icon-red {
-      background: linear-gradient(145deg, #c62828, #7b0000);
-      box-shadow: 0 4px 18px rgba(198,40,40,0.6), 0 0 0 1px rgba(239,154,154,0.2) inset;
-      border: 1px solid rgba(239,154,154,0.35);
-    }
-    .qm-icon-gold {
-      background: linear-gradient(145deg, #8a6500, #4a3800);
-      box-shadow: 0 4px 18px rgba(138,101,0,0.5), 0 0 0 1px rgba(255,193,7,0.2) inset;
-      border: 1px solid rgba(255,193,7,0.35);
-    }
-    .qm-text { flex: 1; }
-    .qm-title { font-size: 13px; font-weight: 700; color: #fff; }
-    .qm-sub { font-size: 11px; color: var(--text2); margin-top: 2px; }
-    .qm-arrow { font-size: 20px; color: var(--text3); line-height: 1; }
+    .quiz-fav-card:active { background: rgba(255,193,7,0.12); transform: scale(0.98); }
+    .quiz-fav-card:disabled { opacity: 0.4; cursor: default; }
+    .quiz-fav-card-icon { font-size: 28px; }
+    .quiz-fav-card-text { flex: 1; }
+    .quiz-fav-card-title { font-size: 15px; font-weight: 600; color: #fff; }
+    .quiz-fav-card-sub { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 2px; }
+
+    /* Legacy mode buttons (kept for fallback) */
+    .quiz-mode-list { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+    .quiz-mode-btn { display: none; } /* hidden — replaced by big cards */
+    .qm-icon-wrap { display: none; }
+    .qm-text { display: none; }
+    .qm-arrow { display: none; }
 
     /* Hint button */
     .hint-btn {
@@ -719,14 +755,6 @@
 <!-- Header -->
 <header>
   <div class="header-title">⚾ MLB 野球用語辞典 <span class="header-title-badge">EN·JA</span></div>
-  <div class="header-actions">
-    <button class="icon-btn" onclick="toggleSearch()" title="検索">🔍</button>
-  </div>
-  <div class="search-overlay" id="searchOverlay">
-    <input type="text" id="searchInput" placeholder="英語・日本語で検索..."
-           oninput="onSearch(this.value)" autocomplete="off" autocorrect="off">
-    <button class="search-cancel" onclick="closeSearch()">キャンセル</button>
-  </div>
 </header>
 
 <!-- Dict tab switcher -->
@@ -739,9 +767,17 @@
 
 <!-- ===== SCREEN: Dictionary ===== -->
 <div class="screen active" id="screenDict">
+  <div class="search-bar-inline-wrap">
+    <div class="search-bar-inline">
+      <span class="search-bar-icon">🔍</span>
+      <input id="searchInput" type="text" placeholder="Search / 検索..."
+             oninput="onSearch(this.value)" autocomplete="off" autocorrect="off" autocapitalize="off">
+      <button class="search-clear-btn" id="searchClearBtn" onclick="clearSearch()">✕</button>
+    </div>
+  </div>
   <div class="dict-main">
-    <div class="index-strip" id="indexStrip"></div>
     <div class="entry-list" id="entryList"></div>
+    <div class="index-strip" id="indexStrip"></div>
   </div>
 </div>
 
@@ -800,57 +836,45 @@
 
     <div class="quiz-home-desc">出題方法を選んでください</div>
 
-    <!-- EN→JP -->
+    <!-- EN→JP big card -->
     <div class="quiz-section">
-      <div class="quiz-section-box">
-        <div class="quiz-section-label">
-          英語 → 日本語
-          <span style="color:#5efff4;">日本語でこたえて</span>
+      <div class="quiz-big-card quiz-big-card-ej">
+        <div class="quiz-big-card-header">
+          <div class="quiz-big-card-title">英和クイズ</div>
+          <div class="quiz-big-card-sub">英語を見て日本語で答える</div>
         </div>
-        <div class="quiz-mode-list">
-          <button class="quiz-mode-btn" onclick="startQuiz('input')">
-            <div class="qm-icon-wrap qm-icon-blue">✍️</div>
-            <div class="qm-text">
-              <div class="qm-title">入力クイズ</div>
-              <div class="qm-sub">英語を見て日本語キーワードを入力</div>
-            </div>
-            <div class="qm-arrow">›</div>
+        <div class="quiz-big-card-btns">
+          <button class="quiz-big-btn" onclick="startQuiz('input')">
+            <div class="quiz-big-btn-icon">✍️</div>
+            <div class="quiz-big-btn-label">入力</div>
+            <div class="quiz-big-btn-desc">キーワードを入力</div>
           </button>
-          <button class="quiz-mode-btn" onclick="startQuiz('choice')">
-            <div class="qm-icon-wrap qm-icon-red">📋</div>
-            <div class="qm-text">
-              <div class="qm-title">四択クイズ</div>
-              <div class="qm-sub">4つの選択肢から正解を選ぶ</div>
-            </div>
-            <div class="qm-arrow">›</div>
+          <button class="quiz-big-btn" onclick="startQuiz('choice')">
+            <div class="quiz-big-btn-icon">📋</div>
+            <div class="quiz-big-btn-label">四択</div>
+            <div class="quiz-big-btn-desc">4択から選ぶ</div>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- JP→EN -->
+    <!-- JP→EN big card -->
     <div class="quiz-section">
-      <div class="quiz-section-box quiz-section-box-red">
-        <div class="quiz-section-label">
-          Japanese → English
-          <span style="color:#ff8a65;">Answer in English</span>
+      <div class="quiz-big-card quiz-big-card-je">
+        <div class="quiz-big-card-header">
+          <div class="quiz-big-card-title">和英クイズ</div>
+          <div class="quiz-big-card-sub">日本語を見て英語で答える</div>
         </div>
-        <div class="quiz-mode-list">
-          <button class="quiz-mode-btn" onclick="startQuiz('ja-input')">
-            <div class="qm-icon-wrap qm-icon-blue">✍️</div>
-            <div class="qm-text">
-              <div class="qm-title">Input Quiz</div>
-              <div class="qm-sub">Type the English keyword from Japanese</div>
-            </div>
-            <div class="qm-arrow">›</div>
+        <div class="quiz-big-card-btns">
+          <button class="quiz-big-btn" onclick="startQuiz('ja-input')">
+            <div class="quiz-big-btn-icon">✍️</div>
+            <div class="quiz-big-btn-label">Input</div>
+            <div class="quiz-big-btn-desc">Type in English</div>
           </button>
-          <button class="quiz-mode-btn" onclick="startQuiz('ja-choice')">
-            <div class="qm-icon-wrap qm-icon-red">📋</div>
-            <div class="qm-text">
-              <div class="qm-title">4-Choice Quiz</div>
-              <div class="qm-sub">Choose the correct English from 4 options</div>
-            </div>
-            <div class="qm-arrow">›</div>
+          <button class="quiz-big-btn" onclick="startQuiz('ja-choice')">
+            <div class="quiz-big-btn-icon">📋</div>
+            <div class="quiz-big-btn-label">4-Choice</div>
+            <div class="quiz-big-btn-desc">Choose from 4</div>
           </button>
         </div>
       </div>
@@ -858,17 +882,14 @@
 
     <!-- Favorites -->
     <div class="quiz-section" style="padding-bottom:8px">
-      <div class="quiz-section-label">⭐ お気に入り</div>
-      <div class="quiz-mode-list">
-        <button class="quiz-mode-btn" id="favQuizBtn" onclick="startFavQuiz()" style="opacity:0.45" disabled>
-          <div class="qm-icon-wrap qm-icon-gold">⭐</div>
-          <div class="qm-text">
-            <div class="qm-title">お気に入りクイズ</div>
-            <div class="qm-sub" id="favQuizSub">お気に入りを5件以上登録すると解放</div>
-          </div>
-          <div class="qm-arrow">›</div>
-        </button>
-      </div>
+      <button class="quiz-fav-card" id="favQuizBtn" onclick="startFavQuiz()" disabled>
+        <div class="quiz-fav-card-icon">⭐</div>
+        <div class="quiz-fav-card-text">
+          <div class="quiz-fav-card-title">お気に入りクイズ</div>
+          <div class="quiz-fav-card-sub" id="favQuizSub">お気に入りを5件以上登録すると解放</div>
+        </div>
+        <div style="color:rgba(255,255,255,0.3);font-size:18px;">›</div>
+      </button>
     </div>
 
     <button onclick="resetStats()" style="background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;padding:8px;margin-bottom:4px;opacity:0.5;">↺ 記録をリセット</button>
@@ -961,7 +982,10 @@
 
 <!-- Definition panel -->
 <div class="def-panel" id="defPanel">
-  <div class="def-handle"></div>
+  <div class="def-header-row">
+    <div class="def-handle"></div>
+    <button class="def-close-btn" onclick="closeDefinition()">✕</button>
+  </div>
   <div class="def-actions">
     <button class="fav-btn" id="favBtn" onclick="toggleFavorite()" title="お気に入り">⭐</button>
   </div>
@@ -1097,20 +1121,30 @@ function switchDictTab(tab) {
 // =====================
 //  SEARCH
 // =====================
-function toggleSearch() {
-  const o = document.getElementById('searchOverlay');
-  if (o.classList.contains('open')) { closeSearch(); return; }
-  o.classList.add('open');
-  setTimeout(() => document.getElementById('searchInput').focus(), 200);
-}
-function closeSearch() {
-  document.getElementById('searchOverlay').classList.remove('open');
+function clearSearch() {
   document.getElementById('searchInput').value = '';
+  document.getElementById('searchClearBtn').classList.remove('visible');
   searchQuery = '';
   document.getElementById('entryList').parentElement.classList.remove('search-mode');
-  buildIndex();
   renderList();
 }
+function closeSearch() {
+  clearSearch();
+}
+function toggleSearch() { /* no-op: search bar is always visible */ }
+function onSearchInput(val) {
+  const clearBtn = document.getElementById('searchClearBtn');
+  if (clearBtn) clearBtn.classList.toggle('visible', !!val.trim());
+  onSearch(val);
+}
+// override: wire up clear button visibility on input
+document.addEventListener('DOMContentLoaded', () => {
+  const inp = document.getElementById('searchInput');
+  if (inp) inp.addEventListener('input', e => {
+    const clearBtn = document.getElementById('searchClearBtn');
+    if (clearBtn) clearBtn.classList.toggle('visible', !!e.target.value.trim());
+  });
+});
 function onSearch(val) {
   searchQuery = val.trim();
   document.getElementById('entryList').parentElement.classList.toggle('search-mode', !!searchQuery);
